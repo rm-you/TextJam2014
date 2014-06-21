@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-VSTART [[Start2]]
+VYou are part of the maintenance crew aboard the //LGDE Heroism//, a colony ship bound for the 1212 Antilae system, to set up a colony. You are part of the team responsible for setting up the colony while the majority of the colonists stay in hibernation.\u000a\u000aHowever, something has gone wrong. When you awoke, the ship was not in the 1212 Antilae system, but an unknown binary star system. The planet you are orbitting, Unknown VII, happens to be habitable. By the time you had come to your senses, the decision to colonize the planet anyway had already been made by the ship's captain.\u000a\u000a[[Listen to the captain's speech.|Start2]]\u000a[[Suit up|Start2Alt]]
 p22
 sS'title'
 p23
@@ -50,12 +50,12 @@ struct_time
 p26
 ((I2014
 I6
-I20
-I19
-I32
-I6
-I4
-I171
+I21
+I13
+I51
+I55
+I5
+I172
 I1
 tp27
 (dp28
@@ -143,7 +143,7 @@ Tiddler
 p55
 (dp56
 g21
-VAcid_Trees
+V
 p57
 sg23
 VStoryAuthor
@@ -153,9 +153,9 @@ g26
 ((I2014
 I6
 I21
-I12
-I26
-I41
+I13
+I59
+I38
 I5
 I172
 I1
@@ -193,7 +193,7 @@ Tiddler
 p70
 (dp71
 g21
-VSTART [[Start3]]
+V//"It may not be Jakuta but it's still a habitable planet. Initial scans show promise, and besides, we're low on supplies. The Heroism exhausted it's FTL to bring us here."//  Captain Randome's message to the crew was clear: this is our home.\u000a\u000a//"The rest of the crew will awaken in a few months. I expect you all to perform your duties with the utmost efficiency. Good luck."// All around you, crew are gathering supplies and putting on protective gear. \u000a\u000a[[Suit up.|Start3]]
 p72
 sg23
 VStart2
@@ -202,12 +202,12 @@ sg25
 g26
 ((I2014
 I6
+I21
+I13
+I42
 I20
-I19
-I32
-I19
-I4
-I171
+I5
+I172
 I1
 tp74
 (dp75
@@ -243,7 +243,7 @@ Tiddler
 p85
 (dp86
 g21
-VSTART [[Start4]]
+VTODO GEARING UP TEXT\u000a\u000a[[Start4]]
 p87
 sg23
 VStart3
@@ -252,12 +252,12 @@ sg25
 g26
 ((I2014
 I6
-I20
-I19
-I32
-I28
-I4
-I171
+I21
+I13
+I54
+I42
+I5
+I172
 I1
 tp89
 (dp90
@@ -293,7 +293,7 @@ Tiddler
 p100
 (dp101
 g21
-V<<nobr>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Start5]]
+V<<nobr>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION OF DROP POD\u000a\u000a[[Start5]]
 p102
 sg23
 VStart4
@@ -302,12 +302,12 @@ sg25
 g26
 ((I2014
 I6
-I20
-I23
-I24
-I22
-I4
-I171
+I21
+I13
+I55
+I1
+I5
+I172
 I1
 tp104
 (dp105
@@ -343,7 +343,7 @@ Tiddler
 p115
 (dp116
 g21
-V<<nobr>>\u000a<<set $fuel to 3>>\u000a<<set $generator to 1>>\u000a<<set $doom_xenocide to 16>>\u000a<<set $doom_beasts to 20>>\u000a<<set $doom_disease to 12>>\u000a<<set $doom_supernova to 6>>\u000a<<endnobr>>\u000a[[Hub]]
+V<<nobr>>\u000a<<set $fuel to 3>>\u000a<<set $generator to 1>>\u000a<<set $doom_xenocide to 16>>\u000a<<set $doom_beasts to 20>>\u000a<<set $doom_disease to 12>>\u000a<<set $doom_supernova to 6>>\u000a<<endnobr>>\u000aTODO DROP PODDING\u000a\u000a[[Hub]]
 p117
 sg23
 VStart5
@@ -353,9 +353,9 @@ g26
 ((I2014
 I6
 I21
-I11
-I33
-I45
+I13
+I55
+I12
 I5
 I172
 I1
@@ -393,7 +393,7 @@ Tiddler
 p130
 (dp131
 g21
-V<<nobr>><<if visited() is 1>>\u000aFirst time visiting Hub\u000a<<endif>>\u000a<<endnobr>>\u000a<<if $comm_array > 1 and $refinery > 1 and $spaceport is 0>>[[Build Spaceport]]<<endif>>\u000a\u000a* [[Colony Center]]\u000a* [[Factory]]\u000a* [[Power Plant]]\u000a* [[Robotics Lab]]\u000a<<if $spaceport > 1>> *[[Spaceport]] <<endif>>
+V<<nobr>><<if visited() is 1>>\u000aFirst time visiting Hub\u000aTODO LANDING DESCRIPTION\u000a\u000aTODO INITIAL DESCRIPTION OF AREA\u000a<<endif>>\u000a<<endnobr>>\u000a<<if $comm_array > 1 and $refinery > 1 and $spaceport is 0>>[[Build Spaceport]]<<endif>>\u000a\u000a<<if $spaceport is 1>>TODO DESCRIPTION OF SPACEPORT BEING BUILT<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000a* [[Colony Center]]\u000a* [[Factory]]\u000a* [[Power Plant]]\u000a* [[Robotics Lab]]\u000a<<if $spaceport > 1>> *[[Spaceport]] <<endif>>
 p132
 sg23
 VHub
@@ -403,9 +403,9 @@ g26
 ((I2014
 I6
 I21
-I12
-I36
-I31
+I13
+I56
+I22
 I5
 I172
 I1
@@ -443,7 +443,7 @@ Tiddler
 p145
 (dp146
 g21
-V<<if $weather_tower>><<endif>>\u000a\u000a[[Sleep]]\u000a\u000a<<if $comm_array is 0>> [[Build Communications Array]]<<endif>>\u000a<<if $comm_array is 2 and visited("Island")>> [[Build Signal Jammer]]<<endif>>\u000a<<if $visited_uncalm_ocean and $weather_tower is 0>>[[Build Weather Tower]]<<endif>>\u000a\u000a* [[West of Colony]]\u000a* [[Hub]]
+V<<if $weather_tower is 1>> TODO DESCRIBE WEATHER TOWER BEING BUILT<<endif>>\u000a<<if $weather_tower is 2>> TODO DESCRIBE WEATHER TOWER<<endif>>\u000a\u000a<<if $comm_array is 1>> TODO DESCRIBE COMM ARRAY BEING BUILT<<endif>>\u000a\u000a<<if $comm_array is 2>> TODO DESCRIBE COMM ARRAY<<endif>>\u000a\u000a<<if $jammer is 1>> TODO DESCRIBE JAMMER BEING BUILT<<endif>>\u000a\u000a<<if $jammer is 2>> TODO DESCRIBE JAMMER<<endif>>\u000a\u000a[[Sleep]]\u000a\u000a<<if $comm_array is 0>> [[Build Communications Array]]<<endif>>\u000a<<if $comm_array is 2 and visited("Island")>> [[Build Signal Jammer]]<<endif>>\u000a<<if $visited_uncalm_ocean and $weather_tower is 0>>[[Build Weather Tower]]<<endif>>\u000a\u000a* [[West of Colony]]\u000a* [[Hub]]\u000a\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE ALL THE AVAILABLE OPTIONS INSTEAD OF JUST HAVING OPTIONS APPEAR OUT OF NOWHERE\u000a
 p147
 sg23
 VColony Center
@@ -453,9 +453,9 @@ g26
 ((I2014
 I6
 I21
-I1
-I21
-I49
+I14
+I3
+I22
 I5
 I172
 I1
@@ -493,7 +493,7 @@ Tiddler
 p160
 (dp161
 g21
-V<<nobr>>\u000a<<if $need_flight_suit>>\u000a[[Flight Suit]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $need_boat>>\u000a[[Boat]]\u000a<<endif>>\u000a<<if visited("Island") and $refinery and $bomb is 0>>\u000a[[Bomb]]\u000a<<endif>>\u000a<<if visited("Cave") and $refinery is 0>>\u000a[[Build Refinery]]\u000a<<endif>>\u000a<<if visited("Bio Lab") and visited("Beast Den")>>\u000a[[Build Stasis Net]]\u000a<<endif>>\u000a<<endnobr>>\u000a* [[North of Colony]]\u000a* [[Hub]]
+VTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE ALL THE AVAILABLE OPTIONS INSTEAD OF JUST HAVING OPTIONS APPEAR OUT OF NOWHERE\u000a\u000a<<if $refinery is 1>> TODO DESCRIBE REFINERY BEING CONSTRUCTED<<endif>>\u000a\u000a<<if $refinery is 2>> TODO DESCRIBE COMPLETED REFINERY<<endif>>\u000a\u000a<<if $flight_suit is 1>> TODO DESCRIBE FLIGHT SUIT BEING BUILT<<endif>>\u000a\u000a<<if $boat is 1>> TODO DESCRIBE BOAT BEING BUILT<<endif>>\u000a\u000a<<if $stasis_net is 1>> TODO DESCRIBE NET BEING BUILT<<endif>>\u000a\u000a<<if $bomb is 1>> TODO DESCRIBE BOMB BEING BUILT<<endif>>\u000a\u000a<<nobr>>\u000a<<if $need_flight_suit>>\u000a[[Flight Suit]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $need_boat>>\u000a[[Boat]]\u000a<<endif>>\u000a<<if visited("Island") and $refinery and $bomb is 0>>\u000a[[Bomb]]\u000a<<endif>>\u000a<<if visited("Cave") and $refinery is 0>>\u000a[[Build Refinery]]\u000a<<endif>>\u000a<<if visited("Bio Lab") and visited("Beast Den")>>\u000a[[Build Stasis Net]]\u000a<<endif>>\u000a<<endnobr>>\u000a* [[North of Colony]]\u000a* [[Hub]]
 p162
 sg23
 VFactory
@@ -503,9 +503,9 @@ g26
 ((I2014
 I6
 I21
-I13
-I12
-I52
+I14
+I2
+I1
 I5
 I172
 I1
@@ -593,7 +593,7 @@ Tiddler
 p190
 (dp191
 g21
-V<<nobr>>\u000a<<if $mountain_mapped is 0 and $visited_mountains>>\u000a[[Map Mountain]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $forest_mapped is 0 and $visited_forest>>\u000a[[Map Forest]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $hills_mapped is 0 and $visited_hills>>\u000a[[Map Hills]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $curious_plant or visited("Deep Forest") and $bio_lab is 0>>\u000a[[Construct Bio Lab]]\u000a<<endif>>\u000a<<if $bio_lab > 1>>[[Bio Lab]]<<endif>>\u000a<<endnobr>>\u000a* [[South of Colony]]\u000a* [[Hub]]
+V<<nobr>>\u000a<<if $mountain_mapped is 0 and $visited_mountains>>\u000a[[Map Mountain]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $forest_mapped is 0 and $visited_forest>>\u000a[[Map Forest]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $hills_mapped is 0 and $visited_hills>>\u000a[[Map Hills]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $curious_plant or visited("Deep Forest") and $bio_lab is 0>>\u000a[[Construct Bio Lab]]\u000a<<endif>>\u000a<<if $bio_lab is 1>> TODO DESCRIBE BIO LAB UNDER CONSTRUCTION<<endif>>\u000a<<if $bio_lab > 1>>TODO DESCRIBE BIO LAB\u000a\u000a[[Bio Lab]]<<endif>>\u000a<<endnobr>>\u000a* [[South of Colony]]\u000a* [[Hub]]\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE ALL THE AVAILABLE OPTIONS INSTEAD OF JUST HAVING OPTIONS APPEAR OUT OF NOWHERE\u000a
 p192
 sg23
 VRobotics Lab
@@ -603,9 +603,9 @@ g26
 ((I2014
 I6
 I21
+I14
+I5
 I12
-I35
-I50
 I5
 I172
 I1
@@ -643,7 +643,7 @@ Tiddler
 p205
 (dp206
 g21
-V* [[Mountains]]\u000a* [[Factory]]
+VTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000a* [[Mountains]]\u000a* [[Factory]]
 p207
 sg23
 VNorth of Colony
@@ -652,12 +652,12 @@ sg25
 g26
 ((I2014
 I6
-I20
-I20
-I25
-I50
-I4
-I171
+I21
+I13
+I57
+I45
+I5
+I172
 I1
 tp209
 (dp210
@@ -693,7 +693,7 @@ Tiddler
 p220
 (dp221
 g21
-V<<if $beast_at_south_of_colony>>\u000aBeast!\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_south_of_colony to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[Robotics Lab]]\u000a* [[Ocean Cliffs]]\u000a<<endif>>
+V<<if $beast_at_south_of_colony>>\u000aBeast! TODO DO BETTER BEAST\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_south_of_colony to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[Robotics Lab]]\u000a* [[Ocean Cliffs]]\u000a<<endif>>\u000a\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIPTION FOR BEAST ATTACK
 p222
 sg23
 VSouth of Colony
@@ -703,9 +703,9 @@ g26
 ((I2014
 I6
 I21
-I1
-I43
-I42
+I14
+I11
+I38
 I5
 I172
 I1
@@ -743,7 +743,7 @@ Tiddler
 p235
 (dp236
 g21
-V<<if $beast_at_east_of_colony>>\u000aBeast!\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_east_of_colony to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[Power Plant]]\u000a* [[Hills]]\u000a<<endif>>
+V<<if $beast_at_east_of_colony>>\u000aBeast!\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_east_of_colony to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[Power Plant]]\u000a* [[Hills]]\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIPTION FOR BEAST ATTACK
 p237
 sg23
 VEast of Colony
@@ -753,9 +753,9 @@ g26
 ((I2014
 I6
 I21
-I1
-I44
-I5
+I13
+I58
+I2
 I5
 I172
 I1
@@ -793,7 +793,7 @@ Tiddler
 p250
 (dp251
 g21
-V* [[Colony Center]]\u000a* [[Forest]]
+V\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000a* [[Colony Center]]\u000a* [[Forest]]
 p252
 sg23
 VWest of Colony
@@ -802,12 +802,12 @@ sg25
 g26
 ((I2014
 I6
-I20
-I20
-I43
-I30
-I4
-I171
+I21
+I13
+I58
+I19
+I5
+I172
 I1
 tp254
 (dp255
@@ -843,7 +843,7 @@ Tiddler
 p265
 (dp266
 g21
-V<<if visited() is 1>>\u000aFirst time visiting Mountains\u000a<<set $visited_mountains to 1>>\u000a<<endif>>\u000a<<if $beast_at_mountains>>\u000aBeast!\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_mountains to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a<<if $flight_suit > 1>>\u000a<<nobr>><<if visited("Cave")>>* [[Cave]]<<elseif $mountain_mapped > 1>>* [[Drill Cave]]<<endif>><<endnobr>>\u000a* [[Valley]]\u000a* [[North of Colony]]\u000a<<else>><<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>>\u000a[[Go Back|previous()]]\u000a<<endif>>\u000a<<endif>>
+V<<if visited() is 1>>\u000aFirst time visiting Mountains\u000a<<set $visited_mountains to 1>>\u000a<<endif>>\u000a<<if $beast_at_mountains>>\u000aBeast! TODO BETTER BEAST\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_mountains to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a<<if $flight_suit > 1>>\u000a<<nobr>><<if visited("Cave")>>* [[Cave]]<<elseif $mountain_mapped > 1>>* [[Drill Cave]]<<endif>><<endnobr>>\u000a* [[Valley]]\u000a* [[North of Colony]]\u000a<<else>><<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>>\u000a[[Go Back|previous()]]\u000a<<endif>>\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
 p267
 sg23
 VMountains
@@ -853,9 +853,9 @@ g26
 ((I2014
 I6
 I21
+I14
 I11
-I48
-I24
+I52
 I5
 I172
 I1
@@ -893,7 +893,7 @@ Tiddler
 p280
 (dp281
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $flight_suit to 1>>\u000a<<set $need_flight_suit to 0>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Okay|Factory]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $flight_suit to 1>>\u000a<<set $need_flight_suit to 0>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Factory]]
 p282
 sg23
 VFlight Suit
@@ -902,12 +902,12 @@ sg25
 g26
 ((I2014
 I6
-I20
-I23
-I19
-I56
-I4
-I171
+I21
+I14
+I5
+I26
+I5
+I172
 I1
 tp284
 (dp285
@@ -943,7 +943,7 @@ Tiddler
 p295
 (dp296
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $boat to 1>>\u000a<<set $generator -= 1>>\u000a<<set $need_boat to 0>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Factory]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $boat to 1>>\u000a<<set $generator -= 1>>\u000a<<set $need_boat to 0>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Factory]]
 p297
 sg23
 VBoat
@@ -952,12 +952,12 @@ sg25
 g26
 ((I2014
 I6
-I20
-I23
-I20
+I21
 I14
 I4
-I171
+I11
+I5
+I172
 I1
 tp299
 (dp300
@@ -993,7 +993,7 @@ Tiddler
 p310
 (dp311
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $mountain_mapped to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Okay|Robotics Lab]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $mountain_mapped to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Robotics Lab]]
 p312
 sg23
 VMap Mountain
@@ -1002,12 +1002,12 @@ sg25
 g26
 ((I2014
 I6
-I20
-I23
-I48
-I36
+I21
+I14
 I4
-I171
+I28
+I5
+I172
 I1
 tp314
 (dp315
@@ -1043,7 +1043,7 @@ Tiddler
 p325
 (dp326
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $forest_mapped to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Okay|Robotics Lab]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $forest_mapped to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Robotics Lab]]
 p327
 sg23
 VMap Forest
@@ -1052,12 +1052,12 @@ sg25
 g26
 ((I2014
 I6
-I20
-I23
-I19
-I39
+I21
+I14
 I4
-I171
+I42
+I5
+I172
 I1
 tp329
 (dp330
@@ -1093,7 +1093,7 @@ Tiddler
 p340
 (dp341
 g21
-V<<nobr>>\u000a<<if $generator > 0 and $plasma_torch is 0>>\u000a<<set $plasma_torch to 1>>\u000a<<set $generator -= 1>>\u000aYou connect your plasma torch directly to the main power tap on the generator. Sparks fly and the torch hums with energy. After a moment, you disconnect it, certain that the torch has enough power to be used defensively against any beast, should you need to.\u000a<<elseif $plasma_torch>>\u000aYour plasma torch is already charged. Charging it further would just waste power.\u000a<<else>>\u000aYou connect your plasma torch directly to the main power tap on the generator, but nothing seems to happen. There doesn't appear to be any excess power you can draw.\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Power Plant]]
+V<<nobr>>\u000a<<if $generator > 0 and $plasma_torch is 0>>\u000a<<set $plasma_torch to 1>>\u000a<<set $generator -= 1>>\u000aYou connect your plasma torch directly to the main power tap on the generator. Sparks fly and the torch hums with energy. After a moment, you disconnect it, certain that the torch has enough power to be used defensively against any beast, should you need to.\u000a<<elseif $plasma_torch>>\u000aYour plasma torch is already charged. Charging it further would just waste power.\u000a<<else>>\u000aYou connect your plasma torch directly to the main power tap on the generator, but nothing seems to happen. There doesn't appear to be any excess power you can draw.\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO BETTER DESCRIPTION\u000a\u000a[[Return|Power Plant]]
 p342
 sg23
 VOvercharge Plasma Torch
@@ -1102,12 +1102,12 @@ sg25
 g26
 ((I2014
 I6
-I20
-I22
-I54
-I43
-I4
-I171
+I21
+I14
+I6
+I15
+I5
+I172
 I1
 tp344
 (dp345
@@ -1193,7 +1193,7 @@ Tiddler
 p370
 (dp371
 g21
-V<<if $beast_at_valley>>\u000aBeast!\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_valley to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[Mountains]]\u000a* [[Hills]]\u000a<<endif>>
+V<<if $beast_at_valley>>\u000aBeast! TODO DO BETTER BEAST\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_valley to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[Mountains]]\u000a* [[Hills]]\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
 p372
 sg23
 VValley
@@ -1203,9 +1203,9 @@ g26
 ((I2014
 I6
 I21
-I1
-I42
-I52
+I14
+I11
+I45
 I5
 I172
 I1
@@ -1243,7 +1243,7 @@ Tiddler
 p385
 (dp386
 g21
-V<<if $beast_at_hills>>\u000aBeast!\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_hills to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[East of Colony]]\u000a* [[Valley]]\u000a* [[Deep Hills]]\u000a* [[Ocean Hills]]\u000a<<endif>>
+V<<if $beast_at_hills>>\u000aBeast! TODO DO BETTER "BEAST"\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_hills to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[East of Colony]]\u000a* [[Valley]]\u000a* [[Deep Hills]]\u000a* [[Ocean Hills]]\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
 p387
 sg23
 VHills
@@ -1253,9 +1253,9 @@ g26
 ((I2014
 I6
 I21
-I1
-I40
-I16
+I14
+I11
+I13
 I5
 I172
 I1
@@ -1293,7 +1293,7 @@ Tiddler
 p400
 (dp401
 g21
-V<<if $beast_at_ocean_cliffs>>\u000aBeast!\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_ocean_cliffs to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[South of Colony]]\u000a* [[Beach]]\u000a* [[Ocean Hills]]\u000a<<endif>>
+V<<if $beast_at_ocean_cliffs>>\u000aTODO DO BETTER BEAST\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_ocean_cliffs to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[South of Colony]]\u000a* [[Beach]]\u000a* [[Ocean Hills]]\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
 p402
 sg23
 VOcean Cliffs
@@ -1303,9 +1303,9 @@ g26
 ((I2014
 I6
 I21
-I1
-I42
-I35
+I14
+I11
+I29
 I5
 I172
 I1
@@ -1343,7 +1343,7 @@ Tiddler
 p415
 (dp416
 g21
-V<<if visited() is 1>>\u000aFirst time visiting Beach\u000a<<set $need_boat to 1>>\u000a<<set $visited_uncalm_ocean to 1>>\u000a<<endif>>\u000a\u000a* [[Ocean Cliffs]]\u000a* [[Forest]]\u000a* [[Ocean]]
+V<<if visited() is 1>>\u000aFirst time visiting Beach\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS\u000a<<set $need_boat to 1>>\u000a<<set $visited_uncalm_ocean to 1>>\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000a* [[Ocean Cliffs]]\u000a* [[Forest]]\u000a* [[Ocean]]
 p417
 sg23
 VBeach
@@ -1352,12 +1352,12 @@ sg25
 g26
 ((I2014
 I6
-I20
-I23
-I37
-I31
-I4
-I171
+I21
+I14
+I9
+I53
+I5
+I172
 I1
 tp419
 (dp420
@@ -1393,7 +1393,7 @@ Tiddler
 p430
 (dp431
 g21
-V<<nobr>>\u000a<<if visited() is 1>>\u000aFirst time visiting Forest\u000a<<set $visited_forest to 1>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a* [[West of Colony]]\u000a* [[Beach]]\u000a* [[Deep Forest]]
+V<<nobr>>\u000a<<if visited() is 1>>\u000aFirst time visiting Forest\u000a\u000aTODO BETTER DESCRIPTION FOR FOREST\u000aTODO WARNING AGAINST ENTERING DEEP FOREST\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS\u000a<<set $visited_forest to 1>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000a* [[West of Colony]]\u000a* [[Beach]]\u000a* [[Deep Forest]]
 p432
 sg23
 VForest
@@ -1402,12 +1402,12 @@ sg25
 g26
 ((I2014
 I6
-I20
-I23
-I16
-I36
-I4
-I171
+I21
+I14
+I10
+I28
+I5
+I172
 I1
 tp434
 (dp435
@@ -1443,7 +1443,7 @@ Tiddler
 p445
 (dp446
 g21
-V<<nobr>>\u000a<<set $beast_at_hills to 0>>\u000a<<set $beast_at_mountains to 0>>\u000a<<set $beast_at_ocean_cliffs to 0>>\u000a<<set $beast_at_valley to 0>>\u000a<<set $beast_at_ocean_hills to 0>>\u000a<<set $beast_at_south_of_colony to 0>>\u000a<<set $beast_at_east_of_colony to 0>>\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a\u000a\u000a<<set $sleep_count += 1>>\u000a<<print $sleep_count>>\u000a\u000a<<if $doom_disease > 0>>\u000a<<set $doom_disease -= 1>>\u000a<<endif>>\u000a\u000a<<if visited("Destroy Antenna") is 0 and $antenna_fooled is 0>>\u000a<<set $doom_xenocide -= 1>>\u000a<<endif>>\u000a\u000a<<if $supernova is 1>>\u000a<<set $doom_supernova -= 1>>\u000a<<endif>>\u000a\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $doom_beasts -= 2>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a<<if $doom_disease is 0>>\u000aDoom by Disease!\u000a<<elseif $doom_beasts <= 0>>\u000aDoom by Beasts!\u000a<<elseif $doom_xenocide <= 0>>\u000aDoom by Xenocide!\u000a<<elseif $doom_supernova <= 0>>\u000aDoom by Supernova!\u000a<<elseif $beast_den_destroyed and $supernova is 0 and $doom_disease < 0 and $gene_therapy>>\u000a\u000a[[Regular Win]]\u000a\u000a<<else>>\u000a\u000a[[Resolve Sleep]]\u000a\u000a<<endif>>\u000a
+V<<nobr>>\u000a<<set $beast_at_hills to 0>>\u000a<<set $beast_at_mountains to 0>>\u000a<<set $beast_at_ocean_cliffs to 0>>\u000a<<set $beast_at_valley to 0>>\u000a<<set $beast_at_ocean_hills to 0>>\u000a<<set $beast_at_south_of_colony to 0>>\u000a<<set $beast_at_east_of_colony to 0>>\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a\u000a\u000a<<set $sleep_count += 1>>\u000a<<print $sleep_count>>\u000a\u000a<<if $doom_disease > 0>>\u000a<<set $doom_disease -= 1>>\u000a<<endif>>\u000a\u000a<<if visited("Destroy Antenna") is 0 and $antenna_fooled is 0>>\u000a<<set $doom_xenocide -= 1>>\u000a<<endif>>\u000a\u000a<<if $supernova is 1>>\u000a<<set $doom_supernova -= 1>>\u000a<<endif>>\u000a\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $doom_beasts -= 2>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a<<if $doom_disease is 0>>\u000aDoom by Disease!\u000a<<elseif $doom_beasts <= 0>>\u000aDoom by Beasts!\u000a<<elseif $doom_xenocide <= 0>>\u000aDoom by Xenocide!\u000a<<elseif $doom_supernova <= 0>>\u000aDoom by Supernova!\u000a<<elseif $beast_den_destroyed and $supernova is 0 and $doom_disease < 0 and $gene_therapy>>\u000a\u000a[[Regular Win]]\u000a\u000a<<else>>\u000a\u000a[[Resolve Sleep]]\u000a\u000a<<endif>>\u000a\u000aTODO OH GOD\u000a
 p447
 sg23
 VSleep
@@ -1454,8 +1454,8 @@ g26
 I6
 I21
 I13
-I11
-I38
+I59
+I16
 I5
 I172
 I1
@@ -1493,7 +1493,7 @@ Tiddler
 p460
 (dp461
 g21
-V<<nobr>>\u000a<<if $doom_disease > 3>>\u000a<<set $doom_disease to 3>>\u000a<<endif>>\u000a<<endnobr>>\u000a<<if $forest_mapped > 1>>\u000a* [[Forest]]\u000a<<if visited("Strange Fungus") is 0>>* [[Strange Fungus]]<<endif>>\u000a<<else>>\u000aYou are lost.\u000a\u000a* [[Wander the forest.|Deep Forest]]\u000a* [[Call for rescue.|Rescue]]\u000a<<endif>>
+V<<nobr>>\u000a<<if $doom_disease > 3>>\u000a<<set $doom_disease to 3>>\u000a<<endif>>\u000a<<endnobr>>\u000a<<if $forest_mapped > 1>>\u000a* [[Forest]]\u000a<<if visited("Strange Fungus") is 0>>* [[Strange Fungus]]<<endif>>\u000a<<else>>\u000aYou are lost.\u000a\u000a* [[Wander the forest.|Deep Forest]]\u000a* [[Call for rescue.|Rescue]]\u000a<<endif>>\u000a\u000aTODO FOREST DESCRIPTION
 p462
 sg23
 VDeep Forest
@@ -1503,9 +1503,9 @@ g26
 ((I2014
 I6
 I21
-I11
-I31
-I35
+I13
+I58
+I45
 I5
 I172
 I1
@@ -1543,7 +1543,7 @@ Tiddler
 p475
 (dp476
 g21
-V<<if visited() is 1>>\u000aFirst time visiting Hills\u000a<<set $visited_hills to 1>>\u000a<<endif>>\u000a\u000a* [[Hills]]\u000a<<if $hills_mapped is 2>>* [[Beast Den]]<<endif>>
+V<<if visited() is 1>>\u000aFirst time visiting Hills\u000a<<set $visited_hills to 1>>\u000a<<endif>>\u000a\u000a* [[Hills]]\u000a<<if $hills_mapped is 2>>* [[Beast Den]]<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
 p477
 sg23
 VDeep Hills
@@ -1553,9 +1553,9 @@ g26
 ((I2014
 I6
 I21
-I1
-I55
-I24
+I14
+I11
+I57
 I5
 I172
 I1
@@ -1593,7 +1593,7 @@ Tiddler
 p490
 (dp491
 g21
-V<<if $beast_den_destroyed>>An abandoned and charred beast den.\u000a<<else>>A beast den.\u000a<<if $stasis_net > 1 and $beast_captured is 0>>* [[Attempt to take a beast egg.|Capture Beast]]<<endif>>\u000a* [[Destroy Den]]\u000a<<endif>>\u000a\u000a[[Return|Deep Hills]]
+V<<if $beast_den_destroyed>>An abandoned and charred beast den.\u000a<<else>>A beast den.\u000a<<if $stasis_net > 1 and $beast_captured is 0>>* [[Attempt to take a beast egg.|Capture Beast]]<<endif>>\u000a* [[Destroy Den]]\u000a<<endif>>\u000a\u000a[[Return|Deep Hills]]\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
 p492
 sg23
 VBeast Den
@@ -1603,9 +1603,9 @@ g26
 ((I2014
 I6
 I21
+I14
 I12
-I24
-I16
+I3
 I5
 I172
 I1
@@ -1643,7 +1643,7 @@ Tiddler
 p505
 (dp506
 g21
-V<<if $weather_tower > 1 and $boat > 1>> \u000a\u000a*[[Beach]]\u000a<<if visited("Destroy Antenna") is 0>>*[[Island]]<<endif>>\u000a\u000a<<else>>\u000a	<<if $boat < 2 and $weather_tower < 2>> \u000aasdf \u000a	<<elseif $boat < 2>> \u000aghjk\u000a	<<elseif $weather_tower < 2>> \u000adfgh \u000a	<<endif>> \u000a[[Go Back|Beach]]\u000a\u000a<<endif>>
+V<<if $weather_tower > 1 and $boat > 1>> \u000a\u000a*[[Beach]]\u000a<<if visited("Destroy Antenna") is 0>>*[[Island]]<<endif>>\u000a\u000a<<else>>\u000a	<<if $boat < 2 and $weather_tower < 2>> \u000aasdf \u000a	<<elseif $boat < 2>> \u000aghjk\u000a	<<elseif $weather_tower < 2>> \u000adfgh \u000a	<<endif>> \u000a[[Go Back|Beach]]\u000a\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
 p507
 sg23
 VOcean
@@ -1653,9 +1653,9 @@ g26
 ((I2014
 I6
 I21
-I13
-I11
-I44
+I14
+I12
+I24
 I5
 I172
 I1
@@ -1693,7 +1693,7 @@ Tiddler
 p520
 (dp521
 g21
-VA small island at most a kilometer in diameter. In the center sits a metal spire protruding from the ground about a mile high. Your instruments tell you this spire is the source of the hostile frequencies that you've been picking up.\u000a\u000a<<if visited() is 1>>Examining the spire you notice a biological receptacle on the side. You take a sample. <<endif>>\u000a\u000a<<if $bomb > 1>> [[Destroy Antenna]] <<endif>>\u000a<<if $hybrid_genome > 1 and visited("Upload Hybrid Genome") is 0>>[[Upload Hybrid Genome]]<<endif>>\u000a* [[Ocean]]
+VA small island at most a kilometer in diameter. In the center sits a shiny, pulsating spire protruding from the ground about a mile high. Your instruments tell you this living spire is the source of the hostile frequencies that you've been picking up.\u000a\u000a<<if visited() is 1>>Examining the spire you notice a biological receptacle on the side. You take a sample. <<endif>>\u000a\u000a<<if $bomb > 1>> [[Destroy Antenna]] <<endif>>\u000a<<if $hybrid_genome > 1 and visited("Upload Hybrid Genome") is 0>>[[Upload Hybrid Genome]]<<endif>>\u000a* [[Ocean]]\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
 p522
 sg23
 VIsland
@@ -1703,9 +1703,9 @@ g26
 ((I2014
 I6
 I21
-I13
-I15
-I3
+I14
+I12
+I49
 I5
 I172
 I1
@@ -1949,7 +1949,7 @@ Tiddler
 p598
 (dp599
 g21
-V<<nobr>>\u000a\u000a<<if $aux_gen is 1>>\u000a<<set $aux_gen to 2>>\u000a<<elseif $aux_gen > 1>>\u000a<<set $generator += 1>>\u000a<<endif>>\u000a\u000a<<if $fusion_gen is 1>>\u000a<<set $fusion_gen to 2>>\u000a<<elseif $fusion_gen > 1>>\u000a<<set $generator += 1>>\u000a<<endif>>\u000a\u000a<<if $fuel>>\u000a<<set $fuel -= 1>>\u000a<<set $generator += 1>>\u000a<<endif>>\u000a\u000a<<if $mountain_mapped is 1>>\u000a<<set $mountain_mapped to 2>>\u000a<<endif>>\u000a\u000a<<if $forest_mapped is 1>>\u000a<<set $forest_mapped to 2>>\u000a<<endif>>\u000a\u000a<<if $hills_mapped is 1>>\u000a<<set $hills_mapped to 2>>\u000a<<endif>>\u000a\u000a<<if $weather_tower is 1>>\u000a<<set $weather_tower to 2>>\u000a<<endif>>\u000a\u000a<<if $comm_array is 1>>\u000a<<set $comm_array to 2>>\u000a<<endif>>\u000a\u000a<<if $jammer is 1>>\u000a<<set $jammer to 2>>\u000a<<set $doom_xenocide += 5>>\u000a<<endif>>\u000a\u000a<<if $bio_lab is 1>>\u000a<<set $bio_lab to 2>>\u000a<<endif>>\u000a\u000a<<if $boat is 1>>\u000a<<set $boat to 2>>\u000a<<endif>>\u000a\u000a<<if $stasis_net is 1>>\u000a<<set $stasis_net to 2>>\u000a<<endif>>\u000a\u000a<<if $flight_suit is 1>>\u000a<<set $flight_suit to 2>>\u000a<<endif>>\u000a\u000a<<if $bomb is 1>>\u000a<<set $bomb to 2>>\u000a<<endif>>\u000a\u000a<<if $refinery is 1>>\u000a<<set $refinery to 2>>\u000a<<set $fuel += 2>>\u000a<<endif>>\u000a\u000a<<if $ftl_fuel is 1>>\u000a<<set $ftl_fuel to 2>>\u000a<<endif>>\u000a\u000a<<if $cure and $cure < 4>>\u000a<<set $cure += 1>>\u000a<<endif>>\u000a\u000a<<if $genome is 1>>\u000a<<set $genome to 2>>\u000a<<endif>>\u000a\u000a<<if $hybrid_genome is 1>>\u000a<<set $hybrid_genome to 2>>\u000a<<endif>>\u000a\u000a\u000a<<if $fuel is 0 and $aux_gen is 0>>\u000a<<set $generator to 0>>\u000a<<set $aux_gen to 2>>\u000a<<endif>>\u000a\u000a<<if $plasma_torch>>\u000a<<set $plasma_torch to 0>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Colony Center]]
+V<<nobr>>\u000a\u000a<<if $aux_gen is 1>>\u000a<<set $aux_gen to 2>>\u000a<<elseif $aux_gen > 1>>\u000a<<set $generator += 1>>\u000a<<endif>>\u000a\u000a<<if $fusion_gen is 1>>\u000a<<set $fusion_gen to 2>>\u000a<<elseif $fusion_gen > 1>>\u000a<<set $generator += 1>>\u000a<<endif>>\u000a\u000a<<if $fuel>>\u000a<<set $fuel -= 1>>\u000a<<set $generator += 1>>\u000a<<endif>>\u000a\u000a<<if $mountain_mapped is 1>>\u000a<<set $mountain_mapped to 2>>\u000a<<endif>>\u000a\u000a<<if $forest_mapped is 1>>\u000a<<set $forest_mapped to 2>>\u000a<<endif>>\u000a\u000a<<if $hills_mapped is 1>>\u000a<<set $hills_mapped to 2>>\u000a<<endif>>\u000a\u000a<<if $weather_tower is 1>>\u000a<<set $weather_tower to 2>>\u000a<<endif>>\u000a\u000a<<if $comm_array is 1>>\u000a<<set $comm_array to 2>>\u000a<<endif>>\u000a\u000a<<if $jammer is 1>>\u000a<<set $jammer to 2>>\u000a<<set $doom_xenocide += 5>>\u000a<<endif>>\u000a\u000a<<if $bio_lab is 1>>\u000a<<set $bio_lab to 2>>\u000a<<endif>>\u000a\u000a<<if $boat is 1>>\u000a<<set $boat to 2>>\u000a<<endif>>\u000a\u000a<<if $stasis_net is 1>>\u000a<<set $stasis_net to 2>>\u000a<<endif>>\u000a\u000a<<if $flight_suit is 1>>\u000a<<set $flight_suit to 2>>\u000a<<endif>>\u000a\u000a<<if $bomb is 1>>\u000a<<set $bomb to 2>>\u000a<<endif>>\u000a\u000a<<if $refinery is 1>>\u000a<<set $refinery to 2>>\u000a<<set $fuel += 2>>\u000a<<endif>>\u000a\u000a<<if $ftl_fuel is 1>>\u000a<<set $ftl_fuel to 2>>\u000a<<endif>>\u000a\u000a<<if $cure and $cure < 4>>\u000a<<set $cure += 1>>\u000a<<endif>>\u000a\u000a<<if $genome is 1>>\u000a<<set $genome to 2>>\u000a<<endif>>\u000a\u000a<<if $hybrid_genome is 1>>\u000a<<set $hybrid_genome to 2>>\u000a<<endif>>\u000a\u000a\u000a<<if $fuel is 0 and $aux_gen is 0>>\u000a<<set $generator to 0>>\u000a<<set $aux_gen to 2>>\u000a<<endif>>\u000a\u000a<<if $plasma_torch>>\u000a<<set $plasma_torch to 0>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Colony Center]]\u000a\u000aTODO OH GOD
 p600
 sg23
 VResolve Sleep
@@ -1960,8 +1960,8 @@ g26
 I6
 I21
 I13
-I13
-I21
+I59
+I22
 I5
 I172
 I1
@@ -2259,7 +2259,7 @@ Tiddler
 p693
 (dp694
 g21
-V<<if $beast_at_ocean_hills>>\u000aBeast!\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_ocean_hills to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[Ocean Cliffs]]\u000a* [[Hills]]\u000a* [[Natural Cave]]\u000a<<endif>>
+V<<if $beast_at_ocean_hills>>\u000aBeast! TODO DO BETTER BEAST\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_ocean_hills to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[Ocean Cliffs]]\u000a* [[Hills]]\u000a* [[Natural Cave]]\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
 p695
 sg23
 VOcean Hills
@@ -2269,9 +2269,9 @@ g26
 ((I2014
 I6
 I21
-I1
-I54
-I39
+I14
+I11
+I22
 I5
 I172
 I1
@@ -2309,7 +2309,7 @@ Tiddler
 p708
 (dp709
 g21
-V<<if $flight_suit > 1>>\u000a<<set $curious_plant to 1>>\u000a<<else>>\u000a<<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>>\u000a<<endif>>\u000a[[Go Back|Ocean Hills]]
+V<<if $flight_suit > 1>>\u000a<<set $curious_plant to 1>>\u000a<<else>>\u000a<<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>> TODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS\u000a<<endif>>\u000a[[Go Back|Ocean Hills]]
 p710
 sg23
 VNatural Cave
@@ -2319,9 +2319,9 @@ g26
 ((I2014
 I6
 I21
-I1
-I25
-I34
+I14
+I10
+I10
 I5
 I172
 I1
@@ -2411,7 +2411,7 @@ Tiddler
 p739
 (dp740
 g21
-VRescue Happens.\u000a\u000a[[Sleep]]
+VRescue Happens.\u000a\u000a[[Sleep]]\u000a\u000aTODO DESCRIBE THIS BETTER
 p741
 sg23
 VRescue
@@ -2420,12 +2420,12 @@ sg25
 g26
 ((I2014
 I6
-I20
-I23
-I12
-I25
-I4
-I171
+I21
+I13
+I59
+I10
+I5
+I172
 I1
 tp743
 (dp744
@@ -2513,7 +2513,7 @@ Tiddler
 p770
 (dp771
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $hills_mapped to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Okay|Robotics Lab]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $hills_mapped to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Robotics Lab]]
 p772
 sg23
 VMap Hills
@@ -2523,9 +2523,9 @@ g26
 ((I2014
 I6
 I21
-I0
-I28
-I8
+I14
+I3
+I55
 I5
 I172
 I1
@@ -2563,7 +2563,7 @@ Tiddler
 p785
 (dp786
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $weather_tower to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Okay|Colony Center]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $weather_tower to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Colony Center]]
 p787
 sg23
 VBuild Weather Tower
@@ -2573,9 +2573,9 @@ g26
 ((I2014
 I6
 I21
-I0
-I32
-I13
+I14
+I3
+I35
 I5
 I172
 I1
@@ -2663,7 +2663,7 @@ Tiddler
 p815
 (dp816
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $aux_gen to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Power Plant]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $aux_gen to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Power Plant]]
 p817
 sg23
 VBuild Solar Farm
@@ -2673,9 +2673,9 @@ g26
 ((I2014
 I6
 I21
-I0
-I42
-I41
+I14
+I6
+I7
 I5
 I172
 I1
@@ -2713,7 +2713,7 @@ Tiddler
 p830
 (dp831
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $fusion_gen to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Power Plant]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $fusion_gen to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Power Plant]]
 p832
 sg23
 VBuild Fusion Reactor
@@ -2723,9 +2723,9 @@ g26
 ((I2014
 I6
 I21
-I0
-I43
-I52
+I14
+I5
+I32
 I5
 I172
 I1
@@ -2763,7 +2763,7 @@ Tiddler
 p845
 (dp846
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $bio_lab to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Robotics Lab]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $bio_lab to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Robotics Lab]]
 p847
 sg23
 VConstruct Bio Lab
@@ -2773,9 +2773,9 @@ g26
 ((I2014
 I6
 I21
-I1
-I19
-I36
+I14
+I4
+I35
 I5
 I172
 I1
@@ -2813,7 +2813,7 @@ Tiddler
 p860
 (dp861
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $comm_array to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Okay|Colony Center]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $comm_array to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Colony Center]]
 p862
 sg23
 VBuild Communications Array
@@ -2823,9 +2823,9 @@ g26
 ((I2014
 I6
 I21
-I1
-I20
-I49
+I14
+I3
+I41
 I5
 I172
 I1
@@ -2863,7 +2863,7 @@ Tiddler
 p875
 (dp876
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $jammer to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Okay|Colony Center]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $jammer to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Colony Center]]
 p877
 sg23
 VBuild Signal Jammer
@@ -2873,9 +2873,9 @@ g26
 ((I2014
 I6
 I21
-I1
-I22
-I2
+I14
+I3
+I49
 I5
 I172
 I1
@@ -2913,7 +2913,7 @@ Tiddler
 p890
 (dp891
 g21
-V<<if $ftl_fuel > 1>>\u000aThe spaceport stands ready to transport everyone back to the colony ship.\u000a[[Evac]]\u000a<<else>> The spaceport stands ready to transport everyone back to the colony ship. Without FTL fuel, however, it's a bit of a pointless trip, as the colony ship is still stranded in this solar system.\u000a<<endif>>\u000a[[Go Back|Hub]]
+V<<if $ftl_fuel > 1>>\u000aThe spaceport stands ready to transport everyone back to the colony ship.\u000a[[Evac]]\u000a<<else>> The spaceport stands ready to transport everyone back to the colony ship. Without FTL fuel, however, it's a bit of a pointless trip, as the colony ship is still stranded in this solar system.\u000a<<endif>>\u000a\u000aTODO BETTER DESCRIPTION OF SPACEPORT\u000a\u000a[[Go Back|Hub]]
 p892
 sg23
 VSpaceport
@@ -2923,9 +2923,9 @@ g26
 ((I2014
 I6
 I21
-I12
-I40
-I40
+I13
+I57
+I9
 I5
 I172
 I1
@@ -2963,7 +2963,7 @@ Tiddler
 p905
 (dp906
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $spaceport to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Okay|Hub]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $spaceport to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO FLAVORTEXT OF SPACEPORT CONSTRUCTION BEGINNING\u000a\u000a[[Okay|Hub]]
 p907
 sg23
 VBuild Spaceport
@@ -2973,9 +2973,9 @@ g26
 ((I2014
 I6
 I21
-I1
-I27
-I45
+I13
+I56
+I53
 I5
 I172
 I1
@@ -3063,7 +3063,7 @@ Tiddler
 p935
 (dp936
 g21
-VWin!
+VWin!\u000a\u000aTODO BETTER DESCRIPTION OF COLONY BEING COMPLETED
 p937
 sg23
 VRegular Win
@@ -3073,9 +3073,9 @@ g26
 ((I2014
 I6
 I21
-I2
-I3
-I59
+I14
+I13
+I40
 I5
 I172
 I1
@@ -3113,7 +3113,7 @@ Tiddler
 p950
 (dp951
 g21
-V<<if doom_disease > 0>>Doom by Disease!<<else>>\u000aEvac Win!\u000a<<endif>>
+V<<if doom_disease > 0>>Doom by Disease!<<else>>\u000aEvac Win!\u000a<<endif>>\u000a\u000aTODO BETTER DESCRIPTION OF EVACUATION/DISEASE
 p952
 sg23
 VEvac
@@ -3123,9 +3123,9 @@ g26
 ((I2014
 I6
 I21
-I12
-I41
-I44
+I14
+I13
+I52
 I5
 I172
 I1
@@ -3173,9 +3173,9 @@ g26
 ((I2014
 I6
 I21
-I11
-I31
-I54
+I13
+I58
+I55
 I5
 I172
 I1
@@ -3313,7 +3313,7 @@ Tiddler
 p1010
 (dp1011
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $ftl_fuel to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Power Plant]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $ftl_fuel to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION OF REFINING PROCESS\u000a\u000a[[Return|Power Plant]]
 p1012
 sg23
 VRefine Strange Isotope
@@ -3323,9 +3323,9 @@ g26
 ((I2014
 I6
 I21
-I11
-I55
-I36
+I14
+I5
+I44
 I5
 I172
 I1
@@ -3413,7 +3413,7 @@ Tiddler
 p1040
 (dp1041
 g21
-V<<nobr>>\u000a<<if $generator > 0 and $drill is 0>>\u000a<<set $drill += 1>>\u000a<<set $generator -= 1>>\u000aYou hook up your drill to the charging station near the generator. After a few moments, the system blinks. The drill has half a charge, just enough to drill into the cave.\u000a<<elseif $generator > 0 and $drill is 1>>\u000a<<set $drill += 1>>\u000a<<set $generator -= 1>>\u000aYou hook the partially charged drill into the charging station again. After a few moments, an audible beep comes from the charger, indicating a complete charge. You retrieve the fully charged drill, ready to dig.\u000a<<elseif $drill is 2>>\u000aYour drill is already fully charged and ready to use. It can't be charged further.\u000a<<else>>\u000aYou hook up your drill to the charging station near the generator, but nothing seems to happen. There doesn't appear to be any available power.\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Power Plant]]
+V<<nobr>>\u000a<<if $generator > 0 and $drill is 0>>\u000a<<set $drill += 1>>\u000a<<set $generator -= 1>>\u000aYou hook up your drill to the charging station near the generator. After a few moments, the system blinks. The drill has half a charge, just enough to drill into the cave.\u000a<<elseif $generator > 0 and $drill is 1>>\u000a<<set $drill += 1>>\u000a<<set $generator -= 1>>\u000aYou hook the partially charged drill into the charging station again. After a few moments, an audible beep comes from the charger, indicating a complete charge. You retrieve the fully charged drill, ready to dig.\u000a<<elseif $drill is 2>>\u000aYour drill is already fully charged and ready to use. It can't be charged further.\u000a<<else>>\u000aYou hook up your drill to the charging station near the generator, but nothing seems to happen. There doesn't appear to be any available power.\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO BETTER DESCRIPTION\u000a\u000a[[Return|Power Plant]]
 p1042
 sg23
 VCharge Drill
@@ -3423,9 +3423,9 @@ g26
 ((I2014
 I6
 I21
-I11
-I55
-I0
+I14
+I5
+I54
 I5
 I172
 I1
@@ -3463,7 +3463,7 @@ Tiddler
 p1055
 (dp1056
 g21
-V<<if $doom_disease < 3 and $doom_disease > 0>>[[Treat Disease]]<<endif>>\u000a<<if $doom_disease < 4 and $doom_disease > 0 and $beast_captured and $cure is 0>>[[Extract Cure]] <<endif>>\u000a<<if $doom_disease < 4 and $doom_disease > 0 and visited("Strange Fungus") and $cure is 0>>[[Research Fungus]]<<endif>>\u000a<<if $cure > 3>> [[Cure Disease]] <<endif>>\u000a<<if $curious_plant>> [[Research Curious Plant]]<<endif>>\u000a<<if $genome > 1>><<if $doom_disease > 0 or visited("Research Fungus")>> [[Synthesize Hybrid Genome]]<<endif>><<endif>>\u000a[[Robotics Lab]]\u000a\u000a
+V<<if $doom_disease < 3 and $doom_disease > 0>>[[Treat Disease]]<<endif>>\u000a<<if $doom_disease < 4 and $doom_disease > 0 and $beast_captured and $cure is 0>>[[Extract Cure]] <<endif>>\u000a<<if $doom_disease < 4 and $doom_disease > 0 and visited("Strange Fungus") and $cure is 0>>[[Research Fungus]]<<endif>>\u000a<<if $cure > 3>> [[Cure Disease]] <<endif>>\u000a<<if $curious_plant>> [[Research Curious Plant]]<<endif>>\u000a<<if $genome > 1>><<if $doom_disease > 0 or visited("Research Fungus")>> [[Synthesize Hybrid Genome]]<<endif>><<endif>>\u000a[[Robotics Lab]]\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE ALL THE AVAILABLE OPTIONS INSTEAD OF JUST HAVING OPTIONS APPEAR OUT OF NOWHERE\u000a\u000a<<if $cure is 1>>TODO DESCRIBE CURE BEING CREATED<<endif>>\u000a<<if $cure is 2>>TODO DESCRIBE MORE PROGRESS ON CURE<<endif>>\u000a<<if $cure is 3>>TODO DESCRIBE EVEN MORE PROGRESS ON CURE<<endif>>\u000a<<if $genome is 1>>TODO DESCRIBE GENOME BEING RESEARCHED<<endif>>\u000a<<if $hybrid_genome is 1>> TODO DESCRIBE MAD SCIENCE/GENE SPLICING<<endif>>
 p1057
 sg23
 VBio Lab
@@ -3473,9 +3473,9 @@ g26
 ((I2014
 I6
 I21
-I13
-I7
-I35
+I14
+I9
+I6
 I5
 I172
 I1
@@ -3513,7 +3513,7 @@ Tiddler
 p1070
 (dp1071
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $cure to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Bio Lab]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $cure to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Bio Lab]]
 p1072
 sg23
 VResearch Fungus
@@ -3523,9 +3523,9 @@ g26
 ((I2014
 I6
 I21
-I12
+I14
 I6
-I47
+I30
 I5
 I172
 I1
@@ -3563,7 +3563,7 @@ Tiddler
 p1085
 (dp1086
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $cure to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Bio Lab]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $cure to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Bio Lab]]
 p1087
 sg23
 VExtract Cure
@@ -3573,9 +3573,9 @@ g26
 ((I2014
 I6
 I21
-I12
+I14
 I6
-I42
+I36
 I5
 I172
 I1
@@ -3613,7 +3613,7 @@ Tiddler
 p1100
 (dp1101
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $doom_disease to 3>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Bio Lab]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $doom_disease to 3>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Bio Lab]]
 p1102
 sg23
 VTreat Disease
@@ -3623,9 +3623,9 @@ g26
 ((I2014
 I6
 I21
-I12
+I14
 I6
-I28
+I44
 I5
 I172
 I1
@@ -3663,7 +3663,7 @@ Tiddler
 p1115
 (dp1116
 g21
-V<<set $doom_disease to -1>>\u000a<<if visited("Research Fungus")>><<set $antenna_fooled to 0>><<endif>>\u000a\u000a[[Return|Bio Lab]]
+V<<set $doom_disease to -1>>\u000a<<if visited("Research Fungus")>><<set $antenna_fooled to 0>><<endif>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Bio Lab]]
 p1117
 sg23
 VCure Disease
@@ -3673,9 +3673,9 @@ g26
 ((I2014
 I6
 I21
-I13
-I16
-I35
+I14
+I6
+I50
 I5
 I172
 I1
@@ -3713,7 +3713,7 @@ Tiddler
 p1130
 (dp1131
 g21
-V<<if $plasma_torch>>\u000a<<set $beast_den_destroyed to 1>>\u000a<<set $plasma_torch -= 1>>\u000aYou set fire to the beast den and make a hasty escape.\u000a\u000a[[Retreat|Deep Hills]]\u000a<<else>>\u000aYour plasma torch needs more power to ignite this.\u000a\u000a[[Go Back|Beast Den]]\u000a<<endif>>
+V<<if $plasma_torch>>\u000a<<set $beast_den_destroyed to 1>>\u000a<<set $plasma_torch -= 1>>\u000aYou set fire to the beast den and make a hasty escape.\u000a\u000a[[Retreat|Deep Hills]]\u000a<<else>>\u000aYour plasma torch needs more power to ignite this.\u000a\u000a[[Go Back|Beast Den]]\u000a<<endif>>\u000a\u000aTODO BETTER DESCRIPTION
 p1132
 sg23
 VDestroy Den
@@ -3723,9 +3723,9 @@ g26
 ((I2014
 I6
 I21
+I14
 I12
-I34
-I51
+I17
 I5
 I172
 I1
@@ -3763,7 +3763,7 @@ Tiddler
 p1145
 (dp1146
 g21
-V<<if $plasma_torch>>\u000a<<set $beast_captured to 1>>\u000a<<set $plasma_torch -= 1>>\u000aYou stun the beast with your plasma torch and net an egg. You bolt out of the den before reinforcements arrive.\u000a\u000a[[Retreat|Deep Hills]]\u000a<<else>>\u000aThe beast looks too ferocious to try and approach. You could stun it with your plasma torch if it had power. Your only choice is to back off.\u000a\u000a[[Go Back|Beast Den]]\u000a<<endif>>
+V<<if $plasma_torch>>\u000a<<set $beast_captured to 1>>\u000a<<set $plasma_torch -= 1>>\u000aYou stun the beast with your plasma torch and net an egg. You bolt out of the den before reinforcements arrive.\u000a\u000a[[Retreat|Deep Hills]]\u000a<<else>>\u000aThe beast looks too ferocious to try and approach. You could stun it with your plasma torch if it had power. Your only choice is to back off.\u000a\u000a[[Go Back|Beast Den]]\u000a<<endif>>\u000a\u000aTODO BETTER DESCRIPTION
 p1147
 sg23
 VCapture Beast
@@ -3773,9 +3773,9 @@ g26
 ((I2014
 I6
 I21
+I14
 I12
-I23
-I26
+I11
 I5
 I172
 I1
@@ -3813,7 +3813,7 @@ Tiddler
 p1160
 (dp1161
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $stasis_net to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Factory]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $stasis_net to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Factory]]
 p1162
 sg23
 VBuild Stasis Net
@@ -3823,9 +3823,9 @@ g26
 ((I2014
 I6
 I21
-I12
-I24
-I35
+I14
+I4
+I18
 I5
 I172
 I1
@@ -3863,7 +3863,7 @@ Tiddler
 p1175
 (dp1176
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $genome to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Bio Lab]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $genome to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Bio Lab]]
 p1177
 sg23
 VResearch Curious Plant
@@ -3873,9 +3873,9 @@ g26
 ((I2014
 I6
 I21
-I13
-I2
-I36
+I14
+I6
+I23
 I5
 I172
 I1
@@ -3913,7 +3913,7 @@ Tiddler
 p1190
 (dp1191
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $hybrid_genome to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Bio Lab]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $hybrid_genome to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Bio Lab]]
 p1192
 sg23
 VSynthesize Hybrid Genome
@@ -3923,9 +3923,9 @@ g26
 ((I2014
 I6
 I21
-I13
+I14
 I6
-I29
+I56
 I5
 I172
 I1
@@ -3963,7 +3963,7 @@ Tiddler
 p1205
 (dp1206
 g21
-V<<set $supernova to 1>>\u000aYou set the charge and leave the island immediately. As you sail away, a fireball erupts from the base of the spire, and it collapses.\u000a\u000a[[Retreat|Ocean]]
+V<<set $supernova to 1>>\u000aYou set the charge and leave the island immediately. As you sail away, a fireball erupts from the base of the spire, and it collapses.\u000a\u000a[[Retreat|Ocean]]\u000a\u000aTODO BETTER DESCRIPTION
 p1207
 sg23
 VDestroy Antenna
@@ -3973,9 +3973,9 @@ g26
 ((I2014
 I6
 I21
-I13
-I11
-I7
+I14
+I12
+I59
 I5
 I172
 I1
@@ -4013,7 +4013,7 @@ Tiddler
 p1220
 (dp1221
 g21
-V<<if $doom_disease < 0 and visited("Research Fungus") is 0>> <<set $antenna_fooled to 1>><<endif>>\u000aYou upload the genome and hope for the best.\u000a\u000a[[Go Back|Island]]
+V<<if $doom_disease < 0 and visited("Research Fungus") is 0>> <<set $antenna_fooled to 1>><<endif>>\u000aYou insert the spliced genome and hope for the best.\u000a\u000a[[Go Back|Island]]
 p1222
 sg23
 VUpload Hybrid Genome
@@ -4023,9 +4023,9 @@ g26
 ((I2014
 I6
 I21
+I14
 I13
 I15
-I56
 I5
 I172
 I1
@@ -4063,7 +4063,7 @@ Tiddler
 p1235
 (dp1236
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $bomb to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Factory]]
+V<<nobr>>\u000a<<if $generator>>\u000a<<set $bomb to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Factory]]
 p1237
 sg23
 VBomb
@@ -4073,9 +4073,9 @@ g26
 ((I2014
 I6
 I21
-I13
-I12
-I44
+I14
+I4
+I4
 I5
 I172
 I1
@@ -4100,10 +4100,60 @@ tp1244
 (dp1245
 tp1246
 Rp1247
+sbsa(dp1248
+g14
+I00
+sg15
+(lp1249
+F355.75
+aF274.25
+asg17
+(itiddlywiki
+Tiddler
+p1250
+(dp1251
+g21
+V//"It may not be Jakuta but it's still a habitable planet."// You hear Captain Randome's speech to the crew from behind while you concentrate on putting on protective gear.\u000a\u000aTODO MORE DETAIL\u000a\u000a[[Start4]]\u000a
+p1252
+sg23
+VStart2Alt
+p1253
+sg25
+g26
+((I2014
+I6
+I21
+I13
+I54
+I30
+I5
+I172
+I1
+tp1254
+(dp1255
+tp1256
+Rp1257
+sg31
+(lp1258
+sg33
+g26
+((I2014
+I6
+I21
+I13
+I51
+I36
+I5
+I172
+I1
+tp1259
+(dp1260
+tp1261
+Rp1262
 sbsasS'scale'
-p1248
+p1263
 F0.8
 sS'snapping'
-p1249
+p1264
 I00
 ss.
