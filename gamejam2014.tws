@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-VYou are part of the maintenance crew aboard the //LGDE Heroism//, a colony ship bound for the 1212 Antilae system, to set up a colony. You are part of the team responsible for setting up the colony while the majority of the colonists stay in hibernation.\u000a\u000aHowever, something has gone wrong. When you awoke, the ship was not in the 1212 Antilae system, but an unknown binary star system. Fortunately, the planet you are orbitting happens to be habitable. By the time you finished awakening, the decision to colonize the planet had already been made by the ship's captain.\u000a\u000aYou stumble out of the awakening ward and into the maintenance lockers, where Captain Scott is giving a speech to the crew as they gear up in preparation to head to the planet.\u000a\u000a[[Listen to the captain's speech.|StartSlow]]\u000a[[Suit up.|StartFast]]
+VYou are part of the maintenance crew aboard the //LGDE Heroism//, a colony ship bound for the 1212 Antilae system. You are part of the team responsible for setting up the colony while the majority of the colonists stay in hibernation.\u000a\u000aHowever, something has gone wrong. When you awoke, the ship was not in the 1212 Antilae system, but at an unknown binary star system. Fortunately, the planet you are orbitting happens to be habitable. By the time you finished awakening, the decision to colonize the planet had already been made by the ship's captain.\u000a\u000aYou stumble out of the awakening ward and into the maintenance lockers, where Captain Scott is giving a speech to the crew as they gear up in preparation to head to the planet.\u000a\u000a[[Listen to the captain's speech.|StartSlow]]\u000a[[Suit up.|StartFast]]
 p22
 sS'title'
 p23
@@ -51,9 +51,9 @@ p26
 ((I2014
 I6
 I21
-I16
-I6
-I56
+I17
+I1
+I48
 I5
 I172
 I1
@@ -4163,7 +4163,7 @@ Tiddler
 p1265
 (dp1266
 g21
-V//"Oh, yeah? I'm sure the captain's gonna hang Tran this time. Computer doesn't even know what star system we're in, talk about a fuckup."//\u000a\u000a//"Listen, I gotta run, need to find if we have any more LX canisters. The ship burned most of it's reserve getting here, and we're gonna run out of power on the colony in a few days. Stop by the power plant when you're not busy and we'll catch up then."//\u000a\u000a[[//"Sound important. Stay safe, I'll see you on the colony."//|StartFastEnd]]
+V//"Oh, yeah? I'm sure the captain's gonna hang Tran this time. Computer doesn't even know what star system we're in, talk about a fuckup."//\u000a\u000aSoto checks the device on his wrist, then continues.\u000a\u000a//"Listen, I gotta run, need to find if we have any more LX canisters. The ship burned most of it's reserve getting here, and we're gonna run out of power on the colony in a few days. Stop by the power plant when you're not busy and we'll catch up then."//\u000a\u000a[[//"Sounds important. Stay safe, I'll see you on the colony."//|StartFastEnd]]
 p1267
 sg23
 VStartFastChat1
@@ -4174,8 +4174,8 @@ g26
 I6
 I21
 I16
-I8
-I7
+I55
+I49
 I5
 I172
 I1
@@ -4263,7 +4263,7 @@ Tiddler
 p1295
 (dp1296
 g21
-V//"Bah. You save a guy one time and you never let him live it down. I still owe you a drink for that."// \u000a\u000aSoto pauses for a moment, then checks a screen on his wrist.\u000a\u000a//"I've got to go, cargo drone's coming up short on LX. Listen, I overheard from Moss that the sensors picked up some hostile life down there. Power's running a bit tight but I can spare a few watts for your plasma torch so you don't get jumped. Stop by the power plant."\u000a\u000a[[//"Allright. See you on the colony."//|StartFastEnd]]\u000a\u000a<<set $beasts_known to 1>>
+V//"Bah. You save a guy one time and you never let him live it down. I still owe you a drink for that."// \u000a\u000aSoto pauses for a moment, then checks a screen on his wrist. He looks up.\u000a\u000a//"I've got to go, cargo drone's coming up short on LX. Listen, I overheard from Moss that the sensors picked up some hostile life down there. Power's running a bit tight but I can spare a few watts for your plasma torch so you don't get jumped. Stop by the power plant."\u000a\u000a[[//"Allright. See you on the colony."//|StartFastEnd]]\u000a\u000a<<set $beasts_known to 1>>
 p1297
 sg23
 VStartFastChat2
@@ -4274,8 +4274,8 @@ g26
 I6
 I21
 I16
-I9
-I11
+I56
+I0
 I5
 I172
 I1
@@ -4363,7 +4363,7 @@ Tiddler
 p1325
 (dp1326
 g21
-VThe pod launches <<if visited("Delay Pod")>>jerkily<<else>>gracefully<<endif>> from the Heroism, spinning around and giving you a clear view of the large blue planet you are about to descend towards. Autopilot thrusters press you into your seat, an uncomfortable reminder of the G-forces normally associated with re-entry.\u000a\u000a//"Pod 126BB-M beginning re-entry."//\u000a\u000aThe reinforced viewport starts to flare up as the pod rushes through atmosphere. The computer automatically closes the window, leaving you only with the instruments and trust in the autopilot.\u000a\u000a//"Colony to Pod 126BB-M, we see you. Everything is clear.<<if visited("Delay Pod") is 0 or visited("StartFast")>> Colony to Pod 83JJ, stand by, launch window not clear.<<endif>>"//\u000a\u000aSeconds pass as hours as the pod is endlessly jostled by atmospheric turbulence. Airfoils deploy and thrusters fire, and you feel the pod decelerating, the instruments showing the colony is fast approaching. \u000a\u000aThe landing goes like clockwork, with a gentle thud as the pod touches the ground and tips over.\u000a\u000a//"Pod 126BB-M has landed safely. Getting out now."//\u000a\u000a[[Open the pod and step outside.|Hub]]
+VThe pod launches <<if visited("Delay Pod")>>jerkily<<else>>gracefully<<endif>> from the Heroism, spinning around and giving you a clear view of the large blue planet you are about to descend towards. Autopilot thrusters press you into your seat, an uncomfortable reminder of the G-forces normally associated with re-entry.\u000a\u000aYou squawk on the radio, //"Pod 126BB-M beginning re-entry."//\u000a\u000aThe reinforced viewport starts to flare up as the pod rushes through atmosphere. The computer automatically closes the window, leaving you only with the instruments and trust in the autopilot.\u000a\u000aThe radio blares out, //"Colony to Pod 126BB-M, we see you. Everything is clear.<<if visited("Delay Pod") is 0 or visited("StartFast")>> Colony to Pod 83JJ, stand by, launch window not clear.<<endif>>"//\u000a\u000aSeconds pass as hours as the pod is endlessly jostled by atmospheric turbulence. Airfoils deploy and thrusters fire, and you feel the pod decelerating, the instruments showing the colony is fast approaching. \u000a\u000aThe landing goes like clockwork, with a gentle thud as the pod touches the ground and tips over.\u000a\u000aYou toggle the radio, //"Pod 126BB-M has landed safely. Getting out now."//\u000a\u000a[[Open the pod and step outside.|Hub]]
 p1327
 sg23
 VLaunch
@@ -4374,8 +4374,8 @@ g26
 I6
 I21
 I16
-I53
-I41
+I57
+I19
 I5
 I172
 I1
