@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-VYou are part of the maintenance crew aboard the //LGDE Heroism//, a colony ship bound for the 1212 Antilae system, to set up a colony. You are part of the team responsible for setting up the colony while the majority of the colonists stay in hibernation.\u000a\u000aHowever, something has gone wrong. When you awoke, the ship was not in the 1212 Antilae system, but an unknown binary star system. The planet you are orbitting, Unknown VII, happens to be habitable. By the time you had come to your senses, the decision to colonize the planet anyway had already been made by the ship's captain.\u000a\u000a[[Listen to the captain's speech.|Start2]]\u000a[[Suit up|Start2Alt]]
+VYou are part of the maintenance crew aboard the //LGDE Heroism//, a colony ship bound for the 1212 Antilae system, to set up a colony. You are part of the team responsible for setting up the colony while the majority of the colonists stay in hibernation.\u000a\u000aHowever, something has gone wrong. When you awoke, the ship was not in the 1212 Antilae system, but an unknown binary star system. Fortunately, the planet you are orbitting happens to be habitable. By the time you finished awakening, the decision to colonize the planet had already been made by the ship's captain.\u000a\u000aYou stumble out of the awakening ward and into the maintenance lockers, where Captain Scott is giving a speech to the crew as they gear up in preparation to head to the planet.\u000a\u000a[[Listen to the captain's speech.|StartSlow]]\u000a[[Suit up.|StartFast]]
 p22
 sS'title'
 p23
@@ -51,9 +51,9 @@ p26
 ((I2014
 I6
 I21
-I13
-I51
-I55
+I16
+I6
+I56
 I5
 I172
 I1
@@ -193,19 +193,19 @@ Tiddler
 p70
 (dp71
 g21
-V//"It may not be Jakuta but it's still a habitable planet. Initial scans show promise, and besides, we're low on supplies. The Heroism exhausted it's FTL to bring us here."//  Captain Randome's message to the crew was clear: this is our home.\u000a\u000a//"The rest of the crew will awaken in a few months. I expect you all to perform your duties with the utmost efficiency. Good luck."// All around you, crew are gathering supplies and putting on protective gear. \u000a\u000a[[Suit up.|Start3]]
+V//"It may not be Jakuta but it's still a habitable planet. Initial scans show promise, and besides, we're low on supplies. The Heroism exhausted it's FTL to bring us here."//  Captain Scott's message to the crew was clear: this is our home.\u000a\u000a//"The rest of the crew will awaken in a few months. Make that colony functional before then. I expect you all to perform your duties with the utmost efficiency. Good luck."// All around you, crew are gathering supplies and putting on protective gear. \u000a\u000a[[Suit up.|StartSlow2]]
 p72
 sg23
-VStart2
+VStartSlow
 p73
 sg25
 g26
 ((I2014
 I6
 I21
-I13
-I42
-I20
+I15
+I40
+I49
 I5
 I172
 I1
@@ -243,19 +243,19 @@ Tiddler
 p85
 (dp86
 g21
-VTODO GEARING UP TEXT\u000a\u000a[[Start4]]
+VYou focus on putting on all of your protective gear. Forgetting any small detail could get you killed planetside. Your finish your ensemble with a belt of handy tools and an oxygen tank, just in case.\u000a\u000aAt the other end of the room, you notice your friend Soto, already fully geared, heading toward the drop pods. You consider catching up with him to chat but he's moving at a fast pace. Oh well, you'll have a chance to catch up with him at the colony power plant.\u000a\u000a[[Best to get a move to the drop pods.|Start4]]
 p87
 sg23
-VStart3
+VStartSlow2
 p88
 sg25
 g26
 ((I2014
 I6
 I21
-I13
-I54
-I42
+I16
+I6
+I48
 I5
 I172
 I1
@@ -293,7 +293,7 @@ Tiddler
 p100
 (dp101
 g21
-V<<nobr>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION OF DROP POD\u000a\u000a[[Start5]]
+V\u000aAt the far end of the ship is the drop pod hangar. Many large pods, designed for bulk moving colonists, are stacked around, leaving relatively little room to wander around. Most of the personal drop pods have been launched already, but a few still remain, ready to take you to the planet's surface.\u000a\u000aThese pods can only take you to the planet, not back. Once you launch you won't be able to return until the colonists awaken.\u000a\u000a[[Lets go.|Drop Pod]]\u000a[[I should double check my gear.|Delay Pod]]
 p102
 sg23
 VStart4
@@ -303,9 +303,9 @@ g26
 ((I2014
 I6
 I21
-I13
-I55
-I1
+I16
+I29
+I43
 I5
 I172
 I1
@@ -343,19 +343,19 @@ Tiddler
 p115
 (dp116
 g21
-V<<nobr>>\u000a<<set $fuel to 3>>\u000a<<set $generator to 1>>\u000a<<set $doom_xenocide to 16>>\u000a<<set $doom_beasts to 20>>\u000a<<set $doom_disease to 12>>\u000a<<set $doom_supernova to 6>>\u000a<<endnobr>>\u000aTODO DROP PODDING\u000a\u000a[[Hub]]
+VYou climb into the pod. <<if visited("Delay Pod")>>This pod looks rough and uncomfortable. You hope it will hold together for the journey.<<else>>The pod looks clean and hums to life as you hop in, ready to take you to the colony.<<endif>>\u000a\u000aYou set the radio and broadcast your status. //"Heroism to colony, pod 126BB-M ready to launch."//\u000a\u000a<<if visited("Delay Pod") and visited("StartSlow")>>//"Colony to pod 126BB-M, about damn time. You're clear, launch."//<<else>>//"Colony to pod 126BB-M, launch window is clear."//<<endif>>\u000a\u000a[[Launch the pod and set course for the center of the colony .|Launch]]\u000a<<nobr>>\u000a<<set $fuel to 3>>\u000a<<set $generator to 1>>\u000a<<set $doom_xenocide to 16>>\u000a<<set $doom_beasts to 20>>\u000a<<set $doom_disease to 12>>\u000a<<set $doom_supernova to 6>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endnobr>>\u000a
 p117
 sg23
-VStart5
+VDrop Pod
 p118
 sg25
 g26
 ((I2014
 I6
 I21
-I13
+I16
+I35
 I55
-I12
 I5
 I172
 I1
@@ -493,7 +493,7 @@ Tiddler
 p160
 (dp161
 g21
-VTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE ALL THE AVAILABLE OPTIONS INSTEAD OF JUST HAVING OPTIONS APPEAR OUT OF NOWHERE\u000a\u000a<<if $refinery is 1>> TODO DESCRIBE REFINERY BEING CONSTRUCTED<<endif>>\u000a\u000a<<if $refinery is 2>> TODO DESCRIBE COMPLETED REFINERY<<endif>>\u000a\u000a<<if $flight_suit is 1>> TODO DESCRIBE FLIGHT SUIT BEING BUILT<<endif>>\u000a\u000a<<if $boat is 1>> TODO DESCRIBE BOAT BEING BUILT<<endif>>\u000a\u000a<<if $stasis_net is 1>> TODO DESCRIBE NET BEING BUILT<<endif>>\u000a\u000a<<if $bomb is 1>> TODO DESCRIBE BOMB BEING BUILT<<endif>>\u000a\u000a<<nobr>>\u000a<<if $need_flight_suit>>\u000a[[Flight Suit]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $need_boat>>\u000a[[Boat]]\u000a<<endif>>\u000a<<if visited("Island") and $refinery and $bomb is 0>>\u000a[[Bomb]]\u000a<<endif>>\u000a<<if visited("Cave") and $refinery is 0>>\u000a[[Build Refinery]]\u000a<<endif>>\u000a<<if visited("Bio Lab") and visited("Beast Den")>>\u000a[[Build Stasis Net]]\u000a<<endif>>\u000a<<endnobr>>\u000a* [[North of Colony]]\u000a* [[Hub]]
+VTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE ALL THE AVAILABLE OPTIONS INSTEAD OF JUST HAVING OPTIONS APPEAR OUT OF NOWHERE\u000a\u000a<<if $refinery is 1>> TODO DESCRIBE REFINERY BEING CONSTRUCTED<<endif>>\u000a\u000a<<if $refinery is 2>> TODO DESCRIBE COMPLETED REFINERY<<endif>>\u000a\u000a<<if $flight_suit is 1>> TODO DESCRIBE FLIGHT SUIT BEING BUILT<<endif>>\u000a\u000a<<if $boat is 1>> TODO DESCRIBE BOAT BEING BUILT<<endif>>\u000a\u000a<<if $stasis_net is 1>> TODO DESCRIBE NET BEING BUILT<<endif>>\u000a\u000a<<if $bomb is 1>> TODO DESCRIBE BOMB BEING BUILT<<endif>>\u000a\u000a<<nobr>>\u000a<<if $need_flight_suit>>\u000a[[Flight Suit]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $need_boat>>\u000a[[Boat]]\u000a<<endif>>\u000a<<if visited("Island") and $refinery and $bomb is 0>>\u000a[[Bomb]]\u000a<<endif>>\u000a<<if visited("Cave") and $refinery is 0>>\u000a[[Build Refinery]]\u000a<<endif>>\u000a<<if visited("Bio Lab") and visited("Beast Den") and $stasis_net is 0>>\u000a[[Build Stasis Net]]\u000a<<endif>>\u000a<<endnobr>>\u000a* [[North of Colony]]\u000a* [[Hub]]
 p162
 sg23
 VFactory
@@ -504,8 +504,8 @@ g26
 I6
 I21
 I14
-I2
-I1
+I25
+I39
 I5
 I172
 I1
@@ -1889,8 +1889,8 @@ g14
 I00
 sg15
 (lp581
-I1148
-aI9
+F1170.5
+aF11.5
 asg17
 (itiddlywiki
 Tiddler
@@ -4105,27 +4105,27 @@ g14
 I00
 sg15
 (lp1249
-F355.75
-aF274.25
+F285.75
+aF236.75
 asg17
 (itiddlywiki
 Tiddler
 p1250
 (dp1251
 g21
-V//"It may not be Jakuta but it's still a habitable planet."// You hear Captain Randome's speech to the crew from behind while you concentrate on putting on protective gear.\u000a\u000aTODO MORE DETAIL\u000a\u000a[[Start4]]\u000a
+V//"It may not be Jakuta but it's still a habitable planet."// You hear Captain Scott's speech to the crew from behind, but focus on putting on all of your protective gear. Forgetting any small detail could get you killed planetside. Your finish your ensemble with a belt of handy tools and an oxygen tank, just in case.\u000a\u000aAs the captain's speech finishes up, your friend Soto spots you and approaches.\u000a\u000a//"Well, good to see you're not last this time. You excited?"//\u000a\u000a//[["I bet I'm more thrilled than the captain."|StartFastChat1]]//\u000a[[//"Hah! Someone's gotta watch your back down there."//|StartFastChat2]]
 p1252
 sg23
-VStart2Alt
+VStartFast
 p1253
 sg25
 g26
 ((I2014
 I6
 I21
-I13
+I15
 I54
-I30
+I40
 I5
 I172
 I1
@@ -4150,10 +4150,260 @@ tp1259
 (dp1260
 tp1261
 Rp1262
+sbsa(dp1263
+g14
+I00
+sg15
+(lp1264
+F458.75
+aF222.5
+asg17
+(itiddlywiki
+Tiddler
+p1265
+(dp1266
+g21
+V//"Oh, yeah? I'm sure the captain's gonna hang Tran this time. Computer doesn't even know what star system we're in, talk about a fuckup."//\u000a\u000a//"Listen, I gotta run, need to find if we have any more LX canisters. The ship burned most of it's reserve getting here, and we're gonna run out of power on the colony in a few days. Stop by the power plant when you're not busy and we'll catch up then."//\u000a\u000a[[//"Sound important. Stay safe, I'll see you on the colony."//|StartFastEnd]]
+p1267
+sg23
+VStartFastChat1
+p1268
+sg25
+g26
+((I2014
+I6
+I21
+I16
+I8
+I7
+I5
+I172
+I1
+tp1269
+(dp1270
+tp1271
+Rp1272
+sg31
+(lp1273
+sg33
+g26
+((I2014
+I6
+I21
+I14
+I33
+I51
+I5
+I172
+I1
+tp1274
+(dp1275
+tp1276
+Rp1277
+sbsa(dp1278
+g14
+I00
+sg15
+(lp1279
+F807.5
+aF231.25
+asg17
+(itiddlywiki
+Tiddler
+p1280
+(dp1281
+g21
+VYou step aside and thoroughly double check your gear. Can't be too careful, forgetting something could be fatal.\u000a\u000a<<if visited("StartSlow")>>After 20 minutes, you've confirmed that you have everything. Looking up, you see that only a single personal pod remains. Looks like you're last off this boat.<<else>>After 20 minutes, you've confirmed that you have everything. Looking up, you spot Soto making his way into a pod. He notices you as well and waves. //"Looks like I'm ahead again!"// Before you can respond, he closes the pod and launches out. There's only a few pods left.<<endif>>\u000a\u000a[[Lets go.|Drop Pod]]
+p1282
+sg23
+VDelay Pod
+p1283
+sg25
+g26
+((I2014
+I6
+I21
+I16
+I25
+I55
+I5
+I172
+I1
+tp1284
+(dp1285
+tp1286
+Rp1287
+sg31
+(lp1288
+sg33
+g26
+((I2014
+I6
+I21
+I14
+I40
+I46
+I5
+I172
+I1
+tp1289
+(dp1290
+tp1291
+Rp1292
+sbsa(dp1293
+g14
+I00
+sg15
+(lp1294
+F454.5
+aF432.5
+asg17
+(itiddlywiki
+Tiddler
+p1295
+(dp1296
+g21
+V//"Bah. You save a guy one time and you never let him live it down. I still owe you a drink for that."// \u000a\u000aSoto pauses for a moment, then checks a screen on his wrist.\u000a\u000a//"I've got to go, cargo drone's coming up short on LX. Listen, I overheard from Moss that the sensors picked up some hostile life down there. Power's running a bit tight but I can spare a few watts for your plasma torch so you don't get jumped. Stop by the power plant."\u000a\u000a[[//"Allright. See you on the colony."//|StartFastEnd]]\u000a\u000a<<set $beasts_known to 1>>
+p1297
+sg23
+VStartFastChat2
+p1298
+sg25
+g26
+((I2014
+I6
+I21
+I16
+I9
+I11
+I5
+I172
+I1
+tp1299
+(dp1300
+tp1301
+Rp1302
+sg31
+(lp1303
+sg33
+g26
+((I2014
+I6
+I21
+I15
+I53
+I51
+I5
+I172
+I1
+tp1304
+(dp1305
+tp1306
+Rp1307
+sbsa(dp1308
+g14
+I00
+sg15
+(lp1309
+F643.75
+aF267.5
+asg17
+(itiddlywiki
+Tiddler
+p1310
+(dp1311
+g21
+VYou exchange pleasantries as Soto heads off.\u000a\u000a[[Best to get a move to the drop pods.|Start4]]
+p1312
+sg23
+VStartFastEnd
+p1313
+sg25
+g26
+((I2014
+I6
+I21
+I16
+I8
+I30
+I5
+I172
+I1
+tp1314
+(dp1315
+tp1316
+Rp1317
+sg31
+(lp1318
+sg33
+g26
+((I2014
+I6
+I21
+I16
+I7
+I1
+I5
+I172
+I1
+tp1319
+(dp1320
+tp1321
+Rp1322
+sbsa(dp1323
+g14
+I00
+sg15
+(lp1324
+F1045.75
+aF207.75
+asg17
+(itiddlywiki
+Tiddler
+p1325
+(dp1326
+g21
+VThe pod launches <<if visited("Delay Pod")>>jerkily<<else>>gracefully<<endif>> from the Heroism, spinning around and giving you a clear view of the large blue planet you are about to descend towards. Autopilot thrusters press you into your seat, an uncomfortable reminder of the G-forces normally associated with re-entry.\u000a\u000a//"Pod 126BB-M beginning re-entry."//\u000a\u000aThe reinforced viewport starts to flare up as the pod rushes through atmosphere. The computer automatically closes the window, leaving you only with the instruments and trust in the autopilot.\u000a\u000a//"Colony to Pod 126BB-M, we see you. Everything is clear.<<if visited("Delay Pod") is 0 or visited("StartFast")>> Colony to Pod 83JJ, stand by, launch window not clear.<<endif>>"//\u000a\u000aSeconds pass as hours as the pod is endlessly jostled by atmospheric turbulence. Airfoils deploy and thrusters fire, and you feel the pod decelerating, the instruments showing the colony is fast approaching. \u000a\u000aThe landing goes like clockwork, with a gentle thud as the pod touches the ground and tips over.\u000a\u000a//"Pod 126BB-M has landed safely. Getting out now."//\u000a\u000a[[Open the pod and step outside.|Hub]]
+p1327
+sg23
+VLaunch
+p1328
+sg25
+g26
+((I2014
+I6
+I21
+I16
+I53
+I41
+I5
+I172
+I1
+tp1329
+(dp1330
+tp1331
+Rp1332
+sg31
+(lp1333
+sg33
+g26
+((I2014
+I6
+I21
+I16
+I29
+I19
+I5
+I172
+I1
+tp1334
+(dp1335
+tp1336
+Rp1337
 sbsasS'scale'
-p1263
+p1338
 F0.8
 sS'snapping'
-p1264
+p1339
 I00
 ss.
