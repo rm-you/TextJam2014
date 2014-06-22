@@ -1643,7 +1643,7 @@ Tiddler
 p505
 (dp506
 g21
-V<<set $visited_uncalm_ocean to 1>>\u000a\u000a<<if $weather_tower > 1 and $boat > 1>> \u000a\u000a*[[Beach]]\u000a<<if visited("Destroy Antenna") is 0>>*[[Island]]<<endif>>\u000a\u000a<<else>>\u000a	<<if $boat < 2 and $weather_tower < 2>> \u000aasdf \u000a	<<elseif $boat < 2>> \u000aghjk\u000a	<<elseif $weather_tower < 2>> \u000adfgh \u000a	<<endif>> \u000a[[Go Back|Beach]]\u000a\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
+V<<set $visited_uncalm_ocean to 1>><<if $weather_tower > 1>>You sit in your lightweight metal boat as it floats across the water. The water is choppy, but nothing you can't handle.\u000a\u000a*[[Sail back to the mainland.|Beach]]\u000a\u000a<<if visited("Destroy Antenna") is 0>>[[Sail toward the island.|Island]]\u000a\u000a<<endif>><<else>>You unfold your boat and eye the water cautiously. The water seems dangerously agitated today. Without a clear read on the weather, it would be too dangerous to sail. A weather station at the colony center would let you know if it's safe to sail today.\u000a\u000a[[Okay.|Beach]]\u000a\u000a<<endif>>
 p507
 sg23
 VOcean
@@ -1654,7 +1654,7 @@ g26
 I6
 I22
 I13
-I18
+I58
 I33
 I6
 I173
@@ -1693,7 +1693,7 @@ Tiddler
 p520
 (dp521
 g21
-VYou land at a small island at most a kilometer in diameter. In the center sits a shiny, pulsating spire protruding from the ground about a mile high. Your instruments tell you this living spire is the source of the hostile frequencies that the animals around the camp have been responding to.\u000a\u000a<<if visited() is 1>>Examining the spire you notice a biological receptacle on the side. You take a sample. <<endif>>\u000a\u000a<<if $bomb > 1>> [[Plant Lucy's bomb and flee the island.|Destroy Antenna]] \u000a\u000a<<endif>><<if $hybrid_genome > 1 and visited("Upload Hybrid Genome") is 0>>[[Put Inez's hybrid into the receptacle.|Upload Hybrid Genome]]\u000a\u000a<<endif>> [[Get back in the boat.|Ocean]]
+VYou land at a small island at most a kilometer in diameter. In the center sits a shiny, pulsating spire protruding from the ground about a mile high. Your instruments tell you this living spire is the source of the hostile frequencies that the animals around the camp have been responding to.\u000a\u000a<<if visited() is 1>>Examining the spire you notice a biological receptacle on the side. You take a sample. \u000a\u000a<<endif>><<if $bomb > 1>> [[Plant Lucy's bomb and flee the island.|Destroy Antenna]] \u000a\u000a<<endif>><<if $hybrid_genome > 1 and visited("Upload Hybrid Genome") is 0>>[[Put Inez's hybrid into the receptacle.|Upload Hybrid Genome]]\u000a\u000a<<endif>> [[Get back in the boat.|Ocean]]
 p522
 sg23
 VIsland
@@ -1704,8 +1704,8 @@ g26
 I6
 I22
 I13
-I17
-I24
+I58
+I53
 I6
 I173
 I1
