@@ -1282,7 +1282,7 @@ tp396
 Rp397
 sbsa(dp398
 g14
-I01
+I00
 sg15
 (lp399
 F1733.5
@@ -1543,7 +1543,7 @@ Tiddler
 p475
 (dp476
 g21
-V<<if visited() is 1>>\u000aFirst time visiting Hills\u000a<<set $visited_hills to 1>>\u000a<<endif>>\u000a\u000a* [[Hills]]\u000a<<if $hills_mapped is 2>>* [[Beast Den]]<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
+V<<if visited() is 1>><<set $visited_hills to 1>>You head deeper into the hills. The wavy terrain extends far and long all the way to the ocean. It would take you weeks to explore everything.. \u000a\u000a<<else>>You travel deeper into the hills.\u000a\u000a<<endif>>[[Head west, back where you came.|Hills]]\u000a\u000a<<if $hills_mapped is 2>>[[Seek and enter the beast den.|Beast Den]]<<endif>>
 p477
 sg23
 VDeep Hills
@@ -1552,12 +1552,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I11
-I57
-I5
-I172
+I22
+I12
+I9
+I51
+I6
+I173
 I1
 tp479
 (dp480
@@ -1593,7 +1593,7 @@ Tiddler
 p490
 (dp491
 g21
-V<<if $beast_den_destroyed>>An abandoned and charred beast den.\u000a<<else>>A beast den.\u000a<<if $stasis_net > 1 and $beast_captured is 0>>* [[Attempt to take a beast egg.|Capture Beast]]<<endif>>\u000a* [[Destroy Den]]\u000a<<endif>>\u000a\u000a[[Return|Deep Hills]]\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
+V<<if $beast_den_destroyed>>An abandoned and charred beast den.<<else>>A beast den. You can hear the thudding and groaning of creatures moving around inside.\u000a\u000aYou don't get very far before encountering a pair of beasts, a parent and child. \u000a\u000a<<if $stasis_net > 1 and $beast_captured is 0>>[[Capture the beast youngling.|Capture Beast]]\u000a\u000a<<endif>>[[Set fire to the den with your plasma torch.|Destroy Den]]\u000a\u000a<<endif>>[[Leave the den.|Deep Hills]]
 p492
 sg23
 VBeast Den
@@ -1602,12 +1602,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
+I22
 I12
-I3
-I5
-I172
+I14
+I4
+I6
+I173
 I1
 tp494
 (dp495
@@ -3713,7 +3713,7 @@ Tiddler
 p1130
 (dp1131
 g21
-V<<if $plasma_torch>>\u000a<<set $beast_den_destroyed to 1>>\u000a<<set $plasma_torch -= 1>>\u000aYou set fire to the beast den and make a hasty escape.\u000a\u000a[[Retreat|Deep Hills]]\u000a<<else>>\u000aYour plasma torch needs more power to ignite this.\u000a\u000a[[Go Back|Beast Den]]\u000a<<endif>>\u000a\u000aTODO BETTER DESCRIPTION
+V<<if $plasma_torch>><<set $beast_den_destroyed to 1>><<set $plasma_torch -= 1>>You set fire to the beast den and make a hasty escape.\u000a\u000a[[Escape.|Deep Hills]]\u000a\u000a<<else>>Your plasma torch needs more power to ignite this.\u000a\u000a[[Go Back.|Beast Den]]\u000a\u000a<<endif>>
 p1132
 sg23
 VDestroy Den
@@ -3722,12 +3722,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
+I22
 I12
-I17
-I5
-I172
+I10
+I27
+I6
+I173
 I1
 tp1134
 (dp1135
@@ -3763,7 +3763,7 @@ Tiddler
 p1145
 (dp1146
 g21
-V<<if $plasma_torch>>\u000a<<set $beast_captured to 1>>\u000a<<set $plasma_torch -= 1>>\u000aYou stun the beast with your plasma torch and net an egg. You bolt out of the den before reinforcements arrive.\u000a\u000a[[Retreat|Deep Hills]]\u000a<<else>>\u000aThe beast looks too ferocious to try and approach. You could stun it with your plasma torch if it had power. Your only choice is to back off.\u000a\u000a[[Go Back|Beast Den]]\u000a<<endif>>\u000a\u000aTODO BETTER DESCRIPTION
+V<<if $plasma_torch>><<set $beast_captured to 1>><<set $plasma_torch -= 1>>You stun the beast with your plasma torch and net a youngling. You bolt out of the den before reinforcements arrive.\u000a\u000a[[Escape.|Deep Hills]]\u000a\u000a<<else>>The beast looks too ferocious to try and approach. You could stun it with your plasma torch if it had power. Your only choice is to back off.\u000a\u000a[[Retreat.|Beast Den]]\u000a\u000a<<endif>>
 p1147
 sg23
 VCapture Beast
@@ -3772,12 +3772,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
+I22
 I12
 I11
-I5
-I172
+I34
+I6
+I173
 I1
 tp1149
 (dp1150
