@@ -643,7 +643,7 @@ Tiddler
 p205
 (dp206
 g21
-VTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000a* [[Mountains]]\u000a* [[Factory]]
+V<<if $beast_at_mountains>>\u000aBeast! TODO BETTER BEAST\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_mountains to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000a* [[Mountains]]\u000a* [[Factory]]\u000a\u000a<<endif>>
 p207
 sg23
 VNorth of Colony
@@ -652,12 +652,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I13
-I57
-I45
-I5
-I172
+I22
+I2
+I59
+I15
+I6
+I173
 I1
 tp209
 (dp210
@@ -843,7 +843,7 @@ Tiddler
 p265
 (dp266
 g21
-V<<if visited() is 1>>\u000aFirst time visiting Mountains\u000a<<set $visited_mountains to 1>>\u000a<<endif>>\u000a<<if $beast_at_mountains>>\u000aBeast! TODO BETTER BEAST\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_mountains to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a<<if $flight_suit > 1>>\u000a<<nobr>><<if visited("Cave")>>* [[Cave]]<<elseif $mountain_mapped > 1>>* [[Drill Cave]]<<endif>><<endnobr>>\u000a* [[Valley]]\u000a* [[North of Colony]]\u000a<<else>><<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>>\u000a[[Go Back|previous()]]\u000a<<endif>>\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
+V<<if visited() is 1>>\u000aFirst time visiting Mountains\u000a<<set $visited_mountains to 1>>\u000a<<endif>>\u000a<<if $flight_suit > 1>>\u000a<<nobr>><<if visited("Cave")>>* [[Cave]]<<elseif $mountain_mapped > 1>>* [[Drill Cave]]<<endif>><<endnobr>>\u000a* [[Valley]]\u000a* [[North of Colony]]\u000a<<else>><<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>>\u000a[[Go Back|previous()]]\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
 p267
 sg23
 VMountains
@@ -852,12 +852,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I11
-I52
+I22
+I2
+I59
 I5
-I172
+I6
+I173
 I1
 tp269
 (dp270
