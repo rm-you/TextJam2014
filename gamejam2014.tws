@@ -643,7 +643,7 @@ Tiddler
 p205
 (dp206
 g21
-V<<if $beast_at_mountains>>\u000aBeast! TODO BETTER BEAST\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_mountains to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000a* [[Mountains]]\u000a* [[Factory]]\u000a\u000a<<endif>>
+VYou walk along the path outside the colony. The path is rocky and bumpy.\u000a\u000a<<if $beast_at_mountains>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_mountains to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>>[[Head north, to the mountains.|Mountains]]\u000a\u000a[[Head south, toward the colony.|Factory]]\u000a\u000a<<endif>>
 p207
 sg23
 VNorth of Colony
@@ -653,9 +653,9 @@ g26
 ((I2014
 I6
 I22
-I2
-I59
-I15
+I4
+I23
+I10
 I6
 I173
 I1
@@ -693,7 +693,7 @@ Tiddler
 p220
 (dp221
 g21
-V<<if $beast_at_south_of_colony>>\u000aBeast! TODO DO BETTER BEAST\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_south_of_colony to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[Robotics Lab]]\u000a* [[Ocean Cliffs]]\u000a<<endif>>\u000a\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIPTION FOR BEAST ATTACK
+VYou walk along the path outside the colony. The path ascends steeply southward.\u000a\u000a<<if $beast_at_south_of_colony>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_south_of_colony to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>>[[Head north, toward the colony.|Robotics Lab]]\u000a\u000a[[Head south, toward the ocean cliffs.|Ocean Cliffs]]\u000a\u000a<<endif>>
 p222
 sg23
 VSouth of Colony
@@ -702,12 +702,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I11
-I38
-I5
-I172
+I22
+I4
+I26
+I43
+I6
+I173
 I1
 tp224
 (dp225
@@ -743,7 +743,7 @@ Tiddler
 p235
 (dp236
 g21
-V<<if $beast_at_east_of_colony>>\u000aBeast!\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_east_of_colony to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[Power Plant]]\u000a* [[Hills]]\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIPTION FOR BEAST ATTACK
+VYou walk along the path outside the colony. The path is dusty and flat.\u000a\u000a<<if $beast_at_east_of_colony>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_east_of_colony to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>>[[Head east, into the hills.|Hills]]\u000a\u000a[[Head west, toward the colony.|Power Plant]]\u000a\u000a<<endif>>
 p237
 sg23
 VEast of Colony
@@ -752,12 +752,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I13
-I58
-I2
-I5
-I172
+I22
+I4
+I25
+I55
+I6
+I173
 I1
 tp239
 (dp240
@@ -793,7 +793,7 @@ Tiddler
 p250
 (dp251
 g21
-V\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000a* [[Colony Center]]\u000a* [[Forest]]
+VYou walk along the path outside the colony. Sparse trees line the edges of the path.\u000a\u000a[[Head east, toward the colony.|Colony Center]]\u000a\u000a[[Head west, into the forest.|Forest]]
 p252
 sg23
 VWest of Colony
@@ -802,12 +802,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I13
-I58
-I19
-I5
-I172
+I22
+I4
+I16
+I30
+I6
+I173
 I1
 tp254
 (dp255
@@ -4500,10 +4500,60 @@ tp1364
 (dp1365
 tp1366
 Rp1367
+sbsa(dp1368
+g14
+I00
+sg15
+(lp1369
+F2237.0
+aF209.75
+asg17
+(itiddlywiki
+Tiddler
+p1370
+(dp1371
+g21
+VA fearsome beast lurks here, with a tough exoskeleton and sharp fangs protruding from it's maw. It paces back and forth on its four legs and looks aggressive. <<if $plasma_torch is 0>>Best not to pick a fight with it.<<endif>>
+p1372
+sg23
+VBeast
+p1373
+sg25
+g26
+((I2014
+I6
+I22
+I4
+I27
+I54
+I6
+I173
+I1
+tp1374
+(dp1375
+tp1376
+Rp1377
+sg31
+(lp1378
+sg33
+g26
+((I2014
+I6
+I22
+I4
+I17
+I59
+I6
+I173
+I1
+tp1379
+(dp1380
+tp1381
+Rp1382
 sbsasS'scale'
-p1368
+p1383
 F0.8
 sS'snapping'
-p1369
+p1384
 I00
 ss.
