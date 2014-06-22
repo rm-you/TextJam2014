@@ -1393,7 +1393,7 @@ Tiddler
 p430
 (dp431
 g21
-V<<set $visited_forest to 1>>You walk <<if visited() is 1>>into<<else>>through<<endif>> the forest. You are surrounded by smoothbark trees brimming with green leaves. \u000a\u000a<<if visited() is 1>> The path south leads toward a beach.\u000a\u000a<<endif>>[[Head south toward the beach.|Beach]]\u000a\u000a<<if visited() is 1>> The path east heads back toward the colony.\u000a\u000a<<endif>>[[Head east towards the colony.|West of Colony]]\u000a\u000a<<if visited() is 1>> the path west heads deeper into the forest. The trees get thicker as you go deeper, you should wait for the robots to map the area first so you don't get lost.\u000a\u000a<<endif>>[[Head deeper into the forest, going west.|Deep Forest]]
+V<<set $visited_forest to 1>>You walk <<if visited() is 1>>into<<else>>through<<endif>> the forest. You are surrounded by smoothbark trees brimming with green leaves. \u000a\u000a<<if visited() is 1>> The path south leads toward a beach.\u000a\u000a<<endif>>[[Head south toward the beach.|Beach]]\u000a\u000a<<if visited() is 1>> The path east heads back toward the colony.\u000a\u000a<<endif>>[[Head east towards the colony.|West of Colony]]\u000a\u000a<<if visited() is 1>>The path west heads deeper into the forest. The trees get thicker as you go deeper -- you should wait for the robots to map the area first so you don't get lost.\u000a\u000a<<endif>>[[Head deeper into the forest, going west.|Deep Forest]]
 p432
 sg23
 VForest
@@ -1403,9 +1403,9 @@ g26
 ((I2014
 I6
 I22
-I4
 I14
-I3
+I20
+I41
 I6
 I173
 I1
