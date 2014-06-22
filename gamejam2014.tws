@@ -436,7 +436,7 @@ I00
 sg15
 (lp144
 F1551.0
-aF880.0
+aF881.25
 asg17
 (itiddlywiki
 Tiddler
@@ -1393,7 +1393,7 @@ Tiddler
 p430
 (dp431
 g21
-V<<nobr>>\u000a<<if visited() is 1>>\u000aFirst time visiting Forest\u000a\u000aTODO BETTER DESCRIPTION FOR FOREST\u000aTODO WARNING AGAINST ENTERING DEEP FOREST\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS\u000a<<set $visited_forest to 1>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000a* [[West of Colony]]\u000a* [[Beach]]\u000a* [[Deep Forest]]
+V<<set $visited_forest to 1>>You walk <<if visited() is 1>>into<<else>>through<<endif>> the forest. You are surrounded by smoothbark trees brimming with green leaves. \u000a\u000a<<if visited() is 1>> The path south leads toward a beach.\u000a\u000a<<endif>>[[Head south toward the beach.|Beach]]\u000a\u000a<<if visited() is 1>> The path east heads back toward the colony.\u000a\u000a<<endif>>[[Head east towards the colony.|West of Colony]]\u000a\u000a<<if visited() is 1>> the path west heads deeper into the forest. The trees get thicker as you go deeper, you should wait for the robots to map the area first so you don't get lost.\u000a\u000a<<endif>>[[Head deeper into the forest, going west.|Deep Forest]]
 p432
 sg23
 VForest
@@ -1402,12 +1402,12 @@ sg25
 g26
 ((I2014
 I6
-I21
+I22
+I4
 I14
-I10
-I28
-I5
-I172
+I3
+I6
+I173
 I1
 tp434
 (dp435
@@ -1443,7 +1443,7 @@ Tiddler
 p445
 (dp446
 g21
-V<<nobr>>\u000a<<set $beast_at_hills to 0>>\u000a<<set $beast_at_mountains to 0>>\u000a<<set $beast_at_ocean_cliffs to 0>>\u000a<<set $beast_at_valley to 0>>\u000a<<set $beast_at_ocean_hills to 0>>\u000a<<set $beast_at_south_of_colony to 0>>\u000a<<set $beast_at_east_of_colony to 0>>\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a\u000a\u000a<<set $sleep_count += 1>>\u000a<<print $sleep_count>>\u000a\u000a<<if $doom_disease > 0>>\u000a<<set $doom_disease -= 1>>\u000a<<endif>>\u000a\u000a<<if visited("Destroy Antenna") is 0 and $antenna_fooled is 0>>\u000a<<set $doom_xenocide -= 1>>\u000a<<endif>>\u000a\u000a<<if $supernova is 1>>\u000a<<set $doom_supernova -= 1>>\u000a<<endif>>\u000a\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $doom_beasts -= 2>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a<<if $doom_disease is 0>>\u000aDoom by Disease!\u000a<<elseif $doom_beasts <= 0>>\u000aDoom by Beasts!\u000a<<elseif $doom_xenocide <= 0>>\u000aDoom by Xenocide!\u000a<<elseif $doom_supernova <= 0>>\u000aDoom by Supernova!\u000a<<elseif $beast_den_destroyed and $supernova is 0 and $doom_disease < 0 and $gene_therapy>>\u000a\u000a[[Regular Win]]\u000a\u000a<<else>>\u000a\u000a[[Resolve Sleep]]\u000a\u000a<<endif>>\u000a\u000aTODO OH GOD\u000a
+V<<nobr>>\u000a<<set $beast_at_hills to 0>>\u000a<<set $beast_at_mountains to 0>>\u000a<<set $beast_at_ocean_cliffs to 0>>\u000a<<set $beast_at_valley to 0>>\u000a<<set $beast_at_ocean_hills to 0>>\u000a<<set $beast_at_south_of_colony to 0>>\u000a<<set $beast_at_east_of_colony to 0>>\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a\u000a<<set $sleep_count += 1>>\u000a\u000a<<if $doom_disease > 0>>\u000a<<set $doom_disease -= 1>>\u000a<<endif>>\u000a\u000a<<if visited("Destroy Antenna") is 0 and $antenna_fooled is 0>>\u000a<<set $doom_xenocide -= 1>>\u000a<<endif>>\u000a\u000a<<if $supernova is 1>>\u000a<<set $doom_supernova -= 1>>\u000a<<endif>>\u000a\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $doom_beasts -= 2>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a<<if $doom_disease is 0>>\u000aDoom by Disease!\u000a<<elseif $doom_beasts <= 0>>\u000aDoom by Beasts!\u000a<<elseif $doom_xenocide <= 0>>\u000aDoom by Xenocide!\u000a<<elseif $doom_supernova <= 0>>\u000aDoom by Supernova!\u000a<<elseif $beast_den_destroyed and $supernova is 0 and $doom_disease < 0 and $gene_therapy>>\u000a\u000a[[Regular Win]]\u000a\u000a<<else>>\u000a\u000aYou walk into your room and relax.\u000a\u000a//"Surveyor's log, day <<print $sleep_count>>..."//\u000a\u000aWith the days events wrapped up, you rest your head on your clean cot and think about tomorrow.\u000a\u000a[[Fall asleep.|Resolve Sleep]]\u000a\u000a<<endif>>\u000a\u000aTODO OH GOD\u000a
 p447
 sg23
 VSleep
@@ -1452,12 +1452,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I13
-I59
-I16
-I5
-I172
+I22
+I3
+I56
+I8
+I6
+I173
 I1
 tp449
 (dp450
@@ -1493,7 +1493,7 @@ Tiddler
 p460
 (dp461
 g21
-V<<nobr>>\u000a<<if $doom_disease > 3>>\u000a<<set $doom_disease to 3>>\u000a<<endif>>\u000a<<endnobr>>\u000a<<if $forest_mapped > 1>>\u000a* [[Forest]]\u000a<<if visited("Strange Fungus") is 0>>* [[Strange Fungus]]<<endif>>\u000a<<else>>\u000aYou are lost.\u000a\u000a* [[Wander the forest.|Deep Forest]]\u000a* [[Call for rescue.|Rescue]]\u000a<<endif>>\u000a\u000aTODO FOREST DESCRIPTION
+V<<if $doom_disease > 3>><<set $doom_disease to 3>><<endif>>The forest is even thicker here, with the smoothbark trees clustering more tightly. You are forced to take a winding path as you travel. Trees obscure your distant vision. <<if $forest_mapped > 1>>Using your wrist screen to view the mapped area, you manage to keep track of where you are.\u000a\u000a[[Head back toward the edge of the forest.|Forest]]\u000a\u000a<<if visited("Strange Fungus") is 0>>[[Head toward the fungal growths and collect some fungus.|Strange Fungus]]\u000a\u000a<<endif>><<else>>Due to your winding path, you've lost track of where you are.\u000a\u000a[[Wander the forest looking for the exit.|Deep Forest]]\u000a\u000a[[Call for a rescue.|Rescue]]\u000a\u000a<<endif>>
 p462
 sg23
 VDeep Forest
@@ -1502,12 +1502,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I13
-I58
-I45
-I5
-I172
+I22
+I4
+I7
+I1
+I6
+I173
 I1
 tp464
 (dp465
@@ -2411,7 +2411,7 @@ Tiddler
 p739
 (dp740
 g21
-VRescue Happens.\u000a\u000a[[Sleep]]\u000a\u000aTODO DESCRIBE THIS BETTER
+VYou signal an emergency on the radio, robots should be on their way.\u000a\u000aMany hours pass before a team of robots finds your location. They lift you up and carry you out of the forest.\u000a\u000aMost of the day was unfortunately spent waiting. There's not enough time to do anything else, and you are getting tired.\u000a\u000a[[Head to the colony center to recover and go to sleep.|Sleep]]
 p741
 sg23
 VRescue
@@ -2420,12 +2420,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I13
-I59
-I10
-I5
-I172
+I22
+I4
+I6
+I38
+I6
+I173
 I1
 tp743
 (dp744
@@ -2913,7 +2913,7 @@ Tiddler
 p890
 (dp891
 g21
-V<<if $ftl_fuel > 1>>\u000aThe spaceport stands ready to transport everyone back to the colony ship.\u000a[[Evac]]\u000a<<else>> The spaceport stands ready to transport everyone back to the colony ship. Without FTL fuel, however, it's a bit of a pointless trip, as the colony ship is still stranded in this solar system.\u000a<<endif>>\u000a\u000aTODO BETTER DESCRIPTION OF SPACEPORT\u000a\u000a[[Go Back|Hub]]
+V<<if visited() is 1>>You approach the spaceport, an imposing tower atop an alloyed foundation. Inside sits Dwayne, the colony's rocket engineer.\u000a\u000a<<else>>You enter the spaceport. Dwayne sits at a console, silently watching the skies.\u000a\u000a<<endif>><<if $ftl_fuel > 1>>The spaceport is ready to transport everyone back to the colony ship.\u000a\u000a[[Evacuate the colony.|Evac]]\u000a\u000a<<else>>The spaceport is ready to transport everyone back to the colony ship. Without FTL fuel, however, it's a bit of a pointless trip, as the colony ship is still stranded in this solar system.\u000a\u000a<<endif>>\u000a\u000a[[Exit the spaceport.|Hub]]
 p892
 sg23
 VSpaceport
@@ -2922,12 +2922,12 @@ sg25
 g26
 ((I2014
 I6
-I21
+I22
+I3
 I13
-I57
-I9
-I5
-I172
+I54
+I6
+I173
 I1
 tp894
 (dp895
@@ -3163,7 +3163,7 @@ Tiddler
 p965
 (dp966
 g21
-VYou gather some of the Strange Fungus.\u000a\u000a[[Deep Forest]]
+VYou gather some of the strange fungus into a glass receptacle.\u000a\u000a[[Okay.|Deep Forest]]
 p967
 sg23
 VStrange Fungus
@@ -3172,12 +3172,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I13
-I58
-I55
-I5
-I172
+I22
+I3
+I15
+I43
+I6
+I173
 I1
 tp969
 (dp970
