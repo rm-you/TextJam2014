@@ -4513,7 +4513,7 @@ Tiddler
 p1370
 (dp1371
 g21
-VA fearsome beast lurks here, with a tough exoskeleton and sharp fangs protruding from it's maw. It paces back and forth on its four legs and looks aggressive. <<if $plasma_torch is 0>>Best not to pick a fight with it.<<endif>>
+VA fearsome beast lurks here, with a tough exoskeleton and sharp fangs protruding from it's maw. It paces back and forth on its four legs and looks aggressive. <<if $plasma_torch is 0>>\u000a\u000aWithout a weapon it's best not to pick a fight with it. If your plasma torch had more power you could use it to fight.<<endif>>
 p1372
 sg23
 VBeast
@@ -4523,9 +4523,9 @@ g26
 ((I2014
 I6
 I22
-I4
-I27
-I54
+I12
+I1
+I5
 I6
 I173
 I1
