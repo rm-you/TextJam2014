@@ -1282,7 +1282,7 @@ tp396
 Rp397
 sbsa(dp398
 g14
-I00
+I01
 sg15
 (lp399
 F1733.5
@@ -1293,7 +1293,7 @@ Tiddler
 p400
 (dp401
 g21
-VYou walk up along a cliff adjacent to the ocean. \u000a\u000a<<if $beast_at_ocean_cliffs>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_ocean_cliffs to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>> [[Head north, towards the colony.|South of Colony]]\u000a\u000a[[Head east, following the ocean.|Ocean Hills]]\u000a\u000a[[Head west, towards the beach.|Beach]]\u000a\u000a<<endif>>
+VYou walk up along a cliff adjacent to the ocean. <<if visited("Destroy Antenna") is 0>>Off in the distant ocean, you can see a far away island with an ominous looking spire at its center.<<endif>>\u000a\u000a<<if $beast_at_ocean_cliffs>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_ocean_cliffs to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>><<if visited() is 1>>North of here is a downward sloping path to the colony.\u000a\u000a<<endif>>[[Head north, towards the colony.|South of Colony]]\u000a\u000a<<if visited() is 1>>East of here follows the ocean line, leading toward the hilly regions.\u000a\u000a<<endif>>[[Head east, following the ocean.|Ocean Hills]]\u000a\u000a<<if visited() is 1>>West of here is a downward slope to a beach, where you can reach the ocean.\u000a\u000a<<endif>>[[Head west, towards the beach.|Beach]]\u000a\u000a<<endif>>
 p402
 sg23
 VOcean Cliffs
@@ -1303,9 +1303,9 @@ g26
 ((I2014
 I6
 I22
-I4
-I44
-I37
+I12
+I5
+I21
 I6
 I173
 I1
