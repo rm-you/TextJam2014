@@ -393,7 +393,7 @@ Tiddler
 p130
 (dp131
 g21
-V<<if visited() is 1>>Stepping out of the pod, you are nearly overwhelmed by the sights of the colony and the landscape. Twin suns shine brilliantly in the crisp blue sky overhead. Tall mountains line the horizon to the north, and all around you are clean prefabricated structures. To the east is a very distinct building, the power plant of the colony, where you expect to find your technician friend Soto.\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000aFrom the south approach a trio of robots, likely here to retrieve the pod. The ships roboticist Terra is probably manging them right now from the robotics lab. Anything menial has to be handled by the robots, since there's only seven people managing this entire colony right now. You will probably need to stop by sooner rather than later..\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000aYou hear a belching noise come from the north, and a belch of smoke erupts from the closest prefab to the north. You surmise it to be the colony's manufacturing. Lucy's probably trying to get a head start on the industrial needs of the colony. She's hard to get along with, but if you need anything fabricated she's the only one who can do it.\u000a\u000a[[Head north to the factory.|Factory]]\u000a\u000aYour radio sounds out a familiar voice. //"Pleasant landing, I hope? This is Lya, come see me at the colony center. It's the big dome-shaped building west of where you landed." // You recognize administrator Lya's voice, and judging by her tone she's probably got your task in mind already.\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<else>>This is the direct center of the colony, a flat clearing ideal for receiving pods and shipments from the Heroism. There's a few piles of supplies lying around and paths to every other part of the colony. The skies are clear. Nothing will arrive anytime soon.\u000a\u000a<<if $comm_array > 1 and $refinery > 1 and $spaceport is 0>>There's a pile of alloys here and an unattached link to the colony center. This would be an ideal location to build the spaceport to get back to the Heroism.\u000a\u000a[[//"Terra, have the bots start assembling the spaceport."//|Build Spaceport]]\u000a\u000a<<endif>><<if $spaceport is 1>>Robots are hard at work in this area, laying out sheets of alloy and fusing them together. The incomplete launch tower grows taller by the minute. The colony should be ready to launch in no time.\u000a\u000a<<endif>><<if $spaceport is 2>>The colony's spaceport is here, a flat metal base with a launch tower, ready to launch cargo and people up to the Heroism. Dwayne sits inside, keeping track of the Heroism's location.\u000a\u000a[[Enter the spaceport.|Spaceport]]\u000a\u000a<<endif>>[[Head north to the factory.|Factory]]\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a\u000a<<endif>>
+V<<if visited() is 1>>Stepping out of the pod, you are nearly overwhelmed by the sights of the colony and the landscape. Twin suns shine brilliantly in the crisp blue sky overhead. Tall mountains line the horizon to the north, and all around you are clean prefabricated structures. To the east is a very distinct building, the power plant of the colony, where you expect to find your technician friend Soto.\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000aFrom the south approach a trio of robots, likely here to retrieve the pod. The ships roboticist Terra is probably manging them right now from the robotics lab. Anything menial has to be handled by the robots, since there's only seven people managing this entire colony right now. You will probably need to stop by sooner rather than later..\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000aYou hear a belching noise come from the north, and a plume of smoke erupts from the closest prefab to the north. You surmise it to be the colony's manufacturing. Lucy's probably trying to get a head start on the industrial needs of the colony. She's hard to get along with, but if you need anything fabricated she's the only one who can do it.\u000a\u000a[[Head north to the factory.|Factory]]\u000a\u000aYour radio sounds out a familiar voice. //"Pleasant landing, I hope? This is Lya, come see me at the colony center. It's the big dome-shaped building west of where you landed." // You recognize administrator Lya's voice, and judging by her tone she's probably got your task in mind already.\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<else>>This is the direct center of the colony, a flat clearing ideal for receiving pods and shipments from the Heroism. There's a few piles of supplies lying around and paths to every other part of the colony. The skies are clear. Nothing will arrive anytime soon.\u000a\u000a<<if $comm_array > 1 and $refinery > 1 and $spaceport is 0>>There's a pile of alloys here and an unattached link to the colony center. This would be an ideal location to build the spaceport to get back to the Heroism.\u000a\u000a[[//"Terra, have the bots start assembling the spaceport."//|Build Spaceport]]\u000a\u000a<<endif>><<if $spaceport is 1>>Robots are hard at work in this area, laying out sheets of alloy and fusing them together. The incomplete launch tower grows taller by the minute. The colony should be ready to launch in no time.\u000a\u000a<<endif>><<if $spaceport is 2>>The colony's spaceport is here, a flat metal base with a launch tower, ready to launch cargo and people up to the Heroism. Dwayne sits inside, keeping track of the Heroism's location.\u000a\u000a[[Enter the spaceport.|Spaceport]]\u000a\u000a<<endif>>[[Head north to the factory.|Factory]]\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a\u000a<<endif>>
 p132
 sg23
 VHub
@@ -403,9 +403,9 @@ g26
 ((I2014
 I6
 I22
-I1
-I46
-I12
+I14
+I13
+I13
 I6
 I173
 I1
@@ -4363,7 +4363,7 @@ Tiddler
 p1325
 (dp1326
 g21
-VThe pod launches <<if visited("Delay Pod")>>jerkily<<else>>gracefully<<endif>> from the Heroism, spinning around and giving you a clear view of the large blue planet you are about to descend towards. Autopilot thrusters press you into your seat, an uncomfortable reminder of the G-forces normally associated with re-entry.\u000a\u000aYou squawk on the radio to the Heroism, //"Pod 126BB-M beginning re-entry."//\u000a\u000aThe reinforced viewport starts to flare up as the pod rushes through atmosphere. The computer automatically closes the window, leaving you only with the instruments and trust in the autopilot. Seconds pass as hours as the pod is endlessly jostled by atmospheric turbulence. Airfoils deploy and thrusters fire, and you feel the pod decelerating, the instruments showing the colony is fast approaching. The landing goes like clockwork, with a gentle thud as the pod touches the ground and tips over.\u000a\u000aYou toggle the radio as it links in with the local Colony grid, //"Pod 126BB-M has landed safely. Getting out now."//\u000a\u000a[[Open the pod and step outside.|Hub]]
+VThe pod launches <<if visited("Delay Pod")>>jerkily<<else>>gracefully<<endif>> from the Heroism, spinning around and giving you a clear view of the large blue planet you are about to descend towards. Autopilot thrusters press you into your seat, an uncomfortable reminder of the G-forces normally associated with re-entry.\u000a\u000aYou squawk on the radio to the Heroism, //"Pod 126BB-M beginning entry."//\u000a\u000aThe reinforced viewport starts to flare up as the pod rushes through atmosphere. The computer automatically closes the window, leaving you only with the instruments and trust in the autopilot. Seconds pass as hours as the pod is endlessly jostled by atmospheric turbulence. Airfoils deploy and thrusters fire, and you feel the pod decelerating, the instruments showing the colony is fast approaching. The landing goes like clockwork, with a gentle thud as the pod touches the ground and tips over.\u000a\u000aYou toggle the radio as it links in with the local Colony grid, //"Pod 126BB-M has landed safely. Getting out now."//\u000a\u000a[[Open the pod and step outside.|Hub]]
 p1327
 sg23
 VLaunch
@@ -4372,12 +4372,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I17
+I22
 I14
-I56
-I5
-I172
+I12
+I53
+I6
+I173
 I1
 tp1329
 (dp1330
@@ -4563,7 +4563,7 @@ Tiddler
 p1385
 (dp1386
 g21
-VBeasts Lose
+VYou awaken in the middle of the night to a loud thumping sound followed by a scream. You hear growling coming from outside your door. Suddenly, it bursts open, and two beasts stumble in, their eyes filled with rage. It seems the beasts are brave enough now to attack the colony.\u000a\u000aYour close your eyes one last time before being torn apart... 
 p1387
 sg23
 VDoom by Beasts
@@ -4573,9 +4573,9 @@ g26
 ((I2014
 I6
 I22
-I4
-I33
-I21
+I14
+I9
+I51
 I6
 I173
 I1
@@ -4613,7 +4613,7 @@ Tiddler
 p1400
 (dp1401
 g21
-VXenocide Lose
+VYou awaken in the middle of the night to a loud thumping sound followed by a scream. You hear squawking coming from outside your door. Suddenly, it bursts open, and a swarm of huge birds swarm in, flapping around with maddening frenzy. It seems the frequency drove the creatures to finally attack the colony.\u000a\u000aYour close your eyes one last time before being shredded apart... 
 p1402
 sg23
 VDoom by Xenocide
@@ -4623,9 +4623,9 @@ g26
 ((I2014
 I6
 I22
-I4
+I14
+I12
 I33
-I26
 I6
 I173
 I1
@@ -4663,7 +4663,7 @@ Tiddler
 p1415
 (dp1416
 g21
-VDisease Lose
+VYou awaken in the middle of the night, sharp pains coursing through your body. You are barely able to move. It seems that the disease afflicting the colony has run its course, and your body begins to shut down.\u000a\u000aYour eyelids get heavy as you close them one last time... 
 p1417
 sg23
 VDoom by Disease
@@ -4673,9 +4673,9 @@ g26
 ((I2014
 I6
 I22
-I4
-I33
-I12
+I14
+I3
+I6
 I6
 I173
 I1
@@ -4713,7 +4713,7 @@ Tiddler
 p1430
 (dp1431
 g21
-VSupernova Lose
+VYou awaken in the middle of the night to a sweltering heat and bright light. Looking outside, the sky is so bright it seems to be on fire, and it seems to be getting brighter and hotter. Your skin starts to sizzle, then suddenly goes numb. \u000a\u000aYour close your eyes one last time before being consumed by scorching heat... 
 p1432
 sg23
 VDoom by Supernova
@@ -4723,9 +4723,9 @@ g26
 ((I2014
 I6
 I22
-I4
-I33
-I17
+I14
+I5
+I28
 I6
 I173
 I1
