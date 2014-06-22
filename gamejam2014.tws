@@ -193,7 +193,7 @@ Tiddler
 p70
 (dp71
 g21
-V//"It may not be Jakuta but it's still a habitable planet. Initial scans show promise, and besides, we're low on supplies. The Heroism exhausted it's FTL to bring us here."//  Captain Scott's message to the crew was clear: this is our home.\u000a\u000a//"The rest of the crew will awaken in a few months. Make that colony functional before then. I expect you all to perform your duties with the utmost efficiency. Good luck."// All around you, crew are gathering supplies and putting on protective gear. \u000a\u000a[[Suit up.|StartSlow2]]
+V//"It may not be Jakuta, but it's still a habitable planet. Initial scans show promise, so be diligent and the colony will thrive. The Heroism exhausted it's FTL to bring us here. Lets not squander this opportunity that luck has brought us."//  Captain Scott's message to the crew was clear: this is our new home.\u000a\u000a//"The rest of the crew will awaken in a few months. Make that colony functional before then. I expect you all to perform your duties with the utmost efficiency. I will remain on the ship to keep its power regulated. Good luck."// All around you, crew are gathering supplies and putting on protective gear. \u000a\u000a[[Suit up.|StartSlow2]]
 p72
 sg23
 VStartSlow
@@ -203,9 +203,9 @@ g26
 ((I2014
 I6
 I21
-I15
-I40
-I49
+I17
+I5
+I30
 I5
 I172
 I1
@@ -343,7 +343,7 @@ Tiddler
 p115
 (dp116
 g21
-VYou climb into the pod. <<if visited("Delay Pod")>>This pod looks rough and uncomfortable. You hope it will hold together for the journey.<<else>>The pod looks clean and hums to life as you hop in, ready to take you to the colony.<<endif>>\u000a\u000aYou set the radio and broadcast your status. //"Heroism to colony, pod 126BB-M ready to launch."//\u000a\u000a<<if visited("Delay Pod") and visited("StartSlow")>>//"Colony to pod 126BB-M, about damn time. You're clear, launch."//<<else>>//"Colony to pod 126BB-M, launch window is clear."//<<endif>>\u000a\u000a[[Launch the pod and set course for the center of the colony .|Launch]]\u000a<<nobr>>\u000a<<set $fuel to 3>>\u000a<<set $generator to 1>>\u000a<<set $doom_xenocide to 16>>\u000a<<set $doom_beasts to 20>>\u000a<<set $doom_disease to 12>>\u000a<<set $doom_supernova to 6>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endnobr>>\u000a
+VYou climb into the pod. <<if visited("Delay Pod")>>This pod looks rough and uncomfortable. You hope it will hold together for the journey.<<else>>The pod looks clean and hums to life as you hop in, ready to take you to the colony.<<endif>>\u000a\u000aYou set the radio and broadcast your status. //"Pod 126BB-M to Heroism, pod is ready to launch."//\u000a\u000a<<if visited("Delay Pod") and visited("StartSlow")>>//"This is Captain Scott, pod 126BB-M, about damn time. You're clear, launch."//<<else>>//"This is Captain Scott, pod 126BB-M, your launch window is clear."//<<endif>>\u000a\u000a[[Launch the pod and set course for the center of the colony .|Launch]]\u000a<<nobr>>\u000a<<set $fuel to 3>>\u000a<<set $generator to 1>>\u000a<<set $doom_xenocide to 16>>\u000a<<set $doom_beasts to 20>>\u000a<<set $doom_disease to 12>>\u000a<<set $doom_supernova to 6>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endnobr>>\u000a
 p117
 sg23
 VDrop Pod
@@ -353,9 +353,9 @@ g26
 ((I2014
 I6
 I21
-I16
-I35
-I55
+I17
+I13
+I10
 I5
 I172
 I1
@@ -393,7 +393,7 @@ Tiddler
 p130
 (dp131
 g21
-V<<nobr>><<if visited() is 1>>\u000aFirst time visiting Hub\u000aTODO LANDING DESCRIPTION\u000a\u000aTODO INITIAL DESCRIPTION OF AREA\u000a<<endif>>\u000a<<endnobr>>\u000a<<if $comm_array > 1 and $refinery > 1 and $spaceport is 0>>[[Build Spaceport]]<<endif>>\u000a\u000a<<if $spaceport is 1>>TODO DESCRIPTION OF SPACEPORT BEING BUILT<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000a* [[Colony Center]]\u000a* [[Factory]]\u000a* [[Power Plant]]\u000a* [[Robotics Lab]]\u000a<<if $spaceport > 1>> *[[Spaceport]] <<endif>>
+V<<if visited() is 1>>Stepping out of the pod, you are nearly overwhelmed by the sights of the colony and the landscape. Twin suns shine brilliantly in the crisp blue sky overhead. Tall mountains line the horizon to the north, and all around you are clean prefabricated structures. To the east is a very distinct building, the power plant of the colony, where you expect to find your technician friend Soto.\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000aFrom the south approach a trio of robots, likely here to retrieve the pod. The ships roboticist Terra is probably manging them right now from the robotics lab. Anything menial has to be handled by the robots, since there's only seven of us here. You will probably need to stop by sooner rather than later..\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000aYou hear a belching noise come from the north, and a belch of smoke erupts from the closest prefab to the north. You surmise it to be the colony's manufacturing. Lucy's probably trying to get a head start on the industrial needs of the colony. She's hard to get along with, but if you need anything fabricated she's the only one who can do it.\u000a\u000a[[Head north to the factory.|Factory]]\u000a\u000aYour radio sounds out a familiar voice. //"Pleasant landing, I hope? This is Lya, come see mee at the colony center. It's the big dome-shaped building west of where you landed." // Lya's the ship administrator, she's probably got your task in mind already.\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<else>>This is the direct center of the colony, a flat clearing ideal for receiving pods and shipments from the Heroism. There's a few piles of supplies lying around and paths to every other part of the colony. The skies are clear, nothing's arriving anytime soon.\u000a\u000a<<if $comm_array > 1 and $refinery > 1 and $spaceport is 0>>There's a pile of alloys here and an unattached link to the colony center. This would be an ideal location to build the spaceport to get back to the Heroism.\u000a\u000a[[Build Spaceport]]<<endif>><<if $spaceport is 1>>Robots are hard at work in this area, laying out sheets of alloy and fusing them together. The incomplete launch tower grows taller by the minute. The colony should be ready to launch in no time.\u000a\u000a<<endif>><<if $spaceport is 2>>The colony's spaceport is here, a flat metal base with a launch tower, ready to launch cargo and people up to the Heroism.\u000a\u000a<<endif>>[[Head north to the factory.|Factory]]\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<if $spaceport > 1>> *[[Enter the spaceport.|Spaceport]] <<endif>>\u000a<<endif>>
 p132
 sg23
 VHub
@@ -403,9 +403,9 @@ g26
 ((I2014
 I6
 I21
-I13
-I56
-I22
+I19
+I26
+I9
 I5
 I172
 I1
@@ -4313,7 +4313,7 @@ Tiddler
 p1310
 (dp1311
 g21
-VYou exchange pleasantries as Soto heads off.\u000a\u000a[[Best to get a move to the drop pods.|Start4]]
+VYou exchange farewells as Soto heads off.\u000a\u000a[[Best to get a move to the drop pods.|Start4]]
 p1312
 sg23
 VStartFastEnd
@@ -4323,9 +4323,9 @@ g26
 ((I2014
 I6
 I21
-I16
+I17
 I8
-I30
+I0
 I5
 I172
 I1
@@ -4363,7 +4363,7 @@ Tiddler
 p1325
 (dp1326
 g21
-VThe pod launches <<if visited("Delay Pod")>>jerkily<<else>>gracefully<<endif>> from the Heroism, spinning around and giving you a clear view of the large blue planet you are about to descend towards. Autopilot thrusters press you into your seat, an uncomfortable reminder of the G-forces normally associated with re-entry.\u000a\u000aYou squawk on the radio, //"Pod 126BB-M beginning re-entry."//\u000a\u000aThe reinforced viewport starts to flare up as the pod rushes through atmosphere. The computer automatically closes the window, leaving you only with the instruments and trust in the autopilot.\u000a\u000aThe radio blares out, //"Colony to Pod 126BB-M, we see you. Everything is clear.<<if visited("Delay Pod") is 0 or visited("StartFast")>> Colony to Pod 83JJ, stand by, launch window not clear.<<endif>>"//\u000a\u000aSeconds pass as hours as the pod is endlessly jostled by atmospheric turbulence. Airfoils deploy and thrusters fire, and you feel the pod decelerating, the instruments showing the colony is fast approaching. \u000a\u000aThe landing goes like clockwork, with a gentle thud as the pod touches the ground and tips over.\u000a\u000aYou toggle the radio, //"Pod 126BB-M has landed safely. Getting out now."//\u000a\u000a[[Open the pod and step outside.|Hub]]
+VThe pod launches <<if visited("Delay Pod")>>jerkily<<else>>gracefully<<endif>> from the Heroism, spinning around and giving you a clear view of the large blue planet you are about to descend towards. Autopilot thrusters press you into your seat, an uncomfortable reminder of the G-forces normally associated with re-entry.\u000a\u000aYou squawk on the radio to the Heroism, //"Pod 126BB-M beginning re-entry."//\u000a\u000aThe reinforced viewport starts to flare up as the pod rushes through atmosphere. The computer automatically closes the window, leaving you only with the instruments and trust in the autopilot. Seconds pass as hours as the pod is endlessly jostled by atmospheric turbulence. Airfoils deploy and thrusters fire, and you feel the pod decelerating, the instruments showing the colony is fast approaching. The landing goes like clockwork, with a gentle thud as the pod touches the ground and tips over.\u000a\u000aYou toggle the radio as it links in with the local Colony grid, //"Pod 126BB-M has landed safely. Getting out now."//\u000a\u000a[[Open the pod and step outside.|Hub]]
 p1327
 sg23
 VLaunch
@@ -4373,9 +4373,9 @@ g26
 ((I2014
 I6
 I21
-I16
-I57
-I19
+I17
+I14
+I56
 I5
 I172
 I1
