@@ -3063,7 +3063,7 @@ Tiddler
 p935
 (dp936
 g21
-VWin!\u000a\u000aTODO BETTER DESCRIPTION OF COLONY BEING COMPLETED
+VYou awaken the next morning to a cheerful crew celebrating in the cafeteria. It seems that preparations for the colony are complete, and in a few months the colonists will awaken and settle. \u000a\u000aYou spend the next few months making your home more comfortable...\u000a\u000a(Success!)
 p937
 sg23
 VRegular Win
@@ -3072,12 +3072,12 @@ sg25
 g26
 ((I2014
 I6
-I21
+I22
 I14
-I13
-I40
-I5
-I172
+I33
+I45
+I6
+I173
 I1
 tp939
 (dp940
@@ -3113,7 +3113,7 @@ Tiddler
 p950
 (dp951
 g21
-VYou launch from the spaceport. The trip \u000a\u000a<<if doom_disease > 0>>Doom by Disease!\u000a\u000a<<else>>Evac Win!\u000a<<endif>>
+VYou launch from the spaceport. The trip back to the Heroism is quiet, and you soon find yourself docking.\u000a\u000a<<if doom_disease > 0>>Unfortunately, disease from the planet surface has followed you to the Heroism. Before a cure can be found, the crew is incapacitated, and soon after expires.\u000a\u000aThe //LGDE Heroism// drifts through space in solitude...\u000a\u000a<<else>>With preparations for FTL already underway, you stow your surveryor's equipment in the maintenance lockers and hop to the hibernation pods. You know for certain the next time you wake up, it'll be by civilization.\u000a\u000a(Success!)\u000a\u000a<<endif>>
 p952
 sg23
 VEvac
@@ -3124,8 +3124,8 @@ g26
 I6
 I22
 I14
-I18
-I6
+I33
+I54
 I6
 I173
 I1
