@@ -393,7 +393,7 @@ Tiddler
 p130
 (dp131
 g21
-V<<if visited() is 1>>Stepping out of the pod, you are nearly overwhelmed by the sights of the colony and the landscape. Twin suns shine brilliantly in the crisp blue sky overhead. Tall mountains line the horizon to the north, and all around you are clean prefabricated structures. To the east is a very distinct building, the power plant of the colony, where you expect to find your technician friend Soto.\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000aFrom the south approach a trio of robots, likely here to retrieve the pod. The ships roboticist Terra is probably manging them right now from the robotics lab. Anything menial has to be handled by the robots, since there's only seven of us here. You will probably need to stop by sooner rather than later..\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000aYou hear a belching noise come from the north, and a belch of smoke erupts from the closest prefab to the north. You surmise it to be the colony's manufacturing. Lucy's probably trying to get a head start on the industrial needs of the colony. She's hard to get along with, but if you need anything fabricated she's the only one who can do it.\u000a\u000a[[Head north to the factory.|Factory]]\u000a\u000aYour radio sounds out a familiar voice. //"Pleasant landing, I hope? This is Lya, come see mee at the colony center. It's the big dome-shaped building west of where you landed." // Lya's the ship administrator, she's probably got your task in mind already.\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<else>>This is the direct center of the colony, a flat clearing ideal for receiving pods and shipments from the Heroism. There's a few piles of supplies lying around and paths to every other part of the colony. The skies are clear. Nothing will arrive anytime soon.\u000a\u000a<<if $comm_array > 1 and $refinery > 1 and $spaceport is 0>>There's a pile of alloys here and an unattached link to the colony center. This would be an ideal location to build the spaceport to get back to the Heroism.\u000a\u000a[[Build Spaceport]]<<endif>><<if $spaceport is 1>>Robots are hard at work in this area, laying out sheets of alloy and fusing them together. The incomplete launch tower grows taller by the minute. The colony should be ready to launch in no time.\u000a\u000a<<endif>><<if $spaceport is 2>>The colony's spaceport is here, a flat metal base with a launch tower, ready to launch cargo and people up to the Heroism.\u000a\u000a<<endif>>[[Head north to the factory.|Factory]]\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<if $spaceport > 1>> *[[Enter the spaceport.|Spaceport]] <<endif>>\u000a<<endif>>
+V<<if visited() is 1>>Stepping out of the pod, you are nearly overwhelmed by the sights of the colony and the landscape. Twin suns shine brilliantly in the crisp blue sky overhead. Tall mountains line the horizon to the north, and all around you are clean prefabricated structures. To the east is a very distinct building, the power plant of the colony, where you expect to find your technician friend Soto.\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000aFrom the south approach a trio of robots, likely here to retrieve the pod. The ships roboticist Terra is probably manging them right now from the robotics lab. Anything menial has to be handled by the robots, since there's only seven of us here. You will probably need to stop by sooner rather than later..\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000aYou hear a belching noise come from the north, and a belch of smoke erupts from the closest prefab to the north. You surmise it to be the colony's manufacturing. Lucy's probably trying to get a head start on the industrial needs of the colony. She's hard to get along with, but if you need anything fabricated she's the only one who can do it.\u000a\u000a[[Head north to the factory.|Factory]]\u000a\u000aYour radio sounds out a familiar voice. //"Pleasant landing, I hope? This is Lya, come see me at the colony center. It's the big dome-shaped building west of where you landed." // Lya's the ship administrator, she's probably got your task in mind already.\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<else>>This is the direct center of the colony, a flat clearing ideal for receiving pods and shipments from the Heroism. There's a few piles of supplies lying around and paths to every other part of the colony. The skies are clear. Nothing will arrive anytime soon.\u000a\u000a<<if $comm_array > 1 and $refinery > 1 and $spaceport is 0>>There's a pile of alloys here and an unattached link to the colony center. This would be an ideal location to build the spaceport to get back to the Heroism.\u000a\u000a[[//"Terra, have the bots start assembling the spaceport."//|Build Spaceport]]<<endif>><<if $spaceport is 1>>Robots are hard at work in this area, laying out sheets of alloy and fusing them together. The incomplete launch tower grows taller by the minute. The colony should be ready to launch in no time.\u000a\u000a<<endif>><<if $spaceport is 2>>The colony's spaceport is here, a flat metal base with a launch tower, ready to launch cargo and people up to the Heroism.\u000a\u000a<<endif>>[[Head north to the factory.|Factory]]\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<if $spaceport > 1>> *[[Enter the spaceport.|Spaceport]] <<endif>>\u000a<<endif>>
 p132
 sg23
 VHub
@@ -403,9 +403,9 @@ g26
 ((I2014
 I6
 I21
-I19
-I57
-I15
+I21
+I5
+I6
 I5
 I172
 I1
@@ -443,7 +443,7 @@ Tiddler
 p145
 (dp146
 g21
-V<<if visited() is 1>>You walk up to the distinct, dome shaped structure that is the colony center. This structure is where the crew eats and sleeps, and in the future will be expanded to house the colonists. It could also be considered the colony's headquarters.\u000a\u000aLya is standing outside, waiting for you.\u000a\u000a//"Safe trip, I hope."// Lya begins. //"There's a lot to do, so I'll be brief. The colony's coming up a bit short on supplies, thanks to our detour. We're okay on food and prefabs but we're gonna run out of fuel soon. Do your job and survey what's around us, and keep an eye out for anything to solve our energy problem."//\u000a\u000a[[//"Sounds good. Those mountains to the north are probably a good place to look."//|CCReply1]]\u000a<<if visited("Mountains") or visited("Forest") or visited("Hills") >>[[//"Already taken a look around. I'll have a report ready soon."//|CCReply2]]<<endif>><<else>><<if visited() is 2>>Lya nods. //"I'll be in touch via radio."// She heads into the dome-shaped structure, leaving you alone. \u000a\u000a<<endif>>You stand outside of the colony center, a clean dome shaped structure which houses both crew quarters and the cafeteria. <<if $bio_lab < 2>>Lya and Inez are both inside, running the colony and keeping tabs on the crew's health.<<else>>Lya is inside, running the colony.<<endif>> \u000a\u000a<<if $weather_tower is 1>>Robots are hard at work in this area, building up a spire attached to the colony center. The tower seems to grow taller every time you blink.\u000a\u000a<<endif>><<if $weather_tower is 2>>A tall metal spire protudes from the dome, sampling the atomsphere. This weather tower will help the colony predict any inclement weather in the area.\u000a\u000a<<endif>><<if $comm_array is 1>>Robots are hard at work on the dome, running reinforced rods on the roof to support sensitive communications equipment. A pair of robots appear to be fine tuning the signal of the equipment, in preparation to for sending and receiving signals from space. The uplink looks like it's coming together nicely.\u000a\u000a<<endif>><<if $comm_array is 2>> Large antennae stick out from the dome, supported by metal rods. These antennae enable two-way communication with the Heroism. <<if $jammer is 2>>In addition, a large satellite dish rests on top, pointed at the ominous island south of the colony in an attempt to suppress it's signal.<<endif>>\u000a\u000a<<endif>><<if $jammer is 1>> Robots are hard at work modifying the communications antennae. It looks like they're tripling the number of antennae, as well as adding on a large dish, aimed at the ominous island south of the colony.\u000a\u000a<<endif>><<if $comm_array is 0>>When you are ready, let Lya know she can work on rebuilding communications.\u000a\u000a[[//"Lya, I'm finished. Go ahead and fix up communications."//|Build Communications Array]]\u000a\u000a<<endif>><<if $comm_array is 2 and visited("Island")>>The signal that island is broadcasting definitely needs to stop. The robots need to modify the comm system to jam that signal as soon as possible.\u000a\u000a[[//"Terra, send the robots to upgrade the comm system. I need it to jam that signal coming from the island south."//|Build Signal Jammer]]\u000a\u000a<<endif>><<if $visited_uncalm_ocean and $weather_tower is 0>>Not knowing the weather makes it difficult to travel on these alien waters. Having the robots build a weather station here will solve that. [[//"Terra, send the robots to build a weather station, please."//|Build Weather Tower]]\u000a\u000a<<endif>>The path west leads out of the colony, towards a wooded area of alien looking trees.\u000a\u000a[[Leave the colony, heading west into the alien forest.|West of Colony]]\u000a\u000aThe path east leads back to the landing area and the center of the colony.\u000a\u000a[[Head east to the center of the colony.|Hub]]\u000a\u000aWhen there's nothing left to do for today, you can sleep inside.\u000a\u000a[[Unwind and go to sleep.|Sleep]]<<endif>>
+V<<if visited() is 1>>You walk up to the distinct, dome shaped structure that is the colony center. This structure is where the crew eats and sleeps, and in the future will be expanded to house the colonists. It could also be considered the colony's headquarters.\u000a\u000aLya is standing outside, waiting for you.\u000a\u000a//"Safe trip, I hope."// Lya begins. //"There's a lot to do, so I'll be brief. The colony's coming up a bit short on supplies, thanks to our detour. We're okay on food and prefabs but we're gonna run out of fuel soon. Do your job and survey what's around us, and keep an eye out for anything to solve our energy problem."//\u000a\u000a[[//"Sounds good. Those mountains to the north are probably a good place to look."//|CCReply1]]\u000a<<if visited("Mountains") or visited("Forest") or visited("Hills") >>[[//"Already taken a look around. I'll have a report ready soon."//|CCReply2]]<<endif>><<else>><<if visited() is 2>>Lya nods. //"I'll be in touch via radio."// She heads into the dome-shaped structure, leaving you alone. \u000a\u000a<<endif>>You stand outside of the colony center, a clean dome shaped structure which houses both crew quarters and the cafeteria. <<if $bio_lab < 2 and $spaceport < 2>>Lya, Dwayne and Inez are all inside, running the colony, keeping tabs on the crew's health, and watching the skies.<<elseif $bio_lab < 2>>Lya and Inez are inside, running the colony and keeping tabs on the crew's health.<<elseif $spareport < 2>>Lya and Dwayne are inside, running the colony and watching the sky.<<else>>Lya is inside, running the colony.<<endif>> \u000a\u000a<<if $weather_tower is 1>>Robots are hard at work in this area, building up a spire attached to the colony center. The tower seems to grow taller every time you blink.\u000a\u000a<<endif>><<if $weather_tower is 2>>A tall metal spire protudes from the dome, sampling the atomsphere. This weather tower will help the colony predict any inclement weather in the area.\u000a\u000a<<endif>><<if $comm_array is 1>>Robots are hard at work on the dome, running reinforced rods on the roof to support sensitive communications equipment. A pair of robots appear to be fine tuning the signal of the equipment, in preparation to for sending and receiving signals from space. The uplink looks like it's coming together nicely.\u000a\u000a<<endif>><<if $comm_array is 2>> Large antennae stick out from the dome, supported by metal rods. These antennae enable two-way communication with the Heroism. <<if $jammer is 2>>In addition, a large satellite dish rests on top, pointed at the ominous island south of the colony in an attempt to suppress it's signal.<<endif>>\u000a\u000a<<endif>><<if $jammer is 1>> Robots are hard at work modifying the communications antennae. It looks like they're tripling the number of antennae, as well as adding on a large dish, aimed at the ominous island south of the colony.\u000a\u000a<<endif>><<if $comm_array is 0>>When you are ready, let Lya know she can work on rebuilding communications.\u000a\u000a<<if visited("Build Communications Array")>>[[//"Lya, reminding you that I'm finished. Go ahead and fix up communications."//|Build Communications Array]]<<else>>[[//"Lya, I'm finished. Go ahead and fix up communications."//|Build Communications Array]]<<endif>>\u000a\u000a<<endif>><<if $comm_array is 2 and visited("Island")>>The signal that island is broadcasting definitely needs to stop. The robots need to modify the comm system to jam that signal as soon as possible.\u000a\u000a[[//"Terra, send the robots to upgrade the comm system. I need it to jam that signal coming from the island south."//|Build Signal Jammer]]\u000a\u000a<<endif>><<if $visited_uncalm_ocean and $weather_tower is 0>>Not knowing the weather makes it difficult to travel on these alien waters. Having the robots build a weather station here will solve that. \u000a\u000a[[//"Terra, send the robots to build a weather station, please."//|Build Weather Tower]]\u000a\u000a<<endif>>When there's nothing left to do for today, you can sleep inside.\u000a\u000a[[Unwind and go to sleep.|Sleep]]\u000a\u000a<<if visited() is 2>>The path east leads back to the landing area and the center of the colony.\u000a\u000a<<endif>>[[Head east to the center of the colony.|Hub]]\u000a\u000a<<if visited() is 2>>The path west leads out of the colony, towards a wooded area of alien looking trees.\u000a\u000a<<endif>>[[Leave the colony, heading west into the alien forest.|West of Colony]]<<endif>>
 p147
 sg23
 VColony Center
@@ -453,9 +453,9 @@ g26
 ((I2014
 I6
 I21
-I20
-I31
-I11
+I21
+I48
+I3
 I5
 I172
 I1
@@ -543,7 +543,7 @@ Tiddler
 p175
 (dp176
 g21
-V<<if $aux_gen > 1>>\u000aSolar Farm Active\u000a<<endif>>\u000a<<if $fusion_gen > 1>>\u000aFusion Reactor Online\u000a<<endif>>\u000a<<if $mountain_mapped>>\u000a[[Charge Drill]]\u000a<<endif>>\u000a<<if $beasts_known>>\u000a[[Overcharge Plasma Torch]]\u000a<<endif>>\u000a<<if $aux_gen is 0>>\u000a[[Build Solar Farm]]\u000a<<endif>>\u000a<<if $aux_gen is 2 and $refinery is 2 and $fusion_gen is 0>>\u000a[[Build Fusion Reactor]]\u000a<<endif>>\u000aGenerator power is: <<print $generator>>\u000aGenerator fuel is: <<print $fuel>>\u000a<<if $isotope>> [[Refine Strange Isotope]]<<endif>>\u000a\u000a\u000a* [[East of Colony]]\u000a* [[Hub]]
+V<<if $aux_gen > 1>>\u000aSolar Farm Active\u000a<<endif>>\u000a<<if $fusion_gen > 1>>\u000aFusion Reactor Online\u000a<<endif>>\u000a<<if $mountain_mapped>>\u000a[[Charge Drill]]\u000a<<endif>>\u000a<<if $beasts_known>>\u000a[[Overcharge Plasma Torch]]\u000a<<endif>>\u000a<<if $aux_gen is 0>>\u000a[[Build Solar Farm]]\u000a<<endif>>\u000a<<if $aux_gen is 2 and $refinery is 2 and $fusion_gen is 0>>\u000a[[Build Fusion Reactor]]\u000a<<endif>>\u000aGenerator power is: <<print $generator>>\u000aGenerator fuel is: <<print $fuel>>\u000a<<if $isotope>> [[Refine Strange Isotope]]<<endif>>\u000a\u000a<<if $bio_lab > 1>> [[Bio Lab]]<<endif>>\u000a* [[East of Colony]]\u000a* [[Hub]]
 p177
 sg23
 VPower Plant
@@ -553,9 +553,9 @@ g26
 ((I2014
 I6
 I21
-I12
-I42
-I43
+I21
+I31
+I33
 I5
 I172
 I1
@@ -582,7 +582,7 @@ tp186
 Rp187
 sbsa(dp188
 g14
-I00
+I01
 sg15
 (lp189
 F1713.0
@@ -593,7 +593,7 @@ Tiddler
 p190
 (dp191
 g21
-V<<nobr>>\u000a<<if $mountain_mapped is 0 and $visited_mountains>>\u000a[[Map Mountain]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $forest_mapped is 0 and $visited_forest>>\u000a[[Map Forest]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $hills_mapped is 0 and $visited_hills>>\u000a[[Map Hills]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $curious_plant or visited("Deep Forest") and $bio_lab is 0>>\u000a[[Construct Bio Lab]]\u000a<<endif>>\u000a<<if $bio_lab is 1>> TODO DESCRIBE BIO LAB UNDER CONSTRUCTION<<endif>>\u000a<<if $bio_lab > 1>>TODO DESCRIBE BIO LAB\u000a\u000a[[Bio Lab]]<<endif>>\u000a<<endnobr>>\u000a* [[South of Colony]]\u000a* [[Hub]]\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE ALL THE AVAILABLE OPTIONS INSTEAD OF JUST HAVING OPTIONS APPEAR OUT OF NOWHERE\u000a
+V<<if visited() is 1>>You walk up to the robotics lab, a tall opaque prefab that looks like it's trying to resemble a monolith. Inside is Terra, the ship's roboticist. There doesn't appear to be any formal entrance into the facility, probably for safety reasons. Instead, a set of touchscreens rests on the front wall, for passing along locations to survey to Terra.\u000a\u000a<<else>>You stand outside of the robotics, a monolithic structure which supports all robotics functions on the colony. Terra is inside, likely calibrating new robots for production and closely monitoring for any weird drone behavior.\u000a\u000a<<if $mountain_mapped is 1 or $forest_mapped is 1 or $hills_mapped is 1>>Robots are streaming out of the side of the facility, travelling out of the colony to survey lands.\u000a\u000a<<endif>>A set of touchscreens display a rough map of the area and await locational input.\u000a\u000a<<endif>><<if $mountain_mapped is 0 and $visited_mountains>>[[Input the mountains into the touchscreens to be surveyed.|Map Mountain]]\u000a\u000a<<endif>><<if $forest_mapped is 0 and $visited_forest>>[[Input the forest into the touchscreens to be surveyed.|Map Forest]]\u000a\u000a<<endif>><<if $hills_mapped is 0 and $visited_hills>>[[Input the hills into the touchscreens to be surveyed.|Map Hills]]\u000a\u000a<<endif>><<if $curious_plant or visited("Deep Forest") and $bio_lab is 0>>If the colony is going to survive, it needs to understand the existing biology of the planet. As noted before, east of here would be a perfect spot for a new structure.\u000a\u000a[["Terra, have the robots start on the bio lab that we discussed earlier."|Construct Bio Lab]]\u000a\u000a<<endif>><<if $bio_lab is 1>>Robots are hard at work in this area, building up a short, thick lab, ideal for understand the flora and fauna of this planet.\u000a\u000a<<endif>><<if visited() is 1>>The path north leads back to the landing area and the center of the colony.\u000a\u000a<<endif>>[[Head north to the center of the colony.|Hub]]\u000a\u000a<<if visited() is 1>>The path south leads out of the colony, towards a clearing with a high view of the planet's murky blue ocean.\u000a\u000a<<endif>>[[Leave the colony, heading south toward the ocean.|South of Colony]]\u000a\u000a<<if $bio_lab > 1>><<if visited("Bio Lab") is 0>>The path east leads to the bio lab, a smooth rectangular building decorated with long windows and lab equipment. \u000a\u000a<<endif>>[[Head east to the bio lab.|Bio Lab]]\u000a\u000a<<endif>>
 p192
 sg23
 VRobotics Lab
@@ -603,9 +603,9 @@ g26
 ((I2014
 I6
 I21
-I14
-I5
-I12
+I21
+I49
+I6
 I5
 I172
 I1
@@ -993,7 +993,7 @@ Tiddler
 p310
 (dp311
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $mountain_mapped to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Robotics Lab]]
+V<<if $generator>><<set $mountain_mapped to 1>><<set $generator -= 1>>A brief moment after you touch the screen, Terra's voice emerges from the screen. //"Mountains eh? I'll have it mapped down to the pebble."// You can already see robots pouring out of the lab.\u000a\u000a[[//"Great."//|Robotics Lab]]\u000a\u000a<<else>>A brief moment after you touch the screen, Terra's voice emerges from the screen. //"Can't do it right now. I don't have minions to spare. Try tomorrow."// Guess the survey will have to wait until the colony has power to spare again.\u000a\u000a[[//"Okay, thanks."//|Robotics Lab]]\u000a\u000a<<endif>>
 p312
 sg23
 VMap Mountain
@@ -1003,9 +1003,9 @@ g26
 ((I2014
 I6
 I21
-I14
-I4
-I28
+I21
+I37
+I52
 I5
 I172
 I1
@@ -1043,7 +1043,7 @@ Tiddler
 p325
 (dp326
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $forest_mapped to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Robotics Lab]]
+V<<if $generator>><<set $forest_mapped to 1>><<set $generator -= 1>>A brief moment after you touch the screen, Terra's voice emerges from the screen. //"Forests? I'll have 'em mapped down to the grass blade."// You can already see robots pouring out of the lab.\u000a\u000a[[//"Great."//|Robotics Lab]]\u000a\u000a<<else>>A brief moment after you touch the screen, Terra's voice emerges from the screen. //"Can't do it right now. I don't have minions to spare. Try tomorrow."// Guess the survey will have to wait until the colony has power to spare again.\u000a\u000a[[//"Okay, thanks."//|Robotics Lab]]\u000a\u000a<<endif>>
 p327
 sg23
 VMap Forest
@@ -1053,9 +1053,9 @@ g26
 ((I2014
 I6
 I21
-I14
-I4
-I42
+I21
+I38
+I17
 I5
 I172
 I1
@@ -1085,8 +1085,8 @@ g14
 I00
 sg15
 (lp339
-F1978.0
-aF1018.0
+F2013.0
+aF1026.75
 asg17
 (itiddlywiki
 Tiddler
@@ -2513,7 +2513,7 @@ Tiddler
 p770
 (dp771
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $hills_mapped to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Robotics Lab]]
+V<<if $generator>><<set $hills_mapped to 1>><<set $generator -= 1>>A brief moment after you touch the screen, Terra's voice emerges from the screen. //"The hills? I guess..."// You can already see robots pouring out of the lab.\u000a\u000a[[//"Thanks Terra."//|Robotics Lab]]\u000a\u000a<<else>>A brief moment after you touch the screen, Terra's voice emerges from the screen. //"Can't do it right now. I don't have minions to spare. Try tomorrow."// Guess the survey will have to wait until the colony has power to spare again.\u000a\u000a[[//"Okay, thanks."//|Robotics Lab]]\u000a\u000a<<endif>>
 p772
 sg23
 VMap Hills
@@ -2523,9 +2523,9 @@ g26
 ((I2014
 I6
 I21
-I14
-I3
-I55
+I21
+I38
+I52
 I5
 I172
 I1
@@ -2563,7 +2563,7 @@ Tiddler
 p785
 (dp786
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $weather_tower to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Colony Center]]
+V<<if $generator>><<set $weather_tower to 1>><<set $generator -= 1>>//"Oooh, yes, that sounds like fun! "// Terra's voice radiates excitement, and you can already see robots on their way with building materials.\u000a\u000a[[//"Thanks."//|Colony Center]]\u000a\u000a<<else>>//"I'd love to, but my minions have no power. It's so quiet right now."// Guess the tower will have to wait until the colony has power to spare again.\u000a\u000a[[//"Oh, sorry Terra."//|Colony Center]]\u000a\u000a<<endif>>\u000a\u000a
 p787
 sg23
 VBuild Weather Tower
@@ -2573,9 +2573,9 @@ g26
 ((I2014
 I6
 I21
-I14
-I3
-I35
+I20
+I41
+I59
 I5
 I172
 I1
@@ -2763,7 +2763,7 @@ Tiddler
 p845
 (dp846
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $bio_lab to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Robotics Lab]]
+V<<if $generator>><<set $bio_lab to 1>><<set $generator -= 1>>//"Already got the plans laid out. This lab is going to outdo all my previous work!"// You can already see robots pouring out of the lab and fetching building materials.\u000a\u000a[[//"Great."//|Robotics Lab]]\u000a\u000a<<else>>//"I'd love to, but my minions have no power right now. I wish they would move..."// Guess the lab will have to wait until the colony has power to spare again.\u000a\u000a[[//"Okay."//|Robotics Lab]]\u000a\u000a<<endif>>
 p847
 sg23
 VConstruct Bio Lab
@@ -2773,9 +2773,9 @@ g26
 ((I2014
 I6
 I21
-I14
-I4
-I35
+I21
+I43
+I9
 I5
 I172
 I1
@@ -2813,7 +2813,7 @@ Tiddler
 p860
 (dp861
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $comm_array to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Colony Center]]
+V<<if $generator>><<set $comm_array to 1>><<set $generator -= 1>>//"Thanks ace. I'll get in touch with Terra."// A few moments later, Lya replies on the radio. //"They're on their way. Keep up with the survey."// You spot two squads of robots marching toward the dome with building supplies in hand. \u000a\u000a[["Understood."|Colony Center]]\u000a\u000a<<else>>//"Ah, thanks ace. I'll get in touch with Terra."// You wait a few moments for a response. //"Hmm, Terra doesn't have any robots to spare. Looks like the power plants are already being overtaxed. Do me a favor, remind me tomorrow."//\u000a\u000a[[//"Understood."//|Colony Center]]\u000a\u000a<<endif>>
 p862
 sg23
 VBuild Communications Array
@@ -2823,9 +2823,9 @@ g26
 ((I2014
 I6
 I21
-I14
-I3
-I41
+I20
+I47
+I44
 I5
 I172
 I1
@@ -2863,7 +2863,7 @@ Tiddler
 p875
 (dp876
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $jammer to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Colony Center]]
+V<<if $generator>><<set $jammer to 1>><<set $generator -= 1>>//"I know exactly what you need! You can count on me."// Terra's voice radiates excitement, and you can already see robots on their way with building materials.\u000a\u000a[[//"Awesome, thanks."//|Colony Center]]\u000a\u000a<<else>>//"I've got just what you need, but my minions have no power. In fact, it's dark at the lab right now."// Guess the jammer will have to wait until the colony has power to spare again.\u000a\u000a[[//"Oh, sorry Terra."//|Colony Center]]\u000a\u000a<<endif>>\u000a\u000a
 p877
 sg23
 VBuild Signal Jammer
@@ -2873,9 +2873,9 @@ g26
 ((I2014
 I6
 I21
-I14
-I3
+I20
 I49
+I52
 I5
 I172
 I1
@@ -2963,7 +2963,7 @@ Tiddler
 p905
 (dp906
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $spaceport to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO FLAVORTEXT OF SPACEPORT CONSTRUCTION BEGINNING\u000a\u000a[[Okay|Hub]]
+V<<if $generator>><<set $spaceport to 1>><<set $generator -= 1>>//"Way ahead of you. "// Before you can blink several robots are already underway assembling alloys.\u000a\u000a[[//"Wow. Thanks Terra."//|Hub]]\u000a\u000a<<else>>//"I don't have any robots to spare. I can't help you without more power."// Guess the tower will have to wait until the colony has power to spare again.\u000a\u000a[[//"Understood."//|Hub]]\u000a\u000a<<endif>>\u000a\u000a
 p907
 sg23
 VBuild Spaceport
@@ -2973,9 +2973,9 @@ g26
 ((I2014
 I6
 I21
-I13
-I56
-I53
+I20
+I52
+I33
 I5
 I172
 I1
@@ -3455,15 +3455,15 @@ g14
 I00
 sg15
 (lp1054
-F1987.0
-aF1176.25
+F1992.0
+aF1160.0
 asg17
 (itiddlywiki
 Tiddler
 p1055
 (dp1056
 g21
-V<<if $doom_disease < 3 and $doom_disease > 0>>[[Treat Disease]]<<endif>>\u000a<<if $doom_disease < 4 and $doom_disease > 0 and $beast_captured and $cure is 0>>[[Extract Cure]] <<endif>>\u000a<<if $doom_disease < 4 and $doom_disease > 0 and visited("Strange Fungus") and $cure is 0>>[[Research Fungus]]<<endif>>\u000a<<if $cure > 3>> [[Cure Disease]] <<endif>>\u000a<<if $curious_plant>> [[Research Curious Plant]]<<endif>>\u000a<<if $genome > 1>><<if $doom_disease > 0 or visited("Research Fungus")>> [[Synthesize Hybrid Genome]]<<endif>><<endif>>\u000a[[Robotics Lab]]\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE ALL THE AVAILABLE OPTIONS INSTEAD OF JUST HAVING OPTIONS APPEAR OUT OF NOWHERE\u000a\u000a<<if $cure is 1>>TODO DESCRIBE CURE BEING CREATED<<endif>>\u000a<<if $cure is 2>>TODO DESCRIBE MORE PROGRESS ON CURE<<endif>>\u000a<<if $cure is 3>>TODO DESCRIBE EVEN MORE PROGRESS ON CURE<<endif>>\u000a<<if $genome is 1>>TODO DESCRIBE GENOME BEING RESEARCHED<<endif>>\u000a<<if $hybrid_genome is 1>> TODO DESCRIBE MAD SCIENCE/GENE SPLICING<<endif>>
+V<<if $doom_disease < 3 and $doom_disease > 0>>[[Treat Disease]]<<endif>>\u000a<<if $doom_disease < 4 and $doom_disease > 0 and $beast_captured and $cure is 0>>[[Extract Cure]] <<endif>>\u000a<<if $doom_disease < 4 and $doom_disease > 0 and visited("Strange Fungus") and $cure is 0>>[[Research Fungus]]<<endif>>\u000a<<if $cure > 3>> [[Cure Disease]] <<endif>>\u000a<<if $curious_plant>> [[Research Curious Plant]]<<endif>>\u000a<<if $genome > 1>><<if $doom_disease > 0 or visited("Research Fungus")>> [[Synthesize Hybrid Genome]]<<endif>><<endif>>\u000a[[Robotics Lab]]\u000a[[Power Plant]]\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE ALL THE AVAILABLE OPTIONS INSTEAD OF JUST HAVING OPTIONS APPEAR OUT OF NOWHERE\u000a\u000a<<if $cure is 1>>TODO DESCRIBE CURE BEING CREATED<<endif>>\u000a<<if $cure is 2>>TODO DESCRIBE MORE PROGRESS ON CURE<<endif>>\u000a<<if $cure is 3>>TODO DESCRIBE EVEN MORE PROGRESS ON CURE<<endif>>\u000a<<if $genome is 1>>TODO DESCRIBE GENOME BEING RESEARCHED<<endif>>\u000a<<if $hybrid_genome is 1>> TODO DESCRIBE MAD SCIENCE/GENE SPLICING<<endif>>
 p1057
 sg23
 VBio Lab
@@ -3473,9 +3473,9 @@ g26
 ((I2014
 I6
 I21
-I14
-I9
-I6
+I21
+I31
+I16
 I5
 I172
 I1
@@ -3855,8 +3855,8 @@ g14
 I00
 sg15
 (lp1174
-F2118.25
-aF1020.0
+F2142.0
+aF1026.25
 asg17
 (itiddlywiki
 Tiddler
