@@ -843,7 +843,7 @@ Tiddler
 p265
 (dp266
 g21
-V<<if visited() is 1>>\u000aFirst time visiting Mountains\u000a<<set $visited_mountains to 1>>\u000a<<endif>>\u000a<<if $flight_suit > 1>>\u000a<<nobr>><<if visited("Cave")>>* [[Cave]]<<elseif $mountain_mapped > 1>>* [[Drill Cave]]<<endif>><<endnobr>>\u000a* [[Valley]]\u000a* [[North of Colony]]\u000a<<else>><<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>>\u000a[[Go Back|previous()]]\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
+V<<if visited() is 1>><<set $visited_mountains to 1>>You approach the mountainous areas that you saw from the colony. The rock face here would be an excellent place to prospect for minerals, but the climb is rather steep. Even if you could move around, it would take weeks to prospect the whole mountain.\u000a\u000a<<else>>You <<if $flight_suit < 2>>try to <<endif>>climb the mountains.\u000a\u000a<<endif>><<if $flight_suit > 1>>With your flight suit, you are able to move around easily.\u000a\u000a<<if visited("Cave")>>[[Climb up to the cave.|Cave]]<<elseif $mountain_mapped > 1>>[[Dig a cave where the robots found ores.|Drill Cave]]<<endif>>\u000a\u000a[[Head south, towards the colony.|North of Colony]]\u000a\u000a[[Head east into the valley.|Valley]]\u000a\u000a<<else>><<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>>Unfortunately, the climb is too steep for you. Surveyors normally used flight suits to move easier on dangerous slopes, but the ship didn't bring any. Lucy may be able to help you out.\u000a\u000a[[Turn around and head back.|previous()]]\u000a\u000a<<endif>>
 p267
 sg23
 VMountains
@@ -853,9 +853,9 @@ g26
 ((I2014
 I6
 I22
-I2
-I59
-I5
+I12
+I25
+I6
 I6
 I173
 I1
@@ -1143,7 +1143,7 @@ Tiddler
 p355
 (dp356
 g21
-V<<nobr>>\u000a<<if visited() is 1>>\u000a<<set $fuel += 3>>\u000aFirst time visiting Caves\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a*[[Mountains]]\u000a<<if $supernova>> *[[Strange Device]]<<endif>>\u000a<<if $supernova is 0>>*[[Dig Deeper]]<<endif>>
+V<<if visited() is 1>><<set $fuel += 3>>Jackpot! You find a cluster of rare metal ores and a cache of fuels. This should make everyone at the colony happy.\u000a\u000a<<else>>You stand in your man-made cave.\u000a\u000a<<endif>> [[Leave the cave, back to the mountains.|Mountains]]\u000a\u000a<<if $supernova>>[[Look at the strange emitter.|Strange Device]]\u000a\u000a<<endif>><<if $supernova is 0>>[[Dig deeper for more materials.|Dig Deeper]]\u000a\u000a<<endif>>
 p357
 sg23
 VCave
@@ -1152,12 +1152,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I11
-I46
-I7
-I5
-I172
+I22
+I12
+I30
+I40
+I6
+I173
 I1
 tp359
 (dp360
@@ -1543,7 +1543,7 @@ Tiddler
 p475
 (dp476
 g21
-V<<if visited() is 1>><<set $visited_hills to 1>>You head deeper into the hills. The wavy terrain extends far and long all the way to the ocean. It would take you weeks to explore everything.. \u000a\u000a<<else>>You travel deeper into the hills.\u000a\u000a<<endif>>[[Head west, back where you came.|Hills]]\u000a\u000a<<if $hills_mapped is 2>>[[Seek and enter the beast den.|Beast Den]]<<endif>>
+V<<if visited() is 1>><<set $visited_hills to 1>>You head deeper into the hills. The wavy terrain extends far and long all the way to the ocean. It would take you weeks to explore everything.\u000a\u000a<<else>>You travel deeper into the hills.\u000a\u000a<<endif>>[[Head west, back where you came.|Hills]]\u000a\u000a<<if $hills_mapped is 2>>[[Seek and enter the beast den.|Beast Den]]<<endif>>
 p477
 sg23
 VDeep Hills
@@ -1554,7 +1554,7 @@ g26
 I6
 I22
 I12
-I9
+I23
 I51
 I6
 I173
@@ -3205,7 +3205,7 @@ g14
 I00
 sg15
 (lp979
-F1708.25
+F1709.5
 aF175.0
 asg17
 (itiddlywiki
@@ -3213,7 +3213,7 @@ Tiddler
 p980
 (dp981
 g21
-V<<if $fusion_gen and $isotope is 0 and $ftl_fuel is 0>> <<set $isotope to 1>><<endif>>\u000a\u000a[[Cave]]
+VThis room contains a strange emitter, an upside down dome wrapped in thick coils connected to a terminal. The terminal glows with life, but you can't seem to decipher it. The room is sweltering, you don't want to stay here long. Your hand scanner is still picking up strange solar emissions coming from the dome.\u000a\u000aDouble checking your hand scanner, you notice it is detecting FTL isotopes in the room! With a fusion generator you could refine these into fuel for the Heroism. <<if $fusion_gen and $isotope is 0 and $ftl_fuel is 0>><<set $isotope to 1>>You pull out a receptacle and use your hand scanner to try and sample the isotopes with a probe. Before too long you've got a workable amount of isotopes.<<endif>>\u000a\u000a[[Head back into the cave.|Cave]]
 p982
 sg23
 VStrange Device
@@ -3222,12 +3222,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I11
-I43
+I22
+I12
+I44
+I25
 I6
-I5
-I172
+I173
 I1
 tp984
 (dp985
@@ -3263,7 +3263,7 @@ Tiddler
 p995
 (dp996
 g21
-V<<if $drill>>\u000a<<set $drill -= 1>>\u000a<<set $caverandom to random(1,12)>>\u000a<<if $caverandom is 1>> <<set $supernova to 1>>Oh crap. <<endif>>\u000a<<if $caverandom > 1 and $caverandom < 6>>Nothing. <<endif>>\u000a<<if $caverandom > 5>> <<set $fuel += 3>> Rich fuel deposits!<<endif>>\u000a<<endif>>\u000a[[Go Back|Cave]]
+V<<if $drill>><<set $drill -= 1>>You set your drill into the rock face and let it run. The work goes by quickly, in a few minutes you've created a substantial branch of the cave.\u000a\u000a<<set $caverandom to random(1,12)>><<if $caverandom is 1>> <<set $supernova to 1>>You tunnel into a man-made room. Inside is a strange contraption, an upside down dome wrapped in thick coils connected to a terminal. As the rock settles, the terminal suddenly springs to life, and the room seems to heat up tremendously. Your hand scanner starts picking up strange solar emissions coming from the dome.\u000a\u000aYou speak into the radio. //"Uh, I found something weird in the mountains. Some weird technology."// You describe what you see.\u000a\u000aLya's voice responds. //"Buried technology? Strange. I'll see what I can dig up on that."// \u000a\u000a[[Okay.|Cave]]\u000a\u000a<<endif>><<if $caverandom > 1 and $caverandom < 6>>Your drilling doesn't turn up anything useful.\u000a\u000a[[Darn.|Cave]]\u000a\u000a<<endif>><<if $caverandom > 5>><<set $fuel += 3>>You dig up a cluster of fuels embedded in the rock. \u000a\u000a[[Awesome!|Cave]]\u000a\u000a<<endif>><<else>>You set your drill into the rock face, but it doesn't run. Your drill needs to be charged at the power plant first.\u000a\u000a[[Okay.|Cave]]\u000a\u000a<<endif>>\u000a
 p997
 sg23
 VDig Deeper
@@ -3272,12 +3272,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I11
-I57
-I21
-I5
-I172
+I22
+I12
+I40
+I3
+I6
+I173
 I1
 tp999
 (dp1000
@@ -3363,7 +3363,7 @@ Tiddler
 p1025
 (dp1026
 g21
-V<<if $drill > 0>>\u000a<<set $drill -= 1>>\u000a[[Cave]]\u000a<<else>>\u000a[[Mountains]]\u000a<<endif>>
+V<<if $drill > 0>><<set $drill -= 1>>You set your drill into the rock face and let it run. The work goes by quickly, in a few minutes you've created a substantial tunnel in the rock face.\u000a\u000a[[Continue.|Cave]]\u000a\u000a<<else>>You set your drill into the rock face, but it doesn't run. Your drill needs to be charged at the power plant first.\u000a\u000a[[Okay.|Mountains]]\u000a\u000a<<endif>>
 p1027
 sg23
 VDrill Cave
@@ -3372,12 +3372,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I11
-I49
+I22
 I12
-I5
-I172
+I27
+I49
+I6
+I173
 I1
 tp1029
 (dp1030
