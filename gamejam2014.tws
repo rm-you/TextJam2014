@@ -343,7 +343,7 @@ Tiddler
 p115
 (dp116
 g21
-VYou climb into the pod. <<if visited("Delay Pod")>>This pod looks rough and uncomfortable. You hope it will hold together for the journey.<<else>>The pod looks clean and hums to life as you hop in, ready to take you to the colony.<<endif>>\u000a\u000aYou set the radio and broadcast your status. //"Pod 126BB-M to Heroism, pod is ready to launch."//\u000a\u000a<<if visited("Delay Pod") and visited("StartSlow")>>//"This is Captain Scott, pod 126BB-M, about damn time. You're clear, launch."//<<else>>//"This is Captain Scott, pod 126BB-M, your launch window is clear."//<<endif>>\u000a\u000a[[Launch the pod and set course for the center of the colony .|Launch]]\u000a<<nobr>>\u000a<<set $fuel to 3>>\u000a<<set $generator to 1>>\u000a<<set $doom_xenocide to 16>>\u000a<<set $doom_beasts to 20>>\u000a<<set $doom_disease to 12>>\u000a<<set $doom_supernova to 6>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endnobr>>\u000a
+VYou climb into the pod. <<if visited("Delay Pod")>>This pod looks rough and uncomfortable. You hope it will hold together for the journey.<<else>>The pod looks clean and hums to life as you hop in, ready to take you to the colony.<<endif>>\u000a\u000aYou set the radio and broadcast your status. //"Pod 126BB-M to Heroism, pod is ready to launch."//\u000a\u000a<<if visited("Delay Pod") and visited("StartSlow")>>//"This is Captain Scott, pod 126BB-M, about damn time. You're clear, launch."//<<else>>//"This is Captain Scott, pod 126BB-M, your launch window is clear."//<<endif>>\u000a\u000a[[Launch the pod and set course for the center of the colony .|Launch]]\u000a<<nobr>>\u000a<<set $fuel to 3>>\u000a<<set $generator to 1>>\u000a<<set $doom_xenocide to 16>>\u000a<<set $doom_beasts to 22>>\u000a<<set $doom_disease to 14>>\u000a<<set $doom_supernova to 5>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endnobr>>\u000a
 p117
 sg23
 VDrop Pod
@@ -352,12 +352,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I17
-I13
-I10
-I5
-I172
+I22
+I3
+I9
+I44
+I6
+I173
 I1
 tp119
 (dp120
