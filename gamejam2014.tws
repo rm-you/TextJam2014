@@ -393,7 +393,7 @@ Tiddler
 p130
 (dp131
 g21
-V<<if visited() is 1>>Stepping out of the pod, you are nearly overwhelmed by the sights of the colony and the landscape. Twin suns shine brilliantly in the crisp blue sky overhead. Tall mountains line the horizon to the north, and all around you are clean prefabricated structures. To the east is a very distinct building, the power plant of the colony, where you expect to find your technician friend Soto.\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000aFrom the south approach a trio of robots, likely here to retrieve the pod. The ships roboticist Terra is probably manging them right now from the robotics lab. Anything menial has to be handled by the robots, since there's only seven of us here. You will probably need to stop by sooner rather than later..\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000aYou hear a belching noise come from the north, and a belch of smoke erupts from the closest prefab to the north. You surmise it to be the colony's manufacturing. Lucy's probably trying to get a head start on the industrial needs of the colony. She's hard to get along with, but if you need anything fabricated she's the only one who can do it.\u000a\u000a[[Head north to the factory.|Factory]]\u000a\u000aYour radio sounds out a familiar voice. //"Pleasant landing, I hope? This is Lya, come see me at the colony center. It's the big dome-shaped building west of where you landed." // Lya's the ship administrator, she's probably got your task in mind already.\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<else>>This is the direct center of the colony, a flat clearing ideal for receiving pods and shipments from the Heroism. There's a few piles of supplies lying around and paths to every other part of the colony. The skies are clear. Nothing will arrive anytime soon.\u000a\u000a<<if $comm_array > 1 and $refinery > 1 and $spaceport is 0>>There's a pile of alloys here and an unattached link to the colony center. This would be an ideal location to build the spaceport to get back to the Heroism.\u000a\u000a[[//"Terra, have the bots start assembling the spaceport."//|Build Spaceport]]<<endif>><<if $spaceport is 1>>Robots are hard at work in this area, laying out sheets of alloy and fusing them together. The incomplete launch tower grows taller by the minute. The colony should be ready to launch in no time.\u000a\u000a<<endif>><<if $spaceport is 2>>The colony's spaceport is here, a flat metal base with a launch tower, ready to launch cargo and people up to the Heroism.\u000a\u000a<<endif>>[[Head north to the factory.|Factory]]\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<if $spaceport > 1>> *[[Enter the spaceport.|Spaceport]] <<endif>>\u000a<<endif>>
+V<<if visited() is 1>>Stepping out of the pod, you are nearly overwhelmed by the sights of the colony and the landscape. Twin suns shine brilliantly in the crisp blue sky overhead. Tall mountains line the horizon to the north, and all around you are clean prefabricated structures. To the east is a very distinct building, the power plant of the colony, where you expect to find your technician friend Soto.\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000aFrom the south approach a trio of robots, likely here to retrieve the pod. The ships roboticist Terra is probably manging them right now from the robotics lab. Anything menial has to be handled by the robots, since there's only seven people managing this entire colony right now. You will probably need to stop by sooner rather than later..\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000aYou hear a belching noise come from the north, and a belch of smoke erupts from the closest prefab to the north. You surmise it to be the colony's manufacturing. Lucy's probably trying to get a head start on the industrial needs of the colony. She's hard to get along with, but if you need anything fabricated she's the only one who can do it.\u000a\u000a[[Head north to the factory.|Factory]]\u000a\u000aYour radio sounds out a familiar voice. //"Pleasant landing, I hope? This is Lya, come see me at the colony center. It's the big dome-shaped building west of where you landed." // You recognize administrator Lya's voice, and judging by her tone she's probably got your task in mind already.\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<else>>This is the direct center of the colony, a flat clearing ideal for receiving pods and shipments from the Heroism. There's a few piles of supplies lying around and paths to every other part of the colony. The skies are clear. Nothing will arrive anytime soon.\u000a\u000a<<if $comm_array > 1 and $refinery > 1 and $spaceport is 0>>There's a pile of alloys here and an unattached link to the colony center. This would be an ideal location to build the spaceport to get back to the Heroism.\u000a\u000a[[//"Terra, have the bots start assembling the spaceport."//|Build Spaceport]]<<endif>><<if $spaceport is 1>>Robots are hard at work in this area, laying out sheets of alloy and fusing them together. The incomplete launch tower grows taller by the minute. The colony should be ready to launch in no time.\u000a\u000a<<endif>><<if $spaceport is 2>>The colony's spaceport is here, a flat metal base with a launch tower, ready to launch cargo and people up to the Heroism.\u000a\u000a<<endif>>[[Head north to the factory.|Factory]]\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<if $spaceport > 1>> *[[Enter the spaceport.|Spaceport]] <<endif>>\u000a<<endif>>
 p132
 sg23
 VHub
@@ -404,8 +404,8 @@ g26
 I6
 I21
 I21
-I5
-I6
+I57
+I54
 I5
 I172
 I1
@@ -493,7 +493,7 @@ Tiddler
 p160
 (dp161
 g21
-VTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE ALL THE AVAILABLE OPTIONS INSTEAD OF JUST HAVING OPTIONS APPEAR OUT OF NOWHERE\u000a\u000a<<if $refinery is 1>> TODO DESCRIBE REFINERY BEING CONSTRUCTED<<endif>>\u000a\u000a<<if $refinery is 2>> TODO DESCRIBE COMPLETED REFINERY<<endif>>\u000a\u000a<<if $flight_suit is 1>> TODO DESCRIBE FLIGHT SUIT BEING BUILT<<endif>>\u000a\u000a<<if $boat is 1>> TODO DESCRIBE BOAT BEING BUILT<<endif>>\u000a\u000a<<if $stasis_net is 1>> TODO DESCRIBE NET BEING BUILT<<endif>>\u000a\u000a<<if $bomb is 1>> TODO DESCRIBE BOMB BEING BUILT<<endif>>\u000a\u000a<<nobr>>\u000a<<if $need_flight_suit>>\u000a[[Flight Suit]]\u000a<<endif>>\u000a<<endnobr>>\u000a<<nobr>>\u000a<<if $need_boat>>\u000a[[Boat]]\u000a<<endif>>\u000a<<if visited("Island") and $refinery and $bomb is 0>>\u000a[[Bomb]]\u000a<<endif>>\u000a<<if visited("Cave") and $refinery is 0>>\u000a[[Build Refinery]]\u000a<<endif>>\u000a<<if visited("Bio Lab") and visited("Beast Den") and $stasis_net is 0>>\u000a[[Build Stasis Net]]\u000a<<endif>>\u000a<<endnobr>>\u000a* [[North of Colony]]\u000a* [[Hub]]
+V<<if visited() is 1>>You approach the factory, a set of industrial appliances which are designed to collectively fabricate anything and everything that the colony needs. Lucy, the colony's engineer and caretaker of this equipment, stands with arms folded in front of a running 3D printer. She doesn't appear to notice you.\u000a\u000a<<else>>You stand outside of the factory, a row of industry which produces everything for the colony. Lucy is standing here, <<if $flight_suit is 1>>piecing together parts of an outfit together with thin metal wings.<<elseif $boat is 1>>watching a 3D printer exude the sides to a boat.<<elseif $stasis_net is 1>>working a thin harness through a lithomagnet.<<elseif $bomb is 1>>monitoring a centrifuge as it spins at dizzying speeds.<<else>>assembling a robot for farming work.<<endif>>\u000a\u000a<<endif>><<if $refinery is 1>>Robots are hard at work in this area, building up silos and connecting pipes, ideal for processing complex ores and fuels found on the planet.\u000a\u000a<<endif>><<if $refinery is 2>>Off to the side is the industrial smelter. It flows with molten metal, extracting waste material and processing them into usable alloys.\u000a\u000a<<endif>><<if $need_flight_suit and $flight_suit is 0>>Lucy should be able to help you out getting to high and low places.\u000a\u000a[[//"Lucy, I need a flight suit."//|Flight Suit]]\u000a\u000a<<endif>><<if $need_boat and $boat is 0>>Making a portable boat to get to that island should be no problem for Lucy.\u000a\u000a[[//"Lucy, I need a boat."//|Boat]]\u000a\u000a<<endif>><<if visited("Island") and $refinery and $bomb is 0>>If anyone can blow up that tower, Lucy can.\u000a\u000a[[//"Lucy, I need a bomb. Something to topple a tower."//|Bomb]]\u000a\u000a<<endif>><<if visited("Bio Lab") and visited("Beast Den") and $stasis_net is 0>>Capturing a wild animal will be no easy task. Lucy should be able to build something to help you out. \u000a\u000a[[//"Lucy, I need something to capture a live animal."//|Build Stasis Net]]\u000a\u000a<<endif>><<if visited("Cave") and $refinery is 0>>The rare ores on this planet take a lot of energy to be processed into tougher alloys. Having the robots build a new smelter here will solve that.\u000a\u000a[[//"Terra, send the robots to build a smelter at the factory, please. Ask Lucy for the specs."//|Build Refinery]]\u000a\u000a<<endif>><<if visited() is 1>>The path north leads out of the colony, toward the mountains.\u000a\u000a<<endif>>[[Leave the colony, heading north toward the mountains.|North of Colony]]\u000a\u000a<<if visited() is 1>>The path south leads back to the landing area and the center of the colony.\u000a\u000a<<endif>>[[Head south to the center of the colony|Hub]]
 p162
 sg23
 VFactory
@@ -502,12 +502,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I25
-I39
-I5
-I172
+I22
+I0
+I35
+I52
+I6
+I173
 I1
 tp164
 (dp165
@@ -582,7 +582,7 @@ tp186
 Rp187
 sbsa(dp188
 g14
-I01
+I00
 sg15
 (lp189
 F1713.0
@@ -893,7 +893,7 @@ Tiddler
 p280
 (dp281
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $flight_suit to 1>>\u000a<<set $need_flight_suit to 0>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Okay|Factory]]
+V<<if $generator>><<set $flight_suit to 1>><<set $generator -= 1>>Lucy whirls around to face you. //"A flight suit? Seriously?"//  She scowls at you.\u000a\u000a//"You can't do it then?"//\u000a\u000aShe scoffs. //"Course I can piece one together, easy. But you owe me one."// She waves you off.\u000a\u000a[[//"Thanks."//|Factory]]\u000a\u000a<<else>>//"Not now. I've got a hundred farming robots to piece together by hand because there's not enough damn power to run the assembler. Or do you want us to starve?"// She waves you off.\u000a\u000a[[Leave.|Factory]]\u000a\u000a<<endif>>
 p282
 sg23
 VFlight Suit
@@ -902,12 +902,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I5
-I26
-I5
-I172
+I22
+I0
+I35
+I12
+I6
+I173
 I1
 tp284
 (dp285
@@ -943,7 +943,7 @@ Tiddler
 p295
 (dp296
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $boat to 1>>\u000a<<set $generator -= 1>>\u000a<<set $need_boat to 0>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Factory]]
+V<<if $generator>><<set $boat to 1>><<set $generator -= 1>>//"A boat? How big?"//  \u000a\u000a//"Big enough for me."//\u000a\u000aShe rubs her chin for a moment. //"Okay. I can make you a boat. Come back later."// She waves you off.\u000a\u000a[[//"Thanks."//|Factory]]\u000a\u000a<<else>>//"Not now. I've got a hundred farming robots to piece together by hand because there's not enough damn power to run the assembler. Go do your job and survey something instead of bothering me."// She waves you off.\u000a\u000a[[Leave.|Factory]]\u000a\u000a<<endif>>
 p297
 sg23
 VBoat
@@ -952,12 +952,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I4
-I11
-I5
-I172
+I22
+I0
+I19
+I27
+I6
+I173
 I1
 tp299
 (dp300
@@ -2563,7 +2563,7 @@ Tiddler
 p785
 (dp786
 g21
-V<<if $generator>><<set $weather_tower to 1>><<set $generator -= 1>>//"Oooh, yes, that sounds like fun! "// Terra's voice radiates excitement, and you can already see robots on their way with building materials.\u000a\u000a[[//"Thanks."//|Colony Center]]\u000a\u000a<<else>>//"I'd love to, but my minions have no power. It's so quiet right now."// Guess the tower will have to wait until the colony has power to spare again.\u000a\u000a[[//"Oh, sorry Terra."//|Colony Center]]\u000a\u000a<<endif>>\u000a\u000a
+V<<if $generator>><<set $weather_tower to 1>><<set $generator -= 1>>//"Oooh, yes, that sounds like fun!"// Terra's voice radiates excitement, and you can already see robots on their way with building materials.\u000a\u000a[[//"Thanks."//|Colony Center]]\u000a\u000a<<else>>//"I'd love to, but my minions have no power. It's so quiet right now."// Guess the tower will have to wait until the colony has power to spare again.\u000a\u000a[[//"Oh, sorry Terra."//|Colony Center]]\u000a\u000a<<endif>>\u000a\u000a
 p787
 sg23
 VBuild Weather Tower
@@ -2573,9 +2573,9 @@ g26
 ((I2014
 I6
 I21
-I20
-I41
-I59
+I23
+I56
+I7
 I5
 I172
 I1
@@ -2613,7 +2613,7 @@ Tiddler
 p800
 (dp801
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $refinery to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a[[Return|Factory]]
+V<<if $generator>><<set $refinery to 1>><<set $generator -= 1>>//"Talk to Lucy? Okay..."// Terra's voice trails off into rare disappointment. Moments later, you see robots on their way with building materials.\u000a\u000a[[//"Thanks."//|Factory]]\u000a\u000a<<else>>//"I'd love to, but my minions have no power. Darn."// Guess the refinery will have to wait until the colony has power to spare again.\u000a\u000a[[//"Darn indeed."//|Factory]]\u000a\u000a<<endif>>
 p802
 sg23
 VBuild Refinery
@@ -2622,12 +2622,12 @@ sg25
 g26
 ((I2014
 I6
-I21
+I22
 I0
-I40
-I38
-I5
-I172
+I31
+I2
+I6
+I173
 I1
 tp804
 (dp805
@@ -2963,7 +2963,7 @@ Tiddler
 p905
 (dp906
 g21
-V<<if $generator>><<set $spaceport to 1>><<set $generator -= 1>>//"Way ahead of you. "// Before you can blink several robots are already underway assembling alloys.\u000a\u000a[[//"Wow. Thanks Terra."//|Hub]]\u000a\u000a<<else>>//"I don't have any robots to spare. I can't help you without more power."// Guess the tower will have to wait until the colony has power to spare again.\u000a\u000a[[//"Understood."//|Hub]]\u000a\u000a<<endif>>\u000a\u000a
+V<<if $generator>><<set $spaceport to 1>><<set $generator -= 1>>//"Way ahead of you."// Before you can blink several robots are already underway assembling alloys.\u000a\u000a[[//"Wow. Thanks Terra."//|Hub]]\u000a\u000a<<else>>//"I don't have any robots to spare. I can't help you without more power."// Guess the tower will have to wait until the colony has power to spare again.\u000a\u000a[[//"Understood."//|Hub]]\u000a\u000a<<endif>>\u000a\u000a
 p907
 sg23
 VBuild Spaceport
@@ -2973,9 +2973,9 @@ g26
 ((I2014
 I6
 I21
-I20
-I52
-I33
+I23
+I56
+I12
 I5
 I172
 I1
@@ -3813,7 +3813,7 @@ Tiddler
 p1160
 (dp1161
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $stasis_net to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Factory]]
+V<<if $generator>><<set $stasis_net to 1>><<set $generator -= 1>>Lucy turns to you and folds her arms. //"Oh do you? You looking to capture one of those beasts? I think I can make just what you need."//  \u000a\u000a[[//"Thanks."//|Factory]]\u000a\u000a<<else>>//"Not now. I've got a hundred farming robots to piece together by hand because there's not enough damn power to run the assembler. I bet it's your fucking fault too."// She flicks you off. Best to leave her alone for now.\u000a\u000a[[Leave.|Factory]]\u000a\u000a<<endif>>
 p1162
 sg23
 VBuild Stasis Net
@@ -3822,12 +3822,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I4
-I18
-I5
-I172
+I22
+I0
+I24
+I8
+I6
+I173
 I1
 tp1164
 (dp1165
@@ -4063,7 +4063,7 @@ Tiddler
 p1235
 (dp1236
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $bomb to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Factory]]
+V<<if $generator>><<set $bomb to 1>><<set $generator -= 1>>Lucy turns to you, her eyes widening. //"A what?"//  \u000a\u000aYou explain the situation to her with the island. A rare smile crosses Lucy's face.\u000a\u000a//"Oh, you want a bomb? I'll give you a bomb. I'll give you a helluva bomb. You'll like this."// She waves you off. \u000a\u000a[[//"Thanks."//|Factory]]\u000a\u000a<<else>>//"Not now. I've got a hundred farming robots to piece together by hand because there's not enough damn power to run the assembler. Go talk to Soto first."// She waves you off.\u000a\u000a[[Leave.|Factory]]\u000a\u000a<<endif>>
 p1237
 sg23
 VBomb
@@ -4072,12 +4072,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I4
-I4
-I5
-I172
+I22
+I0
+I28
+I11
+I6
+I173
 I1
 tp1239
 (dp1240
