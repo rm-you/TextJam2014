@@ -443,7 +443,7 @@ Tiddler
 p145
 (dp146
 g21
-V<<if visited() is 1>>You walk up to the distinct, dome shaped structure that is the colony center. This structure is where the crew eats and sleeps, and in the future will be expanded to house the colonists. It could also be considered the colony's headquarters.\u000a\u000aLya is standing outside, waiting for you.\u000a\u000a//"Safe trip, I hope."// Lya begins. //"There's a lot to do, so I'll be brief. The colony's coming up a bit short on supplies, thanks to our detour. We're okay on food and prefabs but we're gonna run out of fuel soon. Do your job and survey what's around us, and keep an eye out for anything to solve our energy problem."//\u000a\u000a[[//"Sounds good. Those mountains to the north are probably a good place to look."//|CCReply1]]\u000a<<if visited("Mountains") or visited("Forest") or visited("Hills") >>[[//"Already taken a look around. I'll have a report ready soon."//|CCReply2]]<<endif>><<else>><<if visited() is 2>>Lya nods. //"I'll be in touch via radio."// She heads into the dome-shaped structure, leaving you alone. \u000a\u000a<<endif>>You stand outside of the colony center, a clean dome shaped structure which houses both crew quarters and the cafeteria. <<if $bio_lab < 2 and $spaceport < 2>>Lya, Dwayne and Inez are all inside, running the colony, keeping tabs on the crew's health, and watching the skies.<<elseif $bio_lab < 2>>Lya and Inez are inside, running the colony and keeping tabs on the crew's health.<<elseif $spareport < 2>>Lya and Dwayne are inside, running the colony and watching the sky.<<else>>Lya is inside, running the colony.<<endif>> \u000a\u000a<<if $weather_tower is 1>>Robots are hard at work in this area, building up a spire attached to the colony center. The tower seems to grow taller every time you blink.\u000a\u000a<<endif>><<if $weather_tower is 2>>A tall metal spire protudes from the dome, sampling the atomsphere. This weather tower will help the colony predict any inclement weather in the area.\u000a\u000a<<endif>><<if $comm_array is 1>>Robots are hard at work on the dome, running reinforced rods on the roof to support sensitive communications equipment. A pair of robots appear to be fine tuning the signal of the equipment, in preparation to for sending and receiving signals from space. The uplink looks like it's coming together nicely.\u000a\u000a<<endif>><<if $comm_array is 2>> Large antennae stick out from the dome, supported by metal rods. These antennae enable two-way communication with the Heroism. <<if $jammer is 2>>In addition, a large satellite dish rests on top, pointed at the ominous island south of the colony in an attempt to suppress it's signal.<<endif>>\u000a\u000a<<endif>><<if $jammer is 1>> Robots are hard at work modifying the communications antennae. It looks like they're tripling the number of antennae, as well as adding on a large dish, aimed at the ominous island south of the colony.\u000a\u000a<<endif>><<if $comm_array is 0>>When you are ready, let Lya know she can work on rebuilding communications.\u000a\u000a<<if visited("Build Communications Array")>>[[//"Lya, reminding you that I'm finished. Go ahead and fix up communications."//|Build Communications Array]]<<else>>[[//"Lya, I'm finished. Go ahead and fix up communications."//|Build Communications Array]]<<endif>>\u000a\u000a<<endif>><<if $comm_array is 2 and visited("Island") and $jammer is 0>>The signal that island is broadcasting definitely needs to stop. The robots need to modify the comm system to jam that signal as soon as possible.\u000a\u000a[[//"Terra, send the robots to upgrade the comm system. I need it to jam that signal coming from the island south."//|Build Signal Jammer]]\u000a\u000a<<endif>><<if $visited_uncalm_ocean and $weather_tower is 0>>Not knowing the weather makes it difficult to travel on these alien waters. Having the robots build a weather station here will solve that. \u000a\u000a[[//"Terra, send the robots to build a weather station, please."//|Build Weather Tower]]\u000a\u000a<<endif>>When there's nothing left to do for today, you can sleep inside.\u000a\u000a[[Unwind and go to sleep.|Sleep]]\u000a\u000a<<if visited() is 2>>The path east leads back to the landing area and the center of the colony.\u000a\u000a<<endif>>[[Head east to the center of the colony.|Hub]]\u000a\u000a<<if visited() is 2>>The path west leads out of the colony, towards a wooded area of alien looking trees.\u000a\u000a<<endif>>[[Leave the colony, heading west into the alien forest.|West of Colony]]<<endif>>
+V<<if visited() is 1>>You walk up to the distinct, dome shaped structure that is the colony center. This structure is where the crew eats and sleeps, and in the future will be expanded to house the colonists. It could also be considered the colony's headquarters.\u000a\u000aLya is standing outside, waiting for you.\u000a\u000a//"Safe trip, I hope."// Lya begins. //"There's a lot to do, so I'll be brief. The colony's coming up a bit short on supplies, thanks to our detour. We're okay on food and prefabs but we're gonna run out of fuel soon. Do your job and survey what's around us, and keep an eye out for anything to solve our energy problem."//\u000a\u000a[[//"Sounds good. Those mountains to the north are probably a good place to look."//|CCReply1]]\u000a\u000a<<if visited("Mountains") or visited("Forest") or visited("Hills") >>[[//"Already taken a look around. I'll have a report ready soon."//|CCReply2]]<<endif>><<else>><<if visited() is 2>>Lya nods. //"I'll be in touch via radio."// She heads into the dome-shaped structure, leaving you alone. \u000a\u000a<<endif>>You stand outside of the colony center, a clean dome shaped structure which houses both crew quarters and the cafeteria. <<if $bio_lab < 2 and $spaceport < 2>>Lya, Dwayne and Inez are all inside, running the colony, keeping tabs on the crew's health, and watching the skies.<<elseif $bio_lab < 2>>Lya and Inez are inside, running the colony and keeping tabs on the crew's health.<<elseif $spareport < 2>>Lya and Dwayne are inside, running the colony and watching the sky.<<else>>Lya is inside, running the colony.<<endif>> \u000a\u000a<<if $weather_tower is 1>>Robots are hard at work in this area, building up a spire attached to the colony center. The tower seems to grow taller every time you blink.\u000a\u000a<<endif>><<if $weather_tower is 2>>A tall metal spire protudes from the dome, sampling the atomsphere. This weather tower will help the colony predict any inclement weather in the area.\u000a\u000a<<endif>><<if $comm_array is 1>>Robots are hard at work on the dome, running reinforced rods on the roof to support sensitive communications equipment. A pair of robots appear to be fine tuning the signal of the equipment, in preparation to for sending and receiving signals from space. The uplink looks like it's coming together nicely.\u000a\u000a<<endif>><<if $comm_array is 2>> Large antennae stick out from the dome, supported by metal rods. These antennae enable two-way communication with the Heroism. <<if $jammer is 2>>In addition, a large satellite dish rests on top, pointed at the ominous island south of the colony in an attempt to suppress it's signal.<<endif>>\u000a\u000a<<endif>><<if $jammer is 1>> Robots are hard at work modifying the communications antennae. It looks like they're tripling the number of antennae, as well as adding on a large dish, aimed at the ominous island south of the colony.\u000a\u000a<<endif>><<if $comm_array is 0>>When you are ready, let Lya know she can work on rebuilding communications.\u000a\u000a<<if visited("Build Communications Array")>>[[//"Lya, reminding you that I'm finished. Go ahead and fix up communications."//|Build Communications Array]]<<else>>[[//"Lya, I'm finished. Go ahead and fix up communications."//|Build Communications Array]]<<endif>>\u000a\u000a<<endif>><<if $comm_array is 2 and visited("Island") and $jammer is 0>>The signal that island is broadcasting definitely needs to stop. The robots need to modify the comm system to jam that signal as soon as possible.\u000a\u000a[[//"Terra, send the robots to upgrade the comm system. I need it to jam that signal coming from the island south."//|Build Signal Jammer]]\u000a\u000a<<endif>><<if $visited_uncalm_ocean and $weather_tower is 0>>Not knowing the weather makes it difficult to travel on these alien waters. Having the robots build a weather station here will solve that. \u000a\u000a[[//"Terra, send the robots to build a weather station, please."//|Build Weather Tower]]\u000a\u000a<<endif>>When there's nothing left to do for today, you can sleep inside.\u000a\u000a[[Unwind and go to sleep.|Sleep]]\u000a\u000a<<if visited() is 2>>The path east leads back to the landing area and the center of the colony.\u000a\u000a<<endif>>[[Head east to the center of the colony.|Hub]]\u000a\u000a<<if visited() is 2>>The path west leads out of the colony, towards a wooded area of alien looking trees.\u000a\u000a<<endif>>[[Leave the colony, heading west into the alien forest.|West of Colony]]<<endif>>
 p147
 sg23
 VColony Center
@@ -453,9 +453,9 @@ g26
 ((I2014
 I6
 I22
-I3
-I0
-I56
+I13
+I6
+I35
 I6
 I173
 I1
@@ -593,7 +593,7 @@ Tiddler
 p190
 (dp191
 g21
-V<<if visited() is 1>>You walk up to the robotics lab, a tall opaque prefab that looks like it's trying to resemble a monolith. Inside is Terra, the ship's roboticist. There doesn't appear to be any formal entrance into the facility, probably for safety reasons. Instead, a set of touchscreens rests on the front wall, for passing along locations to survey to Terra.\u000a\u000a<<else>>You stand outside of the robotics, a monolithic structure which supports all robotics functions on the colony. Terra is inside, likely calibrating new robots for production and closely monitoring for any weird drone behavior.\u000a\u000a<<if $mountain_mapped is 1 or $forest_mapped is 1 or $hills_mapped is 1>>Robots are streaming out of the side of the facility, travelling out of the colony to survey lands.\u000a\u000a<<endif>>A set of touchscreens display a rough map of the area and await locational input.\u000a\u000a<<endif>><<if $mountain_mapped is 0 and $visited_mountains>>[[Input the mountains into the touchscreens to be surveyed.|Map Mountain]]\u000a\u000a<<endif>><<if $forest_mapped is 0 and $visited_forest>>[[Input the forest into the touchscreens to be surveyed.|Map Forest]]\u000a\u000a<<endif>><<if $hills_mapped is 0 and $visited_hills>>[[Input the hills into the touchscreens to be surveyed.|Map Hills]]\u000a\u000a<<endif>><<if ($curious_plant or visited("Deep Forest")) and $bio_lab is 0>>If the colony is going to survive, it needs to understand the existing biology of the planet. As noted before, east of here would be a perfect spot for a new structure.\u000a\u000a[["Terra, have the robots start on the bio lab that we discussed earlier."|Construct Bio Lab]]\u000a\u000a<<endif>><<if $bio_lab is 1>>Robots are hard at work in this area, building up a short, thick lab, ideal for understand the flora and fauna of this planet.\u000a\u000a<<endif>><<if visited() is 1>>The path north leads back to the landing area and the center of the colony.\u000a\u000a<<endif>>[[Head north to the center of the colony.|Hub]]\u000a\u000a<<if visited() is 1>>The path south leads out of the colony, towards a clearing with a high view of the planet's murky blue ocean.\u000a\u000a<<endif>>[[Leave the colony, heading south toward the ocean.|South of Colony]]\u000a\u000a<<if $bio_lab > 1>><<if visited("Bio Lab") is 0>>The path east leads to the bio lab, a smooth rectangular building decorated with long windows and lab equipment. \u000a\u000a<<endif>>[[Head east to the bio lab.|Bio Lab]]\u000a\u000a<<endif>>
+V<<if visited() is 1>>You walk up to the robotics lab, a tall opaque prefab that looks like it's trying to resemble a monolith. Inside is Terra, the ship's roboticist. There doesn't appear to be any formal entrance into the facility, probably for safety reasons. Instead, a set of touchscreens rests on the front wall, for passing along locations to survey to Terra.\u000a\u000a<<else>>You stand outside of the robotics, a monolithic structure which supports all robotics functions on the colony. Terra is inside, likely calibrating new robots for production and closely monitoring for any weird drone behavior.\u000a\u000a<<if $mountain_mapped is 1 or $forest_mapped is 1 or $hills_mapped is 1>>Robots are streaming out of the side of the facility, travelling out of the colony to survey lands.\u000a\u000a<<endif>>A set of touchscreens display a rough map of the area and await locational input.\u000a\u000a<<endif>><<if $mountain_mapped is 0 and $visited_mountains>>[[Input the mountains into the touchscreens to be surveyed.|Map Mountain]]\u000a\u000a<<endif>><<if $forest_mapped is 0 and $visited_forest>>[[Input the forest into the touchscreens to be surveyed.|Map Forest]]\u000a\u000a<<endif>><<if $hills_mapped is 0 and $visited_hills>>[[Input the hills into the touchscreens to be surveyed.|Map Hills]]\u000a\u000a<<endif>><<if ($curious_plant or visited("Deep Forest")) and $bio_lab is 0>>If the colony is going to survive, it needs to understand the existing biology of the planet. As noted before, east of here would be a perfect spot for a new structure.\u000a\u000a[["Terra, have the robots start on the bio lab that Inez discussed with you."|Construct Bio Lab]]\u000a\u000a<<endif>><<if $bio_lab is 1>>Robots are hard at work in this area, building up a short, thick lab, ideal for understand the flora and fauna of this planet.\u000a\u000a<<endif>><<if visited() is 1>>The path north leads back to the landing area and the center of the colony.\u000a\u000a<<endif>>[[Head north to the center of the colony.|Hub]]\u000a\u000a<<if visited() is 1>>The path south leads out of the colony, towards a clearing with a high view of the planet's murky blue ocean.\u000a\u000a<<endif>>[[Leave the colony, heading south toward the ocean.|South of Colony]]\u000a\u000a<<if $bio_lab > 1>><<if visited("Bio Lab") is 0>>The path east leads to the bio lab, a smooth rectangular building decorated with long windows and lab equipment. \u000a\u000a<<endif>>[[Head east to the bio lab.|Bio Lab]]\u000a\u000a<<endif>>
 p192
 sg23
 VRobotics Lab
@@ -603,9 +603,9 @@ g26
 ((I2014
 I6
 I22
+I13
 I2
-I45
-I59
+I17
 I6
 I173
 I1
@@ -1443,7 +1443,7 @@ Tiddler
 p445
 (dp446
 g21
-V<<nobr>>\u000a<<set $beast_at_hills to 0>>\u000a<<set $beast_at_mountains to 0>>\u000a<<set $beast_at_ocean_cliffs to 0>>\u000a<<set $beast_at_valley to 0>>\u000a<<set $beast_at_ocean_hills to 0>>\u000a<<set $beast_at_south_of_colony to 0>>\u000a<<set $beast_at_east_of_colony to 0>>\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a\u000a<<set $sleep_count += 1>>\u000a\u000a<<if $doom_disease > 0>>\u000a<<set $doom_disease -= 1>>\u000a<<endif>>\u000a\u000a<<if visited("Destroy Antenna") is 0 and $antenna_fooled is 0>>\u000a<<set $doom_xenocide -= 1>>\u000a<<endif>>\u000a\u000a<<if $supernova is 1>>\u000a<<set $doom_supernova -= 1>>\u000a<<endif>>\u000a\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $doom_beasts -= 2>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a\u000a\u000aYou walk into your room and relax.\u000a\u000a//"Surveyor's log, day <<print $sleep_count>>..."//\u000a\u000aWith the days events wrapped up, you rest your head on your clean cot and think about tomorrow.\u000a\u000a<<if $doom_disease is 0>>[[Fall asleep.|Doom by Disease]]\u000a\u000a<<elseif $doom_beasts <= 0>>[[Fall asleep.|Doom by Beasts]]\u000a\u000a<<elseif $doom_xenocide <= 0>>[[Fall asleep.|Doom by Xenocide]]\u000a\u000a<<elseif $doom_supernova <= 0>>[[Fall asleep.|Doom by Supernova]]\u000a\u000a<<elseif $beast_den_destroyed and $supernova is 0 and $doom_disease < 0 and $gene_therapy>>[[Fall asleep.|Regular Win]]\u000a\u000a<<else>>[[Fall asleep.|Resolve Sleep]]\u000a\u000a<<endif>>\u000a
+V<<nobr>>\u000a<<set $beast_at_hills to 0>>\u000a<<set $beast_at_mountains to 0>>\u000a<<set $beast_at_ocean_cliffs to 0>>\u000a<<set $beast_at_valley to 0>>\u000a<<set $beast_at_ocean_hills to 0>>\u000a<<set $beast_at_south_of_colony to 0>>\u000a<<set $beast_at_east_of_colony to 0>>\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a\u000a<<set $sleep_count += 1>>\u000a\u000a<<if $doom_disease > 0>>\u000a<<set $doom_disease -= 1>>\u000a<<endif>>\u000a\u000a<<if visited("Destroy Antenna") is 0 and $antenna_fooled is 0>>\u000a<<set $doom_xenocide -= 1>>\u000a<<endif>>\u000a\u000a<<if $supernova is 1>>\u000a<<set $doom_supernova -= 1>>\u000a<<endif>>\u000a\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $doom_beasts -= 2>>\u000a<<endif>>\u000a<<endnobr>>You walk into your room and relax.\u000a\u000a//"Surveyor's log, day <<print $sleep_count>>..."//\u000a\u000aWith the days events wrapped up, you rest your head on your clean cot and think about tomorrow.\u000a\u000a<<if $doom_disease is 0>>[[Fall asleep.|Doom by Disease]]\u000a\u000a<<elseif $doom_beasts <= 0>>[[Fall asleep.|Doom by Beasts]]\u000a\u000a<<elseif $doom_xenocide <= 0>>[[Fall asleep.|Doom by Xenocide]]\u000a\u000a<<elseif $doom_supernova <= 0>>[[Fall asleep.|Doom by Supernova]]\u000a\u000a<<elseif $beast_den_destroyed and $supernova is 0 and $doom_disease < 0 and $gene_therapy>>[[Fall asleep.|Regular Win]]\u000a\u000a<<else>>[[Fall asleep.|Resolve Sleep]]\u000a\u000a<<endif>>\u000a
 p447
 sg23
 VSleep
@@ -1453,9 +1453,9 @@ g26
 ((I2014
 I6
 I22
-I4
-I32
-I40
+I12
+I46
+I54
 I6
 I173
 I1
@@ -1543,7 +1543,7 @@ Tiddler
 p475
 (dp476
 g21
-V<<if visited() is 1>><<set $visited_hills to 1>>You head deeper into the hills. The wavy terrain extends far and long all the way to the ocean. It would take you weeks to explore everything.\u000a\u000a<<else>>You travel deeper into the hills.\u000a\u000a<<endif>>[[Head west, back where you came.|Hills]]\u000a\u000a<<if $hills_mapped is 2>>[[Seek and enter the beast den.|Beast Den]]<<endif>>
+V<<if visited() is 1>><<set $visited_hills to 1>>You head deeper into the hills. The wavy terrain extends far and long all the way to the ocean. It would take you weeks to explore everything.\u000a\u000a<<else>>You travel deeper into the hills.\u000a\u000a<<endif>>[[Head west, back where you came from.|Hills]]\u000a\u000a<<if $hills_mapped is 2>>[[Seek and enter the beast den.|Beast Den]]<<endif>>
 p477
 sg23
 VDeep Hills
@@ -1553,9 +1553,9 @@ g26
 ((I2014
 I6
 I22
-I12
-I23
-I51
+I13
+I7
+I37
 I6
 I173
 I1
@@ -2309,7 +2309,7 @@ Tiddler
 p708
 (dp709
 g21
-V<<if $flight_suit > 1>>\u000a<<set $curious_plant to 1>>\u000a<<else>>\u000a<<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>> TODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS\u000a<<endif>>\u000a[[Go Back|Ocean Hills]]
+V<<if $flight_suit > 1>>You climb down and pace the cave. Stick moss covers most of the walls. <<if $curious_plant is 0>>To one side, you notice a plant growing out of the wall with what appear to be strange looking growths along its stem.<<else>>There is nothing else of interest in this cave.<<endif>>\u000a\u000a<<if $curious_plant is 0>>You take a quick scan of the plant with your hand scanner. The plant itself is unknown, but the growths appear to be some other creature, parasitically attached to the plant. Even weirder, several of the growths contain human DNA.\u000a\u000aYou share your findings with the colony, and Lya's voice responds from the radio. //"Human DNA? That doesn't make any sense. What a bizarre finding. Try to bring the plant back with you, we'll want to study it.<<if $bio_lab is 0>> Oh, but we'll need a lab to study it at. Inez. Inez? We've got a strange-- yes, yes. Talk with Terra, tell her what you need.<<endif>>"// \u000a\u000a<<set $curious_plant to 1>>You dig the plant out of the rock and put it in a glass container. The plant looks surprisingly hardy, should be okay for a while.\u000a\u000a<<endif>>[[Climb back out.|Ocean Hills]]\u000a\u000a<<else>><<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>>Unfortunately, the climb down is too steep for you. Surveyors normally used flight suits to get to hard to reach spots, but the ship didn't bring any. Lucy may be able to help you out.\u000a\u000a[[Okay.|Ocean Hills]]\u000a\u000a<<endif>>\u000a\u000a
 p710
 sg23
 VNatural Cave
@@ -2318,12 +2318,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I10
-I10
+I22
+I13
 I5
-I172
+I27
+I6
+I173
 I1
 tp712
 (dp713
@@ -3163,7 +3163,7 @@ Tiddler
 p965
 (dp966
 g21
-VYou gather some of the strange fungus into a glass receptacle.\u000a\u000a[[Okay.|Deep Forest]]
+VYou gather some of the strange fungus into a glass receptacle. You radio your finding back to the colony and prepare to head back.\u000a\u000a[[Okay.|Deep Forest]]
 p967
 sg23
 VStrange Fungus
@@ -3173,9 +3173,9 @@ g26
 ((I2014
 I6
 I22
-I3
-I15
-I43
+I12
+I57
+I52
 I6
 I173
 I1
