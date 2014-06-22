@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-VYou are part of the maintenance crew aboard the //LGDE Heroism//, a colony ship bound for the 1212 Antilae system. You are part of the team responsible for setting up the colony while the majority of the colonists stay in hibernation.\u000a\u000aHowever, something has gone wrong. When you awoke, the ship was not in the 1212 Antilae system, but at an unknown binary star system. Fortunately, the planet you are orbitting happens to be habitable. By the time you finished awakening, the decision to colonize the planet had already been made by the ship's captain.\u000a\u000aYou stumble out of the awakening ward and into the maintenance lockers, where Captain Scott is giving a speech to the crew as they gear up in preparation to head to the planet.\u000a\u000a[[Listen to the captain's speech.|StartSlow]]\u000a[[Suit up.|StartFast]]
+VYou are part of the maintenance crew aboard the //LGDE Heroism//, a colony ship bound for the 1212 Antilae system. You are part of the team responsible for setting up the colony while the majority of the colonists stay in hibernation.\u000a\u000aHowever, something has gone wrong. When you awoke, the ship was not in the 1212 Antilae system, but at an unknown binary star system. Fortunately, the planet you are orbitting happens to be habitable. By the time you finished awakening, the decision to colonize the planet had already been made by the ship's captain.\u000a\u000aYou stumble out of the awakening ward and into the maintenance lockers, where Captain Scott is giving a speech to the crew as they gear up in preparation to head to the planet.\u000a\u000a[[Listen to the captain's speech.|StartSlow]]\u000a\u000a[[Suit up.|StartFast]]
 p22
 sS'title'
 p23
@@ -50,12 +50,12 @@ struct_time
 p26
 ((I2014
 I6
-I21
-I17
-I1
+I22
+I13
+I27
 I48
-I5
-I172
+I6
+I173
 I1
 tp27
 (dp28
@@ -293,7 +293,7 @@ Tiddler
 p100
 (dp101
 g21
-V\u000aAt the far end of the ship is the drop pod hangar. Many large pods, designed for bulk moving colonists, are stacked around, leaving relatively little room to wander around. Most of the personal drop pods have been launched already, but a few still remain, ready to take you to the planet's surface.\u000a\u000aThese pods can only take you to the planet, not back. Once you launch you won't be able to return until the colonists awaken.\u000a\u000a[[Lets go.|Drop Pod]]\u000a[[I should double check my gear.|Delay Pod]]
+V\u000aAt the far end of the ship is the drop pod hangar. Many large pods, designed for bulk moving colonists, are stacked around, leaving relatively little room to wander around. Most of the personal drop pods have been launched already, but a few still remain, ready to take you to the planet's surface.\u000a\u000aThese pods can only take you to the planet, not back. Once you launch you won't be able to return until the colonists awaken.\u000a\u000a[[Lets go.|Drop Pod]]\u000a\u000a[[I should double check my gear.|Delay Pod]]
 p102
 sg23
 VStart4
@@ -302,12 +302,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I16
-I29
-I43
-I5
-I172
+I22
+I13
+I28
+I3
+I6
+I173
 I1
 tp104
 (dp105
@@ -1343,7 +1343,7 @@ Tiddler
 p415
 (dp416
 g21
-V<<if visited() is 1>>\u000aFirst time visiting Beach\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS\u000a<<set $need_boat to 1>>\u000a<<set $visited_uncalm_ocean to 1>>\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000a* [[Ocean Cliffs]]\u000a* [[Forest]]\u000a* [[Ocean]]
+VYou walk along a sandy beach. <<if visited("Destroy Antenna") is 0>>Off in the distant ocean, you can see a far away island with an ominous looking spire at its center.<<endif>>\u000a\u000a<<if visited() is 1>>North of here leads into the forest.\u000a\u000a<<endif>>[[Head north, into the forest.|Forest]]\u000a\u000a<<if visited() is 1>>South of here is the ocean. In order to cross, you'll need a boat. Lucy should be able to make one for you.<<set $need_boat to 1>>\u000a\u000a<<else>><<if $boat > 1>>[[Get in your boat and sail south across the ocean.|Ocean]]<<else>>South of here is the ocean. In order to cross, you'll need a boat.<<endif>>\u000a\u000a<<endif>><<if visited() is 1>>East of here climbs up to the ocean cliffs.\u000a\u000a<<endif>>[[Climb east, heading up to the ocean cliffs.|Ocean Cliffs]]
 p417
 sg23
 VBeach
@@ -1352,12 +1352,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I9
-I53
-I5
-I172
+I22
+I13
+I27
+I40
+I6
+I173
 I1
 tp419
 (dp420
@@ -1643,7 +1643,7 @@ Tiddler
 p505
 (dp506
 g21
-V<<if $weather_tower > 1 and $boat > 1>> \u000a\u000a*[[Beach]]\u000a<<if visited("Destroy Antenna") is 0>>*[[Island]]<<endif>>\u000a\u000a<<else>>\u000a	<<if $boat < 2 and $weather_tower < 2>> \u000aasdf \u000a	<<elseif $boat < 2>> \u000aghjk\u000a	<<elseif $weather_tower < 2>> \u000adfgh \u000a	<<endif>> \u000a[[Go Back|Beach]]\u000a\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
+V<<set $visited_uncalm_ocean to 1>>\u000a\u000a<<if $weather_tower > 1 and $boat > 1>> \u000a\u000a*[[Beach]]\u000a<<if visited("Destroy Antenna") is 0>>*[[Island]]<<endif>>\u000a\u000a<<else>>\u000a	<<if $boat < 2 and $weather_tower < 2>> \u000aasdf \u000a	<<elseif $boat < 2>> \u000aghjk\u000a	<<elseif $weather_tower < 2>> \u000adfgh \u000a	<<endif>> \u000a[[Go Back|Beach]]\u000a\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
 p507
 sg23
 VOcean
@@ -1652,12 +1652,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I12
-I24
-I5
-I172
+I22
+I13
+I18
+I33
+I6
+I173
 I1
 tp509
 (dp510
@@ -1693,7 +1693,7 @@ Tiddler
 p520
 (dp521
 g21
-VA small island at most a kilometer in diameter. In the center sits a shiny, pulsating spire protruding from the ground about a mile high. Your instruments tell you this living spire is the source of the hostile frequencies that you've been picking up.\u000a\u000a<<if visited() is 1>>Examining the spire you notice a biological receptacle on the side. You take a sample. <<endif>>\u000a\u000a<<if $bomb > 1>> [[Destroy Antenna]] <<endif>>\u000a<<if $hybrid_genome > 1 and visited("Upload Hybrid Genome") is 0>>[[Upload Hybrid Genome]]<<endif>>\u000a* [[Ocean]]\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
+VYou land at a small island at most a kilometer in diameter. In the center sits a shiny, pulsating spire protruding from the ground about a mile high. Your instruments tell you this living spire is the source of the hostile frequencies that the animals around the camp have been responding to.\u000a\u000a<<if visited() is 1>>Examining the spire you notice a biological receptacle on the side. You take a sample. <<endif>>\u000a\u000a<<if $bomb > 1>> [[Plant Lucy's bomb and flee the island.|Destroy Antenna]] \u000a\u000a<<endif>><<if $hybrid_genome > 1 and visited("Upload Hybrid Genome") is 0>>[[Put Inez's hybrid into the receptacle.|Upload Hybrid Genome]]\u000a\u000a<<endif>> [[Get back in the boat.|Ocean]]
 p522
 sg23
 VIsland
@@ -1702,12 +1702,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I12
-I49
-I5
-I172
+I22
+I13
+I17
+I24
+I6
+I173
 I1
 tp524
 (dp525
@@ -2411,7 +2411,7 @@ Tiddler
 p739
 (dp740
 g21
-VYou signal an emergency on the radio, robots should be on their way.\u000a\u000aMany hours pass before a team of robots finds your location. They lift you up and carry you out of the forest.\u000a\u000aMost of the day was unfortunately spent waiting. There's not enough time to do anything else, and you are getting tired.\u000a\u000a[[Head to the colony center to recover and go to sleep.|Sleep]]
+VYou signal an emergency on the radio, robots should be on their way.\u000a\u000aMany hours pass. You spend your time documenting the forest. <<if visited() is 1>>You come across some strange growths on the trees that might be worth studying further. You radio back your findings. Lya mentions that Inez could study any samples you bring back, but she needs a lab to work from first. She'll talk with Terra about it.<<endif>>\u000a\u000aEventually, a team of robots finds your location. They lift you up and carry you out of the forest.\u000a\u000aMost of the day was unfortunately spent waiting. There's not enough time to do anything else, and you are getting tired.\u000a\u000a[[Head to the colony center to recover and go to sleep.|Sleep]]
 p741
 sg23
 VRescue
@@ -2421,9 +2421,9 @@ g26
 ((I2014
 I6
 I22
-I4
-I6
-I38
+I13
+I13
+I22
 I6
 I173
 I1
@@ -3963,7 +3963,7 @@ Tiddler
 p1205
 (dp1206
 g21
-V<<set $supernova to 1>>\u000aYou set the charge and leave the island immediately. As you sail away, a fireball erupts from the base of the spire, and it collapses.\u000a\u000a[[Retreat|Ocean]]\u000a\u000aTODO BETTER DESCRIPTION
+V<<set $supernova to 1>>You set the charge and leave the island immediately. As you sail away, a fireball erupts from the base of the spire. The spire collapses soon after.\u000a\u000a[[Sail away.|Ocean]]
 p1207
 sg23
 VDestroy Antenna
@@ -3972,12 +3972,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I12
-I59
-I5
-I172
+I22
+I13
+I9
+I37
+I6
+I173
 I1
 tp1209
 (dp1210
@@ -4013,7 +4013,7 @@ Tiddler
 p1220
 (dp1221
 g21
-V<<if $doom_disease < 0 and visited("Research Fungus") is 0>> <<set $antenna_fooled to 1>><<endif>>\u000aYou insert the spliced genome and hope for the best.\u000a\u000a[[Go Back|Island]]
+V<<if $doom_disease < 0 and visited("Research Fungus") is 0>> <<set $antenna_fooled to 1>><<endif>>You insert the spliced genome and hope for the best.\u000a\u000a[[Okay.|Island]]
 p1222
 sg23
 VUpload Hybrid Genome
@@ -4022,12 +4022,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
+I22
 I13
-I15
-I5
-I172
+I9
+I54
+I6
+I173
 I1
 tp1224
 (dp1225
@@ -4113,7 +4113,7 @@ Tiddler
 p1250
 (dp1251
 g21
-V//"It may not be Jakuta but it's still a habitable planet."// You hear Captain Scott's speech to the crew from behind, but focus on putting on all of your protective gear. Forgetting any small detail could get you killed planetside. Your finish your ensemble with a belt of handy tools and an oxygen tank, just in case.\u000a\u000aAs the captain's speech finishes up, your friend Soto spots you and approaches.\u000a\u000a//"Well, good to see you're not last this time. You excited?"//\u000a\u000a//[["I bet I'm more thrilled than the captain."|StartFastChat1]]//\u000a[[//"Hah! Someone's gotta watch your back down there."//|StartFastChat2]]
+V//"It may not be Jakuta but it's still a habitable planet."// You hear Captain Scott's speech to the crew from behind, but focus on putting on all of your protective gear. Forgetting any small detail could get you killed planetside. Your finish your ensemble with a belt of handy tools and an oxygen tank, just in case.\u000a\u000aAs the captain's speech finishes up, your friend Soto spots you and approaches.\u000a\u000a//"Well, good to see you're not last this time. You excited?"//\u000a\u000a//[["I bet I'm more thrilled than the captain."|StartFastChat1]]//\u000a\u000a[[//"Hah! Someone's gotta watch your back down there."//|StartFastChat2]]
 p1252
 sg23
 VStartFast
@@ -4122,12 +4122,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I15
-I54
-I40
-I5
-I172
+I22
+I13
+I27
+I53
+I6
+I173
 I1
 tp1254
 (dp1255
