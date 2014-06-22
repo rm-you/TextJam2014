@@ -635,7 +635,7 @@ g14
 I00
 sg15
 (lp204
-F1710.0
+F1708.75
 aF623.0
 asg17
 (itiddlywiki
@@ -743,7 +743,7 @@ Tiddler
 p235
 (dp236
 g21
-VYou walk along the path outside the colony. The path is dusty and flat.\u000a\u000a<<if $beast_at_east_of_colony>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_east_of_colony to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>>[[Head east, into the hills.|Hills]]\u000a\u000a[[Head west, toward the colony.|Power Plant]]\u000a\u000a<<endif>>
+VYou walk along the path outside the colony. The path is dusty and flat.\u000a\u000a<<if $beast_at_east_of_colony>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_east_of_colony to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>>[[Climb east, into the hills.|Hills]]\u000a\u000a[[Head west, toward the colony.|Power Plant]]\u000a\u000a<<endif>>
 p237
 sg23
 VEast of Colony
@@ -754,8 +754,8 @@ g26
 I6
 I22
 I4
-I25
-I55
+I41
+I47
 I6
 I173
 I1
@@ -1193,7 +1193,7 @@ Tiddler
 p370
 (dp371
 g21
-V<<if $beast_at_valley>>\u000aBeast! TODO DO BETTER BEAST\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_valley to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[Mountains]]\u000a* [[Hills]]\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
+VYou travel into the valley in the northern mountains.\u000a\u000a<<if $beast_at_valley>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_valley to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>>[[Head south into the hills.|Hills]]\u000a\u000a[[Head west up the mountains.|Mountains]]\u000a\u000a<<endif>>
 p372
 sg23
 VValley
@@ -1202,12 +1202,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I11
-I45
-I5
-I172
+I22
+I4
+I36
+I50
+I6
+I173
 I1
 tp374
 (dp375
@@ -1243,7 +1243,7 @@ Tiddler
 p385
 (dp386
 g21
-V<<if $beast_at_hills>>\u000aBeast! TODO DO BETTER "BEAST"\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_hills to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[East of Colony]]\u000a* [[Valley]]\u000a* [[Deep Hills]]\u000a* [[Ocean Hills]]\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
+VYou climb the hilly regions.\u000a\u000a<<if $beast_at_hills>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_hills to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>>[[Head north into the mountainous valley.|Valley]]\u000a\u000a[[Head south toward the ocean.|Ocean Hills]]\u000a\u000a[[Climb deeper into the hills, going east.|Deep Hills]]\u000a\u000a[[Head west towards the colony.|East of Colony]]\u000a\u000a<<endif>>
 p387
 sg23
 VHills
@@ -1252,12 +1252,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I11
-I13
-I5
-I172
+I22
+I4
+I39
+I27
+I6
+I173
 I1
 tp389
 (dp390
@@ -1293,7 +1293,7 @@ Tiddler
 p400
 (dp401
 g21
-V<<if $beast_at_ocean_cliffs>>\u000aTODO DO BETTER BEAST\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_ocean_cliffs to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[South of Colony]]\u000a* [[Beach]]\u000a* [[Ocean Hills]]\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
+VYou walk up along a cliff adjacent to the ocean. \u000a\u000a<<if $beast_at_ocean_cliffs>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_ocean_cliffs to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>> [[Head north, towards the colony.|South of Colony]]\u000a\u000a[[Head east, following the ocean.|Ocean Hills]]\u000a\u000a[[Head west, towards the beach.|Beach]]\u000a\u000a<<endif>>
 p402
 sg23
 VOcean Cliffs
@@ -1302,12 +1302,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I11
-I29
-I5
-I172
+I22
+I4
+I44
+I37
+I6
+I173
 I1
 tp404
 (dp405
@@ -1443,7 +1443,7 @@ Tiddler
 p445
 (dp446
 g21
-V<<nobr>>\u000a<<set $beast_at_hills to 0>>\u000a<<set $beast_at_mountains to 0>>\u000a<<set $beast_at_ocean_cliffs to 0>>\u000a<<set $beast_at_valley to 0>>\u000a<<set $beast_at_ocean_hills to 0>>\u000a<<set $beast_at_south_of_colony to 0>>\u000a<<set $beast_at_east_of_colony to 0>>\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a\u000a<<set $sleep_count += 1>>\u000a\u000a<<if $doom_disease > 0>>\u000a<<set $doom_disease -= 1>>\u000a<<endif>>\u000a\u000a<<if visited("Destroy Antenna") is 0 and $antenna_fooled is 0>>\u000a<<set $doom_xenocide -= 1>>\u000a<<endif>>\u000a\u000a<<if $supernova is 1>>\u000a<<set $doom_supernova -= 1>>\u000a<<endif>>\u000a\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $doom_beasts -= 2>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a<<if $doom_disease is 0>>\u000aDoom by Disease!\u000a<<elseif $doom_beasts <= 0>>\u000aDoom by Beasts!\u000a<<elseif $doom_xenocide <= 0>>\u000aDoom by Xenocide!\u000a<<elseif $doom_supernova <= 0>>\u000aDoom by Supernova!\u000a<<elseif $beast_den_destroyed and $supernova is 0 and $doom_disease < 0 and $gene_therapy>>\u000a\u000a[[Regular Win]]\u000a\u000a<<else>>\u000a\u000aYou walk into your room and relax.\u000a\u000a//"Surveyor's log, day <<print $sleep_count>>..."//\u000a\u000aWith the days events wrapped up, you rest your head on your clean cot and think about tomorrow.\u000a\u000a[[Fall asleep.|Resolve Sleep]]\u000a\u000a<<endif>>\u000a\u000aTODO OH GOD\u000a
+V<<nobr>>\u000a<<set $beast_at_hills to 0>>\u000a<<set $beast_at_mountains to 0>>\u000a<<set $beast_at_ocean_cliffs to 0>>\u000a<<set $beast_at_valley to 0>>\u000a<<set $beast_at_ocean_hills to 0>>\u000a<<set $beast_at_south_of_colony to 0>>\u000a<<set $beast_at_east_of_colony to 0>>\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a\u000a<<set $sleep_count += 1>>\u000a\u000a<<if $doom_disease > 0>>\u000a<<set $doom_disease -= 1>>\u000a<<endif>>\u000a\u000a<<if visited("Destroy Antenna") is 0 and $antenna_fooled is 0>>\u000a<<set $doom_xenocide -= 1>>\u000a<<endif>>\u000a\u000a<<if $supernova is 1>>\u000a<<set $doom_supernova -= 1>>\u000a<<endif>>\u000a\u000a<<if $beast_den_destroyed is 0>>\u000a<<set $doom_beasts -= 2>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000a\u000a\u000aYou walk into your room and relax.\u000a\u000a//"Surveyor's log, day <<print $sleep_count>>..."//\u000a\u000aWith the days events wrapped up, you rest your head on your clean cot and think about tomorrow.\u000a\u000a<<if $doom_disease is 0>>[[Fall asleep.|Doom by Disease]]\u000a\u000a<<elseif $doom_beasts <= 0>>[[Fall asleep.|Doom by Beasts]]\u000a\u000a<<elseif $doom_xenocide <= 0>>[[Fall asleep.|Doom by Xenocide]]\u000a\u000a<<elseif $doom_supernova <= 0>>[[Fall asleep.|Doom by Supernova]]\u000a\u000a<<elseif $beast_den_destroyed and $supernova is 0 and $doom_disease < 0 and $gene_therapy>>[[Fall asleep.|Regular Win]]\u000a\u000a<<else>>[[Fall asleep.|Resolve Sleep]]\u000a\u000a<<endif>>\u000a
 p447
 sg23
 VSleep
@@ -1453,9 +1453,9 @@ g26
 ((I2014
 I6
 I22
-I3
-I56
-I8
+I4
+I32
+I40
 I6
 I173
 I1
@@ -2259,7 +2259,7 @@ Tiddler
 p693
 (dp694
 g21
-V<<if $beast_at_ocean_hills>>\u000aBeast! TODO DO BETTER BEAST\u000a<<set $beasts_known to 1>>\u000a<<if $plasma_torch>>[[Fend off Beast][$beast_at_ocean_hills to 0]]<<endif>>\u000a* [[Go Back|previous()]]\u000a<<else>>\u000a* [[Ocean Cliffs]]\u000a* [[Hills]]\u000a* [[Natural Cave]]\u000a<<endif>>\u000a\u000aTODO GENERAL DESCRIPTION OF AREA\u000a\u000aTODO BETTER NAMES FOR LINKS\u000a\u000aTODO DESCRIBE PLAYER THOUGHTS ON WHAT THEY NEED TO PROGRESS
+VYou walk along a hilly region adjacent to the ocean. Down near the steep parts of the hill is a natural cave formation.\u000a\u000a<<if $beast_at_ocean_hills>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_ocean_hills to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>>[[Climb north, into the hills.|Hills]]\u000a\u000a[[Climb west, following the ocean line.|Ocean Cliffs]]\u000a\u000a[[Climb down into the natural cave formation.|Natural Cave]]\u000a\u000a<<endif>>
 p695
 sg23
 VOcean Hills
@@ -2268,12 +2268,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I11
 I22
-I5
-I172
+I4
+I42
+I15
+I6
+I173
 I1
 tp697
 (dp698
@@ -4550,10 +4550,210 @@ tp1379
 (dp1380
 tp1381
 Rp1382
+sbsa(dp1383
+g14
+I00
+sg15
+(lp1384
+F2482.0
+aF50.0
+asg17
+(itiddlywiki
+Tiddler
+p1385
+(dp1386
+g21
+VBeasts Lose
+p1387
+sg23
+VDoom by Beasts
+p1388
+sg25
+g26
+((I2014
+I6
+I22
+I4
+I33
+I21
+I6
+I173
+I1
+tp1389
+(dp1390
+tp1391
+Rp1392
+sg31
+(lp1393
+sg33
+g26
+((I2014
+I6
+I22
+I4
+I32
+I45
+I6
+I173
+I1
+tp1394
+(dp1395
+tp1396
+Rp1397
+sbsa(dp1398
+g14
+I00
+sg15
+(lp1399
+F2616.75
+aF51.25
+asg17
+(itiddlywiki
+Tiddler
+p1400
+(dp1401
+g21
+VXenocide Lose
+p1402
+sg23
+VDoom by Xenocide
+p1403
+sg25
+g26
+((I2014
+I6
+I22
+I4
+I33
+I26
+I6
+I173
+I1
+tp1404
+(dp1405
+tp1406
+Rp1407
+sg31
+(lp1408
+sg33
+g26
+((I2014
+I6
+I22
+I4
+I32
+I45
+I6
+I173
+I1
+tp1409
+(dp1410
+tp1411
+Rp1412
+sbsa(dp1413
+g14
+I00
+sg15
+(lp1414
+F2187.75
+aF58.75
+asg17
+(itiddlywiki
+Tiddler
+p1415
+(dp1416
+g21
+VDisease Lose
+p1417
+sg23
+VDoom by Disease
+p1418
+sg25
+g26
+((I2014
+I6
+I22
+I4
+I33
+I12
+I6
+I173
+I1
+tp1419
+(dp1420
+tp1421
+Rp1422
+sg31
+(lp1423
+sg33
+g26
+((I2014
+I6
+I22
+I4
+I32
+I45
+I6
+I173
+I1
+tp1424
+(dp1425
+tp1426
+Rp1427
+sbsa(dp1428
+g14
+I00
+sg15
+(lp1429
+F2331.5
+aF51.25
+asg17
+(itiddlywiki
+Tiddler
+p1430
+(dp1431
+g21
+VSupernova Lose
+p1432
+sg23
+VDoom by Supernova
+p1433
+sg25
+g26
+((I2014
+I6
+I22
+I4
+I33
+I17
+I6
+I173
+I1
+tp1434
+(dp1435
+tp1436
+Rp1437
+sg31
+(lp1438
+sg33
+g26
+((I2014
+I6
+I22
+I4
+I32
+I45
+I6
+I173
+I1
+tp1439
+(dp1440
+tp1441
+Rp1442
 sbsasS'scale'
-p1383
+p1443
 F0.8
 sS'snapping'
-p1384
+p1444
 I00
 ss.
