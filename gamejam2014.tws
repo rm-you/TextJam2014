@@ -393,7 +393,7 @@ Tiddler
 p130
 (dp131
 g21
-V<<if visited() is 1>>Stepping out of the pod, you are nearly overwhelmed by the sights of the colony and the landscape. Twin suns shine brilliantly in the crisp blue sky overhead. Tall mountains line the horizon to the north, and all around you are clean prefabricated structures. To the east is a very distinct building, the power plant of the colony, where you expect to find your technician friend Soto.\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000aFrom the south approach a trio of robots, likely here to retrieve the pod. The ships roboticist Terra is probably manging them right now from the robotics lab. Anything menial has to be handled by the robots, since there's only seven people managing this entire colony right now. You will probably need to stop by sooner rather than later..\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000aYou hear a belching noise come from the north, and a belch of smoke erupts from the closest prefab to the north. You surmise it to be the colony's manufacturing. Lucy's probably trying to get a head start on the industrial needs of the colony. She's hard to get along with, but if you need anything fabricated she's the only one who can do it.\u000a\u000a[[Head north to the factory.|Factory]]\u000a\u000aYour radio sounds out a familiar voice. //"Pleasant landing, I hope? This is Lya, come see me at the colony center. It's the big dome-shaped building west of where you landed." // You recognize administrator Lya's voice, and judging by her tone she's probably got your task in mind already.\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<else>>This is the direct center of the colony, a flat clearing ideal for receiving pods and shipments from the Heroism. There's a few piles of supplies lying around and paths to every other part of the colony. The skies are clear. Nothing will arrive anytime soon.\u000a\u000a<<if $comm_array > 1 and $refinery > 1 and $spaceport is 0>>There's a pile of alloys here and an unattached link to the colony center. This would be an ideal location to build the spaceport to get back to the Heroism.\u000a\u000a[[//"Terra, have the bots start assembling the spaceport."//|Build Spaceport]]<<endif>><<if $spaceport is 1>>Robots are hard at work in this area, laying out sheets of alloy and fusing them together. The incomplete launch tower grows taller by the minute. The colony should be ready to launch in no time.\u000a\u000a<<endif>><<if $spaceport is 2>>The colony's spaceport is here, a flat metal base with a launch tower, ready to launch cargo and people up to the Heroism.\u000a\u000a<<endif>>[[Head north to the factory.|Factory]]\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<if $spaceport > 1>> *[[Enter the spaceport.|Spaceport]] <<endif>>\u000a<<endif>>
+V<<if visited() is 1>>Stepping out of the pod, you are nearly overwhelmed by the sights of the colony and the landscape. Twin suns shine brilliantly in the crisp blue sky overhead. Tall mountains line the horizon to the north, and all around you are clean prefabricated structures. To the east is a very distinct building, the power plant of the colony, where you expect to find your technician friend Soto.\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000aFrom the south approach a trio of robots, likely here to retrieve the pod. The ships roboticist Terra is probably manging them right now from the robotics lab. Anything menial has to be handled by the robots, since there's only seven people managing this entire colony right now. You will probably need to stop by sooner rather than later..\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000aYou hear a belching noise come from the north, and a belch of smoke erupts from the closest prefab to the north. You surmise it to be the colony's manufacturing. Lucy's probably trying to get a head start on the industrial needs of the colony. She's hard to get along with, but if you need anything fabricated she's the only one who can do it.\u000a\u000a[[Head north to the factory.|Factory]]\u000a\u000aYour radio sounds out a familiar voice. //"Pleasant landing, I hope? This is Lya, come see me at the colony center. It's the big dome-shaped building west of where you landed." // You recognize administrator Lya's voice, and judging by her tone she's probably got your task in mind already.\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a<<else>>This is the direct center of the colony, a flat clearing ideal for receiving pods and shipments from the Heroism. There's a few piles of supplies lying around and paths to every other part of the colony. The skies are clear. Nothing will arrive anytime soon.\u000a\u000a<<if $comm_array > 1 and $refinery > 1 and $spaceport is 0>>There's a pile of alloys here and an unattached link to the colony center. This would be an ideal location to build the spaceport to get back to the Heroism.\u000a\u000a[[//"Terra, have the bots start assembling the spaceport."//|Build Spaceport]]\u000a\u000a<<endif>><<if $spaceport is 1>>Robots are hard at work in this area, laying out sheets of alloy and fusing them together. The incomplete launch tower grows taller by the minute. The colony should be ready to launch in no time.\u000a\u000a<<endif>><<if $spaceport is 2>>The colony's spaceport is here, a flat metal base with a launch tower, ready to launch cargo and people up to the Heroism. Dwayne sits inside, keeping track of the Heroism's location.\u000a\u000a[[Enter the spaceport.|Spaceport]]\u000a\u000a<<endif>>[[Head north to the factory.|Factory]]\u000a\u000a[[Head south to the robotics lab.|Robotics Lab]]\u000a\u000a[[Head east to the power plant.|Power Plant]]\u000a\u000a[[Head west to the colony center.|Colony Center]]\u000a\u000a\u000a<<endif>>
 p132
 sg23
 VHub
@@ -402,12 +402,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I21
-I57
-I54
-I5
-I172
+I22
+I1
+I46
+I12
+I6
+I173
 I1
 tp134
 (dp135
@@ -543,7 +543,7 @@ Tiddler
 p175
 (dp176
 g21
-V<<if $aux_gen > 1>>\u000aSolar Farm Active\u000a<<endif>>\u000a<<if $fusion_gen > 1>>\u000aFusion Reactor Online\u000a<<endif>>\u000a<<if $mountain_mapped>>\u000a[[Charge Drill]]\u000a<<endif>>\u000a<<if $beasts_known>>\u000a[[Overcharge Plasma Torch]]\u000a<<endif>>\u000a<<if $aux_gen is 0>>\u000a[[Build Solar Farm]]\u000a<<endif>>\u000a<<if $aux_gen is 2 and $refinery is 2 and $fusion_gen is 0>>\u000a[[Build Fusion Reactor]]\u000a<<endif>>\u000aGenerator power is: <<print $generator>>\u000aGenerator fuel is: <<print $fuel>>\u000a<<if $isotope>> [[Refine Strange Isotope]]<<endif>>\u000a\u000a<<if $bio_lab > 1>> [[Bio Lab]]<<endif>>\u000a* [[East of Colony]]\u000a* [[Hub]]
+V<<if visited() is 1>>You approach the colony's power plant, a set of tall unassuming prefabs which generate power for the day to day needs of the colony. Thick cables protrude from each building, connected to every other building in the colony.\u000a\u000aSoto, the power technician, is busily pacing from structure to structure, reading monitors and taking notes on his wrist screen. \u000a\u000a<<else>>You stand in front of the power plant for the colony.<<if $fuel>>The central prefab hums with power softly.<<endif>> <<if $aux_gen > 1>>On one side is the solar array, providing extra power to the colony.<<endif>> <<if $fusion_gen > 1>>On the other is the fusion reactor, humming with energy. <<endif>>Soto is here, <<if $generator > 2>>sitting back and relaxing.<<else>>keeping a watchful eye on power levels.<<endif>>\u000a\u000a<<endif>><<if $aux_gen is 1>>Robots are hard at work in this area, setting up arrays of mirrors and aligning them to a focal point to alleviate the colony's energy problems.\u000a\u000a<<endif>><<if $fusion_gen is 1>>Robots are hard at work in this area, constructing a strange spherical structure that you surmise will be a fusion reactor.\u000a\u000a<<endif>>You take a glance at the power plant's current status. <<if $fuel > 1>>There's enough fuel to run the generator for <<print $fuel>> days.<<elseif $fuel>>There's enough fuel to run the generator for the rest of today.<<else>>There's no fuel to run the generator.<<endif>> <<if $generator > 2>>The power plant has loads of capacity left.<<elseif $generator is 2>>The generator has some capacity left.<<elseif $generator>>The generator has a small amount of capacity left.<<else>>The generator is over capacity. Power rationing is in effect.<<endif>>\u000a\u000a<<if $aux_gen is 0>>The colony has an excess of solar mirrors. Using them to generate power would bolster the colony.\u000a\u000a[[//"Terra, send the robots to set up a solar farm at the power plant."//|Build Solar Farm]]\u000a\u000a<<endif>><<if $aux_gen is 2 and $refinery is 2 and $fusion_gen is 0>>Alloys produced by the smelter could be used to contain a fusion reaction. Fusion power should solve the colony's power needs.\u000a\u000a[[//"Terra, send the robots to build a fusion reactor at the power plant."//|Build Fusion Reactor]]\u000a\u000a<<endif>><<if $isotope>>The isotopes from the emitter can be used in the fusion reactor to generate fresh FTL fuel. With this fuel, the Heroism can leave the solar system.\u000a\u000a[[//"Soto, take these isotopes and refine them into FTL fuel."//|Refine Strange Isotope]]\u000a\u000a<<endif>><<if $mountain_mapped and $drill < 2>>The northern mountains hold hidden treasures that need to be dug up. You can charge your drill here.\u000a\u000a<<if $drill is 0>>[[//"Soto, can you charge my drill?"//|Charge Drill]]<<else>>[[//"Soto, can you overcharge my drill?"//|Charge Drill]]<<endif>>\u000a\u000a<<endif>><<if $beasts_known and $plasma_torch is 0>>The beasts around here are dangerous. You can overcharge your plasma torch to use as a defensive weapon here.\u000a\u000a[[//"Soto, can you overcharge my plasma torch?"//|Overcharge Plasma Torch]]\u000a\u000a<<endif>><<if $bio_lab > 1>> [[Head south to the bio lab.|Bio Lab]]\u000a\u000a<<endif>><<if visited() is 1>>The path east leads out of the colony, toward the hills.\u000a\u000a<<endif>>[[Leave the colony, heading east toward the hills.|East of Colony]]\u000a\u000a<<if visited() is 1>> The path west leads back to the landing area and the center of the colony.\u000a\u000a<<endif>>[[Head west to the center of the colony|Hub]]
 p177
 sg23
 VPower Plant
@@ -552,12 +552,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I21
-I31
-I33
-I5
-I172
+I22
+I1
+I44
+I15
+I6
+I173
 I1
 tp179
 (dp180
@@ -993,7 +993,7 @@ Tiddler
 p310
 (dp311
 g21
-V<<if $generator>><<set $mountain_mapped to 1>><<set $generator -= 1>>A brief moment after you touch the screen, Terra's voice emerges from the screen. //"Mountains eh? I'll have it mapped down to the pebble."// You can already see robots pouring out of the lab.\u000a\u000a[[//"Great."//|Robotics Lab]]\u000a\u000a<<else>>A brief moment after you touch the screen, Terra's voice emerges from the screen. //"Can't do it right now. I don't have minions to spare. Try tomorrow."// Guess the survey will have to wait until the colony has power to spare again.\u000a\u000a[[//"Okay, thanks."//|Robotics Lab]]\u000a\u000a<<endif>>
+V<<if $generator>><<set $mountain_mapped to 1>><<set $generator -= 1>>A brief moment after you touch the screen, Terra's voice bellows from the screen. //"Mountains eh? I'll have it mapped down to the pebble."// You can already see robots pouring out of the lab.\u000a\u000a[[//"Great."//|Robotics Lab]]\u000a\u000a<<else>>A brief moment after you touch the screen, Terra's voice bellows from the screen. //"Can't do it right now. I don't have minions to spare. Try tomorrow."// Guess the survey will have to wait until the colony has power to spare again.\u000a\u000a[[//"Okay, thanks."//|Robotics Lab]]\u000a\u000a<<endif>>
 p312
 sg23
 VMap Mountain
@@ -1002,12 +1002,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I21
-I37
-I52
-I5
-I172
+I22
+I1
+I42
+I18
+I6
+I173
 I1
 tp314
 (dp315
@@ -1043,7 +1043,7 @@ Tiddler
 p325
 (dp326
 g21
-V<<if $generator>><<set $forest_mapped to 1>><<set $generator -= 1>>A brief moment after you touch the screen, Terra's voice emerges from the screen. //"Forests? I'll have 'em mapped down to the grass blade."// You can already see robots pouring out of the lab.\u000a\u000a[[//"Great."//|Robotics Lab]]\u000a\u000a<<else>>A brief moment after you touch the screen, Terra's voice emerges from the screen. //"Can't do it right now. I don't have minions to spare. Try tomorrow."// Guess the survey will have to wait until the colony has power to spare again.\u000a\u000a[[//"Okay, thanks."//|Robotics Lab]]\u000a\u000a<<endif>>
+V<<if $generator>><<set $forest_mapped to 1>><<set $generator -= 1>>A brief moment after you touch the screen, Terra's voice bellows from the screen. //"Forests? I'll have 'em mapped down to the grass blade."// You can already see robots pouring out of the lab.\u000a\u000a[[//"Great."//|Robotics Lab]]\u000a\u000a<<else>>A brief moment after you touch the screen, Terra's voice bellows from the screen. //"Can't do it right now. I don't have minions to spare. Try tomorrow."// Guess the survey will have to wait until the colony has power to spare again.\u000a\u000a[[//"Okay, thanks."//|Robotics Lab]]\u000a\u000a<<endif>>
 p327
 sg23
 VMap Forest
@@ -1052,12 +1052,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I21
-I38
-I17
-I5
-I172
+I22
+I1
+I42
+I35
+I6
+I173
 I1
 tp329
 (dp330
@@ -1085,15 +1085,15 @@ g14
 I00
 sg15
 (lp339
-F2013.0
-aF1026.75
+F1979.25
+aF1019.25
 asg17
 (itiddlywiki
 Tiddler
 p340
 (dp341
 g21
-V<<nobr>>\u000a<<if $generator > 0 and $plasma_torch is 0>>\u000a<<set $plasma_torch to 1>>\u000a<<set $generator -= 1>>\u000aYou connect your plasma torch directly to the main power tap on the generator. Sparks fly and the torch hums with energy. After a moment, you disconnect it, certain that the torch has enough power to be used defensively against any beast, should you need to.\u000a<<elseif $plasma_torch>>\u000aYour plasma torch is already charged. Charging it further would just waste power.\u000a<<else>>\u000aYou connect your plasma torch directly to the main power tap on the generator, but nothing seems to happen. There doesn't appear to be any excess power you can draw.\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO BETTER DESCRIPTION\u000a\u000a[[Return|Power Plant]]
+V<<if $generator>><<set $plasma_torch to 1>><<set $generator -= 1>>//"Sure thing, buddy."// Soto takes your plasma torch and disappears inside the prefab housing the main generator. A moment later, he returns. //"Here you go. Careful, it's hot. Remember, it only has one shot, so don't discharge it early."//\u000a\u000a[["Thanks Soto."|Power Plant]]\u000a\u000a<<else>>//"Wish I could, but we're rationing power right now. You'll have to avoid those beasts for now."// \u000a\u000a[[//"Oh well. Thanks anyway."//|Power Plant]]\u000a\u000a<<endif>>
 p342
 sg23
 VOvercharge Plasma Torch
@@ -1102,12 +1102,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
+I22
+I1
+I44
+I23
 I6
-I15
-I5
-I172
+I173
 I1
 tp344
 (dp345
@@ -2513,7 +2513,7 @@ Tiddler
 p770
 (dp771
 g21
-V<<if $generator>><<set $hills_mapped to 1>><<set $generator -= 1>>A brief moment after you touch the screen, Terra's voice emerges from the screen. //"The hills? I guess..."// You can already see robots pouring out of the lab.\u000a\u000a[[//"Thanks Terra."//|Robotics Lab]]\u000a\u000a<<else>>A brief moment after you touch the screen, Terra's voice emerges from the screen. //"Can't do it right now. I don't have minions to spare. Try tomorrow."// Guess the survey will have to wait until the colony has power to spare again.\u000a\u000a[[//"Okay, thanks."//|Robotics Lab]]\u000a\u000a<<endif>>
+V<<if $generator>><<set $hills_mapped to 1>><<set $generator -= 1>>A brief moment after you touch the screen, Terra's voice bellows from the screen. //"The hills? I guess..."// You can already see robots pouring out of the lab.\u000a\u000a[[//"Thanks Terra."//|Robotics Lab]]\u000a\u000a<<else>>A brief moment after you touch the screen, Terra's voice bellows from the screen. //"Can't do it right now. I don't have minions to spare. Try tomorrow."// Guess the survey will have to wait until the colony has power to spare again.\u000a\u000a[[//"Okay, thanks."//|Robotics Lab]]\u000a\u000a<<endif>>
 p772
 sg23
 VMap Hills
@@ -2522,12 +2522,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I21
-I38
-I52
-I5
-I172
+I22
+I1
+I42
+I26
+I6
+I173
 I1
 tp774
 (dp775
@@ -2663,7 +2663,7 @@ Tiddler
 p815
 (dp816
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $aux_gen to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Power Plant]]
+V<<if $generator>><<set $aux_gen to 1>><<set $generator -= 1>>//"Ooh, precision optics, a true challenge. Sounds like fun."// From the tone alone you can tell Terra is beaming. A moment later, robots with mirrors in hand come marching toward the plant.\u000a\u000a[["Thanks, Terra."|Power Plant]]\u000a\u000a<<else>>//"Oh, a solar farm? I'd love to, but my minions have no power right now. Ironic isn't it?"// Guess the solar panels will have to wait until the colony has power to spare again.\u000a\u000a[[//"Not really, actually."//|Power Plant]]\u000a\u000a<<endif>>
 p817
 sg23
 VBuild Solar Farm
@@ -2672,12 +2672,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
+I22
+I1
+I38
+I56
 I6
-I7
-I5
-I172
+I173
 I1
 tp819
 (dp820
@@ -2713,7 +2713,7 @@ Tiddler
 p830
 (dp831
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $fusion_gen to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION\u000a\u000a[[Return|Power Plant]]
+V<<if $generator>><<set $fusion_gen to 1>><<set $generator -= 1>>//"Fusion reactor? I don't know how to build that."// \u000a\u000a//"Lucy may be able to help you out with the design."//\u000a\u000a//"Aww, that's no fun."//\u000a\u000aAfter several minutes, robots with alloys come marching toward the plant.\u000a\u000a[[Okay.|Power Plant]]\u000a\u000a<<else>>//"Fusion reactor? I'd love to, but my minions have no power right now. Ironic isn't it?"// Guess the reactor will have to wait until the colony has power to spare again.\u000a\u000a[[//"Not really, actually."//|Power Plant]]\u000a\u000a<<endif>>
 p832
 sg23
 VBuild Fusion Reactor
@@ -2722,12 +2722,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I5
-I32
-I5
-I172
+I22
+I1
+I25
+I10
+I6
+I173
 I1
 tp834
 (dp835
@@ -3313,7 +3313,7 @@ Tiddler
 p1010
 (dp1011
 g21
-V<<nobr>>\u000a<<if $generator>>\u000a<<set $ftl_fuel to 1>>\u000a<<set $generator -= 1>>\u000a<<else>>\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO DESCRIPTION OF REFINING PROCESS\u000a\u000a[[Return|Power Plant]]
+V<<if $generator>><<set $ftl_fuel to 1>><<set $generator -= 1>>//"Isotope? Wow, what an incredible find. You sure do like to save everyone's skin don't you? Don't worry, I know exactly what to do."// \u000a\u000aSoto takes the isotope canister from you and heads inside of the spherical fusion reactor.\u000a\u000a[[Okay.|Power Plant]]\u000a\u000a<<else>>//"Isotope? Wow, what a miracle find. I wish I could help you though.  The colony's on power rationing. If I take the fusion reactor offline the whole colony will blackout."// Guess the isotope will have to wait until the colony has power to spare again.\u000a\u000a[[//"Damn."//|Power Plant]]\u000a\u000a<<endif>>
 p1012
 sg23
 VRefine Strange Isotope
@@ -3322,12 +3322,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I5
-I44
-I5
-I172
+I22
+I1
+I36
+I6
+I6
+I173
 I1
 tp1014
 (dp1015
@@ -3413,7 +3413,7 @@ Tiddler
 p1040
 (dp1041
 g21
-V<<nobr>>\u000a<<if $generator > 0 and $drill is 0>>\u000a<<set $drill += 1>>\u000a<<set $generator -= 1>>\u000aYou hook up your drill to the charging station near the generator. After a few moments, the system blinks. The drill has half a charge, just enough to drill into the cave.\u000a<<elseif $generator > 0 and $drill is 1>>\u000a<<set $drill += 1>>\u000a<<set $generator -= 1>>\u000aYou hook the partially charged drill into the charging station again. After a few moments, an audible beep comes from the charger, indicating a complete charge. You retrieve the fully charged drill, ready to dig.\u000a<<elseif $drill is 2>>\u000aYour drill is already fully charged and ready to use. It can't be charged further.\u000a<<else>>\u000aYou hook up your drill to the charging station near the generator, but nothing seems to happen. There doesn't appear to be any available power.\u000a<<endif>>\u000a<<endnobr>>\u000a\u000aTODO BETTER DESCRIPTION\u000a\u000a[[Return|Power Plant]]
+V<<if $generator>><<set $drill += 1>><<set $generator -= 1>>//"Sure thing, buddy. Don't forget to bring me back some fuel."// Soto takes your drill and disappears inside the prefab housing the main generator. A moment later, he returns. //"Here you go."//\u000a\u000a[["Thanks Soto."|Power Plant]]\u000a\u000a<<else>>//"Wish I could, but we're rationing power right now. Damn shame too, guess you won't be able to dig for more fuel."// \u000a\u000a[[//"Oh well. Thanks anyway."//|Power Plant]]\u000a\u000a<<endif>>
 p1042
 sg23
 VCharge Drill
@@ -3422,12 +3422,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I14
-I5
-I54
-I5
-I172
+I22
+I1
+I30
+I52
+I6
+I173
 I1
 tp1044
 (dp1045
