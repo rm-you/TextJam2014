@@ -3013,7 +3013,7 @@ Tiddler
 p920
 (dp921
 g21
-V<<set $plasma_torch -= 1>>\u000a<<set $doom_beasts += 1>>\u000a[[Success|previous()]]
+V<<set $plasma_torch -= 1>><<set $doom_beasts += 1>>You rush the beast head on, surprising it. Before it can react, you make contact with your plasma torch. A brilliant ball of light punctures the beast's hide, and it recoils on the ground. It stops moving. \u000a\u000a[[Continue.|previous()]]
 p922
 sg23
 VFend off Beast
@@ -3022,12 +3022,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I1
-I45
-I42
-I5
-I172
+I22
+I4
+I49
+I43
+I6
+I173
 I1
 tp924
 (dp925
