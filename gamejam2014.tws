@@ -5,7 +5,7 @@ VC:\u005cusers\u005cvmuser\u005cDesktop\u005ctmplxclfs.html
 p2
 sS'saveDestination'
 p3
-S'\\\\?\\unix\\home\\vmuser\\Desktop\\gamejam2014.tws'
+V/Users/adam6424/Workspace/TextJam2014/gamejam2014.tws
 p4
 sS'metadata'
 p5
@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-VYou are part of the maintenance crew aboard the //LGDE Heroism//, a colony ship bound for the 1212 Antilae system. You are part of the team responsible for setting up the colony while the majority of the colonists stay in hibernation.\u000a\u000aHowever, something has gone wrong. When you awoke, the ship was not in the 1212 Antilae system, but at an unknown binary star system. Fortunately, the planet you are orbitting happens to be habitable. By the time you finished awakening, the decision to colonize the planet had already been made by the ship's captain.\u000a\u000aYou stumble out of the awakening ward and into the maintenance lockers, where Captain Scott is giving a speech to the crew as they gear up in preparation to head to the planet.\u000a\u000a[[Listen to the captain's speech.|StartSlow]]\u000a\u000a[[Suit up.|StartFast]]
+VYou are part of the maintenance crew aboard the //LGDE Heroism//, a colony ship bound for the 1212 Antilae system. Your team is responsible for bootstrapping the colony while the majority of the colonists stay in hibernation.\u000a\u000aSomething has gone incredibly wrong. When you awoke, the ship was not in the 1212 Antilae system, but orbiting a mysterious planet in an unknown binary star system. By some stroke of luck, the planet appears to be habitable. You finish with stasis recovery protocol in time to hear the news: the captain has given the order to begin colonization. Given the ship's limited fuel reserves and malfunctioning navigation system, he had no choice.\u000a\u000aYou stumble out of the recovery ward and into the maintenance lockers, where Captain Scott is giving a speech to the bustling crew. Some stand at attention, though the majority purposefully gather their gear and prepare to head to the planet.\u000a\u000a[[Listen to the captain's speech.|StartSlow]]\u000a\u000a[[Suit up.|StartFast]]
 p22
 sS'title'
 p23
@@ -50,12 +50,12 @@ struct_time
 p26
 ((I2014
 I6
-I22
-I13
-I27
-I48
-I6
-I173
+I23
+I23
+I58
+I21
+I0
+I174
 I1
 tp27
 (dp28
@@ -193,7 +193,7 @@ Tiddler
 p70
 (dp71
 g21
-V//"It may not be Jakuta, but it's still a habitable planet. Initial scans show promise, so be diligent and the colony will thrive. The Heroism exhausted it's FTL to bring us here. Lets not squander this opportunity that luck has brought us."//  Captain Scott's message to the crew was clear: this is our new home.\u000a\u000a//"The rest of the crew will awaken in a few months. Make that colony functional before then. I expect you all to perform your duties with the utmost efficiency. I will remain on the ship to keep its power regulated. Good luck."// All around you, crew are gathering supplies and putting on protective gear. \u000a\u000a[[Suit up.|StartSlow2]]
+V//"It may not be Jakuta, but it's still a habitable planet. Initial scans show promise, so be diligent and the colony will thrive. The Heroism exhausted its FTL to bring us here. Let's not squander the opportunity that luck has brought us."//  Captain Scott's message to the crew was clear: this is our new home.\u000a\u000a//"The rest of the crew will awaken in a few months, so let's have a functional colony waiting for them. I will remain aboard the Heroism to keep her systems online until then. I expect you all to perform your duties with utmost efficiency. Remember, this is the moment you've all trained for. Good luck."// All around you, various crew are gathering supplies and equipping protective gear.\u000a\u000a[[Suit up.|StartSlow2]]
 p72
 sg23
 VStartSlow
@@ -202,12 +202,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I17
-I5
-I30
-I5
-I172
+I24
+I0
+I0
+I22
+I1
+I175
 I1
 tp74
 (dp75
@@ -243,7 +243,7 @@ Tiddler
 p85
 (dp86
 g21
-VYou focus on putting on all of your protective gear. Forgetting any small detail could get you killed planetside. Your finish your ensemble with a belt of handy tools and an oxygen tank, just in case.\u000a\u000aAt the other end of the room, you notice your friend Soto, already fully geared, heading toward the drop pods. You consider catching up with him to chat but he's moving at a fast pace. Oh well, you'll have a chance to catch up with him at the colony power plant.\u000a\u000a[[Best to get a move to the drop pods.|Start4]]
+VYou focus on equipping all of your protective gear. Forgetting any small detail now could get you killed planetside. You finish your ensemble with a belt of handy tools and an oxygen tank, just in case.\u000a\u000aYou notice your friend Soto at the other end of the room, already fully geared and heading toward the drop pods. You consider catching up with him to chat, but he's moving at a fast pace. Oh well, you'll have a chance to catch up with him at the colony's power plant.\u000a\u000a[[Best get a move to the drop pods.|Start4]]
 p87
 sg23
 VStartSlow2
@@ -252,12 +252,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I16
-I6
-I48
-I5
-I172
+I24
+I0
+I3
+I30
+I1
+I175
 I1
 tp89
 (dp90
@@ -293,7 +293,7 @@ Tiddler
 p100
 (dp101
 g21
-V\u000aAt the far end of the ship is the drop pod hangar. Many large pods, designed for bulk moving colonists, are stacked around, leaving relatively little room to wander around. Most of the personal drop pods have been launched already, but a few still remain, ready to take you to the planet's surface.\u000a\u000aThese pods can only take you to the planet, not back. Once you launch you won't be able to return until the colonists awaken.\u000a\u000a[[Lets go.|Drop Pod]]\u000a\u000a[[I should double check my gear.|Delay Pod]]
+VAt the far end of the ship is the drop pod hangar. Stacks of large pods (designed for moving colonists en masse) fill the room, leaving relatively little space to wander. <<if visited("Delay Pod")>>Most of the personal drop pods have launched already, but a few still remain. The pod in front of you looks just as good as any of them. <<else>>A few of the personal drop pods have launched already, but enough remain for you to take your pick. You inspect one of them, notice it is missing a large chunk of foam from the seat, and pick another. //Whoever gets stuck with that pod is in for a rough ride.//<<endif>>\u000a\u000aThese pods can only take you to the planet, not back. Once you launch you won't be able to return until the colonists awaken.\u000a\u000a[[Lets go.|Drop Pod]]\u000a\u000a[[I should double check my gear.|Delay Pod]]
 p102
 sg23
 VStart4
@@ -302,12 +302,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I13
-I28
-I3
-I6
-I173
+I24
+I0
+I24
+I42
+I1
+I175
 I1
 tp104
 (dp105
@@ -343,7 +343,7 @@ Tiddler
 p115
 (dp116
 g21
-VYou climb into the pod. <<if visited("Delay Pod")>>This pod looks rough and uncomfortable. You hope it will hold together for the journey.<<else>>The pod looks clean and hums to life as you hop in, ready to take you to the colony.<<endif>>\u000a\u000aYou set the radio and broadcast your status. //"Pod 126BB-M to Heroism, pod is ready to launch."//\u000a\u000a<<if visited("Delay Pod") and visited("StartSlow")>>//"This is Captain Scott, pod 126BB-M, about damn time. You're clear, launch."//<<else>>//"This is Captain Scott, pod 126BB-M, your launch window is clear."//<<endif>>\u000a\u000a[[Launch the pod and set course for the center of the colony .|Launch]]\u000a<<nobr>>\u000a<<set $fuel to 3>>\u000a<<set $generator to 1>>\u000a<<set $doom_xenocide to 16>>\u000a<<set $doom_beasts to 22>>\u000a<<set $doom_disease to 14>>\u000a<<set $doom_supernova to 5>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endnobr>>\u000a
+VYou climb into the pod. <<if visited("Delay Pod")>>This pod looks rough and uncomfortable. You hope it will hold together for the journey.<<else>>The pod hums to life as you hop in, ready to take you to the colony.<<endif>>\u000a\u000aYou set the radio and broadcast your status. //"Pod 126BB-M to Heroism, pod is ready to launch."//\u000a\u000a<<if visited("Delay Pod") and visited("StartSlow")>>//"This is Captain Scott, pod 126BB-M, about damn time. You're clear, launch."//<<else>>//"This is Captain Scott, pod 126BB-M, your launch window is clear."//<<endif>>\u000a\u000a[[Launch the pod and set course for the center of the colony.|Launch]]\u000a<<nobr>>\u000a<<set $fuel to 3>>\u000a<<set $generator to 1>>\u000a<<set $doom_xenocide to 16>>\u000a<<set $doom_beasts to 22>>\u000a<<set $doom_disease to 14>>\u000a<<set $doom_supernova to 5>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<set $beastrand = random(1,7)>>\u000a<<if $beastrand is 1>>\u000a<<set $beast_at_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 2>>\u000a<<set $beast_at_mountains to 1>>\u000a<<endif>>\u000a<<if $beastrand is 3>>\u000a<<set $beast_at_ocean_cliffs to 1>>\u000a<<endif>>\u000a<<if $beastrand is 4>>\u000a<<set $beast_at_valley to 1>>\u000a<<endif>>\u000a<<if $beastrand is 5>>\u000a<<set $beast_at_ocean_hills to 1>>\u000a<<endif>>\u000a<<if $beastrand is 6>>\u000a<<set $beast_at_south_of_colony to 1>>\u000a<<endif>>\u000a<<if $beastrand is 7>>\u000a<<set $beast_at_east_of_colony to 1>>\u000a<<endif>>\u000a<<endnobr>>\u000a
 p117
 sg23
 VDrop Pod
@@ -352,12 +352,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I3
-I9
-I44
-I6
-I173
+I24
+I0
+I27
+I10
+I1
+I175
 I1
 tp119
 (dp120
@@ -443,7 +443,7 @@ Tiddler
 p145
 (dp146
 g21
-V<<if visited() is 1>>You walk up to the distinct, dome shaped structure that is the colony center. This structure is where the crew eats and sleeps, and in the future will be expanded to house the colonists. It could also be considered the colony's headquarters.\u000a\u000aLya is standing outside, waiting for you.\u000a\u000a//"Safe trip, I hope."// Lya begins. //"There's a lot to do, so I'll be brief. The colony's coming up a bit short on supplies, thanks to our detour. We're okay on food and prefabs but we're gonna run out of fuel soon. Do your job and survey what's around us, and keep an eye out for anything to solve our energy problem."//\u000a\u000a[[//"Sounds good. Those mountains to the north are probably a good place to look."//|CCReply1]]\u000a\u000a<<if visited("Mountains") or visited("Forest") or visited("Hills") >>[[//"Already taken a look around. I'll have a report ready soon."//|CCReply2]]<<endif>><<else>><<if visited() is 2>>Lya nods. //"I'll be in touch via radio."// She heads into the dome-shaped structure, leaving you alone. \u000a\u000a<<endif>>You stand outside of the colony center, a clean dome shaped structure which houses both crew quarters and the cafeteria. <<if $bio_lab < 2 and $spaceport < 2>>Lya, Dwayne and Inez are all inside, running the colony, keeping tabs on the crew's health, and watching the skies.<<elseif $bio_lab < 2>>Lya and Inez are inside, running the colony and keeping tabs on the crew's health.<<elseif $spareport < 2>>Lya and Dwayne are inside, running the colony and watching the sky.<<else>>Lya is inside, running the colony.<<endif>> \u000a\u000a<<if $weather_tower is 1>>Robots are hard at work in this area, building up a spire attached to the colony center. The tower seems to grow taller every time you blink.\u000a\u000a<<endif>><<if $weather_tower is 2>>A tall metal spire protudes from the dome, sampling the atomsphere. This weather tower will help the colony predict any inclement weather in the area.\u000a\u000a<<endif>><<if $comm_array is 1>>Robots are hard at work on the dome, running reinforced rods on the roof to support sensitive communications equipment. A pair of robots appear to be fine tuning the signal of the equipment, in preparation to for sending and receiving signals from space. The uplink looks like it's coming together nicely.\u000a\u000a<<endif>><<if $comm_array is 2>> Large antennae stick out from the dome, supported by metal rods. These antennae enable two-way communication with the Heroism. <<if $jammer is 2>>In addition, a large satellite dish rests on top, pointed at the ominous island south of the colony in an attempt to suppress it's signal.<<endif>>\u000a\u000a<<endif>><<if $jammer is 1>> Robots are hard at work modifying the communications antennae. It looks like they're tripling the number of antennae, as well as adding on a large dish, aimed at the ominous island south of the colony.\u000a\u000a<<endif>><<if $comm_array is 0>>When you have power to spare, let Lya know she can work on rebuilding communications.\u000a\u000a[[//"Lya, go ahead and fix up communications."//|Build Communications Array]]\u000a\u000a<<endif>><<if $comm_array is 2 and visited("Island") and $jammer is 0>>The signal that island is broadcasting definitely needs to stop. The robots need to modify the comm system to jam that signal as soon as possible.\u000a\u000a[[//"Terra, send the robots to upgrade the comm system. I need it to jam that signal coming from the island south."//|Build Signal Jammer]]\u000a\u000a<<endif>><<if $visited_uncalm_ocean and $weather_tower is 0>>Not knowing the weather makes it difficult to travel on these alien waters. Having the robots build a weather station here will solve that. \u000a\u000a[[//"Terra, send the robots to build a weather station, please."//|Build Weather Tower]]\u000a\u000a<<endif>>When there's nothing left to do for today, you can sleep inside.\u000a\u000a[[Unwind and go to sleep.|Sleep]]\u000a\u000a<<if visited() is 2>>The path east leads back to the landing area and the center of the colony.\u000a\u000a<<endif>>[[Head east to the center of the colony.|Hub]]\u000a\u000a<<if visited() is 2>>The path west leads out of the colony, towards a wooded area of alien looking trees.\u000a\u000a<<endif>>[[Leave the colony, heading west into the alien forest.|West of Colony]]<<endif>>
+V<<if visited() is 1>>You walk up to the distinct, dome shaped structure that is the colony center. This structure is where the crew eats and sleeps, and in the future will be expanded to house the rest of the colonists. It could also be considered the colony's headquarters.\u000a\u000aLya is standing outside, waiting for you.\u000a\u000a//"Safe trip, I hope."// Lya begins. //"There's a lot to do, so I'll be brief. The colony's coming up a bit short on supplies, thanks to our detour. We're okay on food and prefabs but we're gonna run out of fuel soon. Do your job and survey what's around us, and keep an eye out for anything that might solve our energy problem."//\u000a\u000a[[//"Sounds good. Those mountains to the north are probably a good place to look."//|CCReply1]]\u000a\u000a<<if visited("Mountains") or visited("Forest") or visited("Hills") >>[[//"Already taken a look around. I'll have a report ready soon."//|CCReply2]]<<endif>><<else>><<if visited() is 2>>Lya nods. //"I'll be in touch via radio."// She heads into the dome shaped structure, leaving you alone. \u000a\u000a<<endif>>You stand outside of the colony center, a clean dome shaped structure which houses both crew quarters and the cafeteria. <<if $bio_lab < 2 and $spaceport < 2>>Lya, Dwayne and Inez are all inside, running the colony, keeping tabs on the crew's health, and watching the skies.<<elseif $bio_lab < 2>>Lya and Inez are inside, running the colony and keeping tabs on the crew's health.<<elseif $spareport < 2>>Lya and Dwayne are inside, running the colony and watching the sky.<<else>>Lya is inside, running the colony.<<endif>> \u000a\u000a<<if $weather_tower is 1>>Robots are hard at work in this area, building up a spire attached to the colony center. The tower seems to grow taller every time you blink.\u000a\u000a<<endif>><<if $weather_tower is 2>>A tall metal spire protudes from the dome, sampling the atomsphere. This weather tower will help the colony predict any inclement weather in the area.\u000a\u000a<<endif>><<if $comm_array is 1>>Robots are hard at work on the dome, running reinforced rods on the roof to support sensitive communications equipment. A pair of robots appear to be fine tuning the signal of the equipment, in preparation to send and receive signals from space. The uplink looks like it's coming together nicely.\u000a\u000a<<endif>><<if $comm_array is 2>> Large antennae stick out from the dome, supported by metal rods. These antennae enable two-way communication with the Heroism. <<if $jammer is 2>>In addition, a large satellite dish rests on top, pointed at the ominous island south of the colony, in an attempt to suppress it's signal.<<endif>>\u000a\u000a<<endif>><<if $jammer is 1>> Robots are hard at work modifying the communications antennae. It looks like they're tripling the number of antennae, as well as adding on a large dish, aimed at the ominous island south of the colony.\u000a\u000a<<endif>><<if $comm_array is 0>>When you have power to spare, let Lya know so she can work on rebuilding the communications array.\u000a\u000a[[//"Lya, go ahead and fix up your comms."//|Build Communications Array]]\u000a\u000a<<endif>><<if $comm_array is 2 and visited("Island") and $jammer is 0>>The signal that island is broadcasting definitely needs to stop. The robots should modify the comm system to jam that signal as soon as possible.\u000a\u000a[[//"Terra, send the robots to upgrade the comm system. I need it to jam the signal coming from the island to the south."//|Build Signal Jammer]]\u000a\u000a<<endif>><<if $visited_uncalm_ocean and $weather_tower is 0>>Not knowing the weather makes it difficult to travel on these alien waters. If the robots built a weather station here it would solve that problem. \u000a\u000a[[//"Terra, send the robots to build a weather station, please."//|Build Weather Tower]]\u000a\u000a<<endif>>When there's nothing left to do for today, you can sleep inside.\u000a\u000a[[Unwind and go to sleep.|Sleep]]\u000a\u000a<<if visited() is 2>>The path east leads back to the landing area and the center of the colony.\u000a\u000a<<endif>>[[Head east to the center of the colony.|Hub]]\u000a\u000a<<if visited() is 2>>The path west leads out of the colony, towards a wooded area full of alien looking trees.\u000a\u000a<<endif>>[[Leave the colony, heading west into the alien forest.|West of Colony]]<<endif>>
 p147
 sg23
 VColony Center
@@ -452,12 +452,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I14
-I19
-I11
-I6
-I173
+I24
+I0
+I47
+I57
+I1
+I175
 I1
 tp149
 (dp150
@@ -843,7 +843,7 @@ Tiddler
 p265
 (dp266
 g21
-V<<if visited() is 1>><<set $visited_mountains to 1>>You approach the mountainous areas that you saw from the colony. The rock face here would be an excellent place to prospect for minerals, but the climb is rather steep. Even if you could move around, it would take weeks to prospect the whole mountain.\u000a\u000a<<else>>You <<if $flight_suit < 2>>try to <<endif>>climb the mountains.\u000a\u000a<<endif>><<if $flight_suit > 1>>With your flight suit, you are able to move around easily.\u000a\u000a<<if visited("Cave")>>[[Climb up to the cave.|Cave]]<<elseif $mountain_mapped > 1>>[[Dig a cave where the robots found ores.|Drill Cave]]<<endif>>\u000a\u000a[[Head south, towards the colony.|North of Colony]]\u000a\u000a[[Head east into the valley.|Valley]]\u000a\u000a<<else>><<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>>Unfortunately, the climb is too steep for you. Surveyors normally used flight suits to move easier on dangerous slopes, but the ship didn't bring any. Lucy may be able to help you out.\u000a\u000a[[Turn around and head back.|previous()]]\u000a\u000a<<endif>>
+V<<if visited() is 1>><<set $visited_mountains to 1>>You approach the mountainous area that you saw from the colony. The rock face here would be an excellent place to prospect for minerals, but the climb is rather steep. Even if you could move around, it would take weeks to prospect the whole mountain.\u000a\u000a<<else>>You <<if $flight_suit < 2>>try to <<endif>>climb the mountains.\u000a\u000a<<endif>><<if $flight_suit > 1>>With your flight suit, you are able to move around easily.\u000a\u000a<<if visited("Cave")>>[[Climb up to the cave.|Cave]]<<elseif $mountain_mapped > 1>>[[Dig a cave where the robots found ores.|Drill Cave]]<<endif>>\u000a\u000a[[Head south, towards the colony.|North of Colony]]\u000a\u000a[[Head east into the valley.|Valley]]\u000a\u000a<<else>><<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>>Unfortunately, the climb is too steep for you. Surveyors normally used flight suits to move more easily on dangerous slopes, but the ship didn't bring any. Lucy may be able to help you out.\u000a\u000a[[Turn around and head back.|previous()]]\u000a\u000a<<endif>>
 p267
 sg23
 VMountains
@@ -852,12 +852,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I12
-I25
-I6
-I6
-I173
+I24
+I0
+I56
+I3
+I1
+I175
 I1
 tp269
 (dp270
@@ -1143,7 +1143,7 @@ Tiddler
 p355
 (dp356
 g21
-V<<if visited() is 1>><<set $fuel += 3>>Jackpot! You find a cluster of rare metal ores and a cache of fuels. This should make everyone at the colony happy.\u000a\u000a<<else>>You stand in your man-made cave.\u000a\u000a<<endif>> [[Leave the cave, back to the mountains.|Mountains]]\u000a\u000a<<if $supernova>>[[Look at the strange emitter.|Strange Device]]\u000a\u000a<<endif>><<if $supernova is 0>>[[Dig deeper for more materials.|Dig Deeper]]\u000a\u000a<<endif>>
+V<<if visited() is 1>><<set $fuel += 3>>Jackpot! You find a cluster of rare metal ores and a cache of fuels. This should make everyone at the colony happy.\u000a\u000a<<else>>You stand in your man-made cave.\u000a\u000a<<endif>> [[Leave the cave, heading back to the mountains.|Mountains]]\u000a\u000a<<if $supernova>>[[Look at the strange emitter.|Strange Device]]\u000a\u000a<<endif>><<if $supernova is 0>>[[Dig deeper to look for more materials.|Dig Deeper]]\u000a\u000a<<endif>>
 p357
 sg23
 VCave
@@ -1152,12 +1152,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I12
-I30
-I40
-I6
-I173
+I24
+I0
+I54
+I7
+I1
+I175
 I1
 tp359
 (dp360
@@ -1202,12 +1202,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I4
-I36
-I50
-I6
-I173
+I24
+I0
+I57
+I7
+I1
+I175
 I1
 tp374
 (dp375
@@ -1293,7 +1293,7 @@ Tiddler
 p400
 (dp401
 g21
-VYou walk up along a cliff adjacent to the ocean. <<if visited("Destroy Antenna") is 0>>Off in the distant ocean, you can see a far away island with an ominous looking spire at its center.<<endif>>\u000a\u000a<<if $beast_at_ocean_cliffs>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_ocean_cliffs to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>><<if visited() is 1>>North of here is a downward sloping path to the colony.\u000a\u000a<<endif>>[[Head north, towards the colony.|South of Colony]]\u000a\u000a<<if visited() is 1>>East of here follows the ocean line, leading toward the hilly regions.\u000a\u000a<<endif>>[[Head east, following the ocean.|Ocean Hills]]\u000a\u000a<<if visited() is 1>>West of here is a downward slope to a beach, where you can reach the ocean.\u000a\u000a<<endif>>[[Head west, towards the beach.|Beach]]\u000a\u000a<<endif>>
+VYou walk along the cliffs adjacent to the ocean. <<if visited("Destroy Antenna") is 0>>Across the ocean, you can see a far away island with an ominous looking spire at its center.<<endif>>\u000a\u000a<<if $beast_at_ocean_cliffs>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_ocean_cliffs to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>><<if visited() is 1>>North of here is a downward sloping path to the colony.\u000a\u000a<<endif>>[[Head north, towards the colony.|South of Colony]]\u000a\u000a<<if visited() is 1>>East of here follows the line of the ocean, leading toward the hilly regions.\u000a\u000a<<endif>>[[Head east, following the ocean.|Ocean Hills]]\u000a\u000a<<if visited() is 1>>West of here is a downward slope to a beach, where you can reach the ocean.\u000a\u000a<<endif>>[[Head west, towards the beach.|Beach]]\u000a\u000a<<endif>>
 p402
 sg23
 VOcean Cliffs
@@ -1302,12 +1302,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I12
-I5
-I21
-I6
-I173
+I24
+I1
+I26
+I30
+I1
+I175
 I1
 tp404
 (dp405
@@ -1343,7 +1343,7 @@ Tiddler
 p415
 (dp416
 g21
-VYou walk along a sandy beach. <<if visited("Destroy Antenna") is 0>>Off in the distant ocean, you can see a far away island with an ominous looking spire at its center.<<endif>>\u000a\u000a<<if visited() is 1>>North of here leads into the forest.\u000a\u000a<<endif>>[[Head north, into the forest.|Forest]]\u000a\u000a<<if visited() is 1>>South of here is the ocean. In order to cross, you'll need a boat. Lucy should be able to make one for you.<<set $need_boat to 1>>\u000a\u000a<<else>><<if $boat > 1>>[[Get in your boat and sail south across the ocean.|Ocean]]<<else>>South of here is the ocean. In order to cross, you'll need a boat.<<endif>>\u000a\u000a<<endif>><<if visited() is 1>>East of here climbs up to the ocean cliffs.\u000a\u000a<<endif>>[[Climb east, heading up to the ocean cliffs.|Ocean Cliffs]]
+VYou walk along a sandy beach. <<if visited("Destroy Antenna") is 0>>Off across the ocean, you can see a far away island with an ominous looking spire at its center.<<endif>>\u000a\u000a<<if visited() is 1>>North of here leads into the forest.\u000a\u000a<<endif>>[[Head north, into the forest.|Forest]]\u000a\u000a<<if visited() is 1>>South of here is the ocean. In order to cross, you'll need a boat. Lucy should be able to make one for you.<<set $need_boat to 1>>\u000a\u000a<<else>><<if $boat > 1>>[[Get in your boat and sail south across the ocean.|Ocean]]<<else>>South of here is the ocean. In order to cross, you'll need a boat.<<endif>>\u000a\u000a<<endif>><<if visited() is 1>>East of here, the land rises to form cliffs against the ocean.\u000a\u000a<<endif>>[[Climb east, heading up to the ocean cliffs.|Ocean Cliffs]]
 p417
 sg23
 VBeach
@@ -1352,12 +1352,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I13
-I27
-I40
-I6
-I173
+I24
+I1
+I24
+I46
+I1
+I175
 I1
 tp419
 (dp420
@@ -1493,7 +1493,7 @@ Tiddler
 p460
 (dp461
 g21
-V<<if $doom_disease > 3>><<set $doom_disease to 3>><<endif>>The forest is even thicker here, with the smoothbark trees clustering more tightly. You are forced to take a winding path as you travel. Trees obscure your distant vision. <<if $forest_mapped > 1>>Using your wrist screen to view the mapped area, you manage to keep track of where you are.\u000a\u000a[[Head back toward the edge of the forest.|Forest]]\u000a\u000a<<if visited("Strange Fungus") is 0>>[[Head toward the fungal growths and collect some fungus.|Strange Fungus]]\u000a\u000a<<endif>><<else>>Due to your winding path, you've lost track of where you are.\u000a\u000a[[Wander the forest looking for the exit.|Deep Forest]]\u000a\u000a[[Call for a rescue.|Rescue]]\u000a\u000a<<endif>>
+V<<if $doom_disease > 3>><<set $doom_disease to 3>><<endif>>The forest is even thicker here, with the smoothbark trees clustered more tightly. You are forced to take a winding path as you travel. Trees obscure your distant vision. <<if $forest_mapped > 1>>Using your wrist screen to view the mapped area, you manage to keep track of where you are.\u000a\u000a[[Head back toward the edge of the forest.|Forest]]\u000a\u000a<<if visited("Strange Fungus") is 0>>[[Head toward the fungal growths and collect some fungus.|Strange Fungus]]\u000a\u000a<<endif>><<else>>Due to your winding path, you've lost track of where you are.\u000a\u000a[[Wander the forest looking for the exit.|Deep Forest]]\u000a\u000a[[Call for a rescue.|Rescue]]\u000a\u000a<<endif>>
 p462
 sg23
 VDeep Forest
@@ -1502,12 +1502,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I4
-I7
+I24
 I1
-I6
-I173
+I8
+I54
+I1
+I175
 I1
 tp464
 (dp465
@@ -1543,7 +1543,7 @@ Tiddler
 p475
 (dp476
 g21
-V<<if visited() is 1>><<set $visited_hills to 1>>You head deeper into the hills. The wavy terrain extends far and long all the way to the ocean. It would take you weeks to explore everything.\u000a\u000a<<else>>You travel deeper into the hills.\u000a\u000a<<endif>>[[Head west, back where you came from.|Hills]]\u000a\u000a<<if $hills_mapped is 2>>[[Seek and enter the beast den.|Beast Den]]<<endif>>
+V<<if visited() is 1>><<set $visited_hills to 1>>You head deeper into the hills. The wavy terrain extends far and long all the way to the ocean. It would take you weeks to explore everything.\u000a\u000a<<else>>You travel deeper into the hills.\u000a\u000a<<endif>>[[Head west, back where you came from.|Hills]]\u000a\u000a<<if $hills_mapped is 2>>[[Seek and enter the beasts' den.|Beast Den]]<<endif>>
 p477
 sg23
 VDeep Hills
@@ -1552,12 +1552,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I13
-I7
-I37
-I6
-I173
+I24
+I1
+I11
+I59
+I1
+I175
 I1
 tp479
 (dp480
@@ -1593,7 +1593,7 @@ Tiddler
 p490
 (dp491
 g21
-V<<if $beast_den_destroyed>>An abandoned and charred beast den.<<else>>A beast den. You can hear the thudding and groaning of creatures moving around inside.\u000a\u000aYou don't get very far before encountering a pair of beasts, a parent and child. \u000a\u000a<<if $stasis_net > 1 and $beast_captured is 0>>[[Capture the beast youngling.|Capture Beast]]\u000a\u000a<<endif>>[[Set fire to the den with your plasma torch.|Destroy Den]]\u000a\u000a<<endif>>[[Leave the den.|Deep Hills]]
+V<<if $beast_den_destroyed>>An abandoned and charred beast den.<<else>>A beast den. You can hear the thudding and groaning of creatures moving around inside.\u000a\u000aYou don't get very far before encountering a pair of beasts, a parent and its hideous spawn. \u000a\u000a<<if $stasis_net > 1 and $beast_captured is 0>>[[Capture the beast youngling.|Capture Beast]]\u000a\u000a<<endif>>[[Set fire to the den with your plasma torch.|Destroy Den]]\u000a\u000a<<endif>>[[Leave the den.|Deep Hills]]
 p492
 sg23
 VBeast Den
@@ -1602,12 +1602,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I12
-I14
-I4
-I6
-I173
+I24
+I1
+I10
+I7
+I1
+I175
 I1
 tp494
 (dp495
@@ -1643,7 +1643,7 @@ Tiddler
 p505
 (dp506
 g21
-V<<set $visited_uncalm_ocean to 1>><<if $weather_tower > 1>>You sit in your lightweight metal boat as it floats across the water. The water is choppy, but nothing you can't handle.\u000a\u000a*[[Sail back to the mainland.|Beach]]\u000a\u000a<<if visited("Destroy Antenna") is 0>>[[Sail toward the island.|Island]]\u000a\u000a<<endif>><<else>>You unfold your boat and eye the water cautiously. The water seems dangerously agitated today. Without a clear read on the weather, it would be too dangerous to sail. A weather station at the colony center would let you know if it's safe to sail today.\u000a\u000a[[Okay.|Beach]]\u000a\u000a<<endif>>
+V<<set $visited_uncalm_ocean to 1>><<if $weather_tower > 1>>You sit in your lightweight metal boat as it floats across the water. The water is choppy, but nothing you can't handle.\u000a\u000a[[Sail back to the mainland.|Beach]]\u000a\u000a<<if visited("Destroy Antenna") is 0>>[[Sail toward the island.|Island]]\u000a\u000a<<endif>><<else>>You unfold your boat and eye the water cautiously. The water seems dangerously agitated today. Without a clear read on the weather, it would be too dangerous to sail. A weather station at the colony center would let you know if it's safe to sail today.\u000a\u000a[[Okay.|Beach]]\u000a\u000a<<endif>>
 p507
 sg23
 VOcean
@@ -1652,12 +1652,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I13
-I58
-I33
-I6
-I173
+I24
+I1
+I21
+I37
+I1
+I175
 I1
 tp509
 (dp510
@@ -1693,7 +1693,7 @@ Tiddler
 p520
 (dp521
 g21
-VYou land at a small island at most a kilometer in diameter. In the center sits a shiny, pulsating spire protruding from the ground about a mile high. Your instruments tell you this living spire is the source of the hostile frequencies that the animals around the camp have been responding to.\u000a\u000a<<if visited() is 1>>Examining the spire you notice a biological receptacle on the side. You take a sample. \u000a\u000a<<endif>><<if $bomb > 1>> [[Plant Lucy's bomb and flee the island.|Destroy Antenna]] \u000a\u000a<<endif>><<if $hybrid_genome > 1 and visited("Upload Hybrid Genome") is 0>>[[Put Inez's hybrid into the receptacle.|Upload Hybrid Genome]]\u000a\u000a<<endif>> [[Get back in the boat.|Ocean]]
+VYou land on a small island at most a kilometer in diameter. In the center sits a shiny, pulsating spire protruding from the ground about a mile high. Your instruments tell you this living spire is the source of the hostile frequencies that are aggitating the animals around the camp.\u000a\u000a<<if visited() is 1>>Examining the spire you notice a biological receptacle on the side. You take a sample. \u000a\u000a<<endif>><<if $bomb > 1>> [[Plant Lucy's bomb and flee the island.|Destroy Antenna]] \u000a\u000a<<endif>><<if $hybrid_genome > 1 and visited("Upload Hybrid Genome") is 0>>[[Put Inez's hybrid into the receptacle.|Upload Hybrid Genome]]\u000a\u000a<<endif>> [[Get back in the boat.|Ocean]]
 p522
 sg23
 VIsland
@@ -1702,12 +1702,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I13
-I58
-I53
-I6
-I173
+I24
+I1
+I20
+I27
+I1
+I175
 I1
 tp524
 (dp525
@@ -2259,7 +2259,7 @@ Tiddler
 p693
 (dp694
 g21
-VYou walk along a hilly region adjacent to the ocean. Down near the steep parts of the hill is a natural cave formation.\u000a\u000a<<if $beast_at_ocean_hills>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_ocean_hills to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>>[[Climb north, into the hills.|Hills]]\u000a\u000a[[Climb west, following the ocean line.|Ocean Cliffs]]\u000a\u000a[[Climb down into the natural cave formation.|Natural Cave]]\u000a\u000a<<endif>>
+VYou walk along a hilly region adjacent to the ocean. Down near the steepest part of the hills is a natural cave formation.\u000a\u000a<<if $beast_at_ocean_hills>><<set $beasts_known to 1>><<display Beast>>\u000a\u000a<<if $plasma_torch>>[[Rush the beast, brandishing your plasma torch.|Fend off Beast][$beast_at_ocean_hills to 0]]\u000a\u000a<<endif>>[[Retreat.|previous()]]\u000a\u000a<<else>>[[Climb north, into the hills.|Hills]]\u000a\u000a[[Climb west, following the ocean line.|Ocean Cliffs]]\u000a\u000a[[Climb down into the natural cave formation.|Natural Cave]]\u000a\u000a<<endif>>
 p695
 sg23
 VOcean Hills
@@ -2268,12 +2268,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I4
+I24
+I1
+I18
 I42
-I15
-I6
-I173
+I1
+I175
 I1
 tp697
 (dp698
@@ -2309,7 +2309,7 @@ Tiddler
 p708
 (dp709
 g21
-V<<if $flight_suit > 1>>You climb down and pace the cave. Stick moss covers most of the walls. <<if $curious_plant is 0>>To one side, you notice a plant growing out of the wall with what appear to be strange looking growths along its stem.<<else>>There is nothing else of interest in this cave.<<endif>>\u000a\u000a<<if $curious_plant is 0>>You take a quick scan of the plant with your hand scanner. The plant itself is unknown, but the growths appear to be some other creature, parasitically attached to the plant. Even weirder, several of the growths contain human DNA.\u000a\u000aYou share your findings with the colony, and Lya's voice responds from the radio. //"Human DNA? That doesn't make any sense. What a bizarre finding. Try to bring the plant back with you, we'll want to study it.<<if $bio_lab is 0>> Oh, but we'll need a lab to study it at. Inez. Inez? We've got a strange-- yes, yes. Talk with Terra, tell her what you need.<<endif>>"// \u000a\u000a<<set $curious_plant to 1>>You dig the plant out of the rock and put it in a glass container. The plant looks surprisingly hardy, should be okay for a while.\u000a\u000a<<endif>>[[Climb back out.|Ocean Hills]]\u000a\u000a<<else>><<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>>Unfortunately, the climb down is too steep for you. Surveyors normally used flight suits to get to hard to reach spots, but the ship didn't bring any. Lucy may be able to help you out.\u000a\u000a[[Okay.|Ocean Hills]]\u000a\u000a<<endif>>\u000a\u000a
+V<<if $flight_suit > 1>>You climb down and pace the cave. Thick moss covers most of the walls. <<if $curious_plant is 0>>To one side, you notice a plant growing out of the wall with what appear to be strange looking growths along its stem.<<else>>There is nothing else of interest in this cave.<<endif>>\u000a\u000a<<if $curious_plant is 0>>You take a quick scan of the plant with your hand scanner. The plant itself is unknown, but the growths appear to be some other creature, parasitically attached to the plant. Even weirder, several of the growths contain human DNA.\u000a\u000aYou share your findings with the colony, and Lya's voice responds from the radio. //"Human DNA? That doesn't make any sense. What a bizarre finding. Try to bring the plant back with you, we'll want to study it.<<if $bio_lab is 0>> Oh, but we'll need a lab to study it. Inez. Inez? We've got a strange-- yes, yes. Talk with Terra, tell her what you need.<<endif>>"// \u000a\u000a<<set $curious_plant to 1>>You dig the plant out of the rock and put it in a glass container. The plant looks surprisingly hardy, it should be okay for a while.\u000a\u000a<<endif>>[[Climb back out.|Ocean Hills]]\u000a\u000a<<else>><<if $flight_suit is 0>><<set $need_flight_suit to 1>><<endif>>Unfortunately, the climb down is too steep for you. Surveyors normally used flight suits to get to hard to reach spots, but the ship didn't bring any. Lucy may be able to help you out.\u000a\u000a[[Okay.|Ocean Hills]]\u000a\u000a<<endif>>\u000a\u000a
 p710
 sg23
 VNatural Cave
@@ -2318,12 +2318,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I13
-I5
-I27
-I6
-I173
+I24
+I1
+I18
+I10
+I1
+I175
 I1
 tp712
 (dp713
@@ -2411,7 +2411,7 @@ Tiddler
 p739
 (dp740
 g21
-VYou signal an emergency on the radio, robots should be on their way.\u000a\u000aMany hours pass. You spend your time documenting the forest. <<if visited() is 1>>You come across some strange growths on the trees that might be worth studying further. You radio back your findings. Lya mentions that Inez could study any samples you bring back, but she needs a lab to work from first. She'll talk with Terra about it.<<endif>>\u000a\u000aEventually, a team of robots finds your location. They lift you up and carry you out of the forest.\u000a\u000aMost of the day was unfortunately spent waiting. There's not enough time to do anything else, and you are getting tired.\u000a\u000a[[Head to the colony center to recover and go to sleep.|Sleep]]
+VYou signal an emergency on the radio, and the robots should be on their way.\u000a\u000aMany hours pass. You spend your time documenting the forest. <<if visited() is 1>>You come across some strange growths on the trees that might be worth studying further. You radio back your findings. Lya mentions that Inez could study any samples you bring back<<if $bio_lab < 2>>, but she needs a lab to work from first. She'll talk with Terra about it<<endif>>.<<endif>>\u000a\u000aEventually, a team of robots finds your location. They lift you up and carry you out of the forest.\u000a\u000aMost of the day was unfortunately spent waiting. There's not enough time to do anything else, and you are getting tired.\u000a\u000a[[Head to the colony center to recover and go to sleep.|Sleep]]
 p741
 sg23
 VRescue
@@ -2420,12 +2420,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I13
-I13
-I22
+I24
+I1
+I17
 I6
-I173
+I1
+I175
 I1
 tp743
 (dp744
@@ -3013,7 +3013,7 @@ Tiddler
 p920
 (dp921
 g21
-V<<set $plasma_torch -= 1>><<set $doom_beasts += 1>>You rush the beast head on, surprising it. Before it can react, you make contact with your plasma torch. A brilliant ball of light punctures the beast's hide, and it recoils on the ground. It stops moving. \u000a\u000a[[Continue.|previous()]]
+V<<set $plasma_torch -= 1>><<set $doom_beasts += 1>>You rush the beast head on, surprising it. Before it can react, you make contact with your plasma torch. A brilliant ball of light punctures the beast's hide, and it recoils to the ground. It stops moving. \u000a\u000a[[Continue.|previous()]]
 p922
 sg23
 VFend off Beast
@@ -3022,12 +3022,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I4
-I49
-I43
-I6
-I173
+I24
+I0
+I57
+I41
+I1
+I175
 I1
 tp924
 (dp925
@@ -3113,7 +3113,7 @@ Tiddler
 p950
 (dp951
 g21
-VYou launch from the spaceport. The trip back to the Heroism is quiet, and you soon find yourself docking.\u000a\u000a<<if doom_disease > 0>>Unfortunately, disease from the planet surface has followed you to the Heroism. Before a cure can be found, the crew is incapacitated, and soon after expires.\u000a\u000aThe //LGDE Heroism// drifts through space in solitude...\u000a\u000a<<else>>With preparations for FTL already underway, you stow your surveryor's equipment in the maintenance lockers and hop to the hibernation pods. You know for certain the next time you wake up, it'll be by civilization.\u000a\u000a(Success!)\u000a\u000a<<endif>>
+VYou launch from the spaceport. The trip back to the Heroism is quiet, and you soon find yourself docking.\u000a\u000a<<if doom_disease > 0>>Unfortunately, disease from the planet's surface has followed you to the Heroism. Before a cure can be found, the crew is incapacitated, and soon after expires.\u000a\u000aThe //LGDE Heroism// drifts through space in solitude...\u000a\u000a<<else>>With preparations for FTL already underway, you stow your surveyor's equipment in the maintenance lockers and hop to the hibernation pods. You know for certain the next time you wake up, it'll be near civilization.\u000a\u000a(Success!)\u000a\u000a<<endif>>
 p952
 sg23
 VEvac
@@ -3122,12 +3122,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I14
-I33
-I54
-I6
-I173
+I24
+I1
+I3
+I29
+I1
+I175
 I1
 tp954
 (dp955
@@ -3163,7 +3163,7 @@ Tiddler
 p965
 (dp966
 g21
-VYou gather some of the strange fungus into a glass receptacle. You radio your finding back to the colony and prepare to head back.\u000a\u000a[[Okay.|Deep Forest]]
+VYou gather some of the strange fungus into a glass receptacle. You radio your findings to the colony and prepare to head back.\u000a\u000a[[Okay.|Deep Forest]]
 p967
 sg23
 VStrange Fungus
@@ -3172,12 +3172,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I12
-I57
-I52
-I6
-I173
+I24
+I1
+I4
+I41
+I1
+I175
 I1
 tp969
 (dp970
@@ -3213,7 +3213,7 @@ Tiddler
 p980
 (dp981
 g21
-VThis room contains a strange emitter, an upside down dome wrapped in thick coils connected to a terminal. The terminal glows with life, but you can't seem to decipher it. The room is sweltering, you don't want to stay here long. Your hand scanner is still picking up strange solar emissions coming from the dome.\u000a\u000aDouble checking your hand scanner, you notice it is detecting FTL isotopes in the room! With a fusion generator you could refine these into fuel for the Heroism. <<if $fusion_gen and $isotope is 0 and $ftl_fuel is 0>><<set $isotope to 1>>You pull out a receptacle and use your hand scanner to try and sample the isotopes with a probe. Before too long you've got a workable amount of isotopes.<<endif>>\u000a\u000a[[Head back into the cave.|Cave]]
+VThis room contains a strange emitter, an upside-down dome wrapped in thick coils connected to a terminal. The terminal glows with life, but you can't seem to decipher it. The room is sweltering, so you don't want to stay here long. Your hand scanner is still picking up strange solar emissions coming from the dome.\u000a\u000aDouble checking your hand scanner, you notice it is detecting FTL isotopes in the room! With a fusion generator you could refine these into fuel for the Heroism. <<if $fusion_gen and $isotope is 0 and $ftl_fuel is 0>><<set $isotope to 1>>You pull out a receptacle and use your hand scanner to try to sample the isotopes with a probe. Before too long you've got a workable amount of isotopes.<<endif>>\u000a\u000a[[Head back into the cave.|Cave]]
 p982
 sg23
 VStrange Device
@@ -3222,12 +3222,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I12
-I44
-I25
-I6
-I173
+I24
+I0
+I53
+I26
+I1
+I175
 I1
 tp984
 (dp985
@@ -3263,7 +3263,7 @@ Tiddler
 p995
 (dp996
 g21
-V<<if $drill>><<set $drill -= 1>>You set your drill into the rock face and let it run. The work goes by quickly, in a few minutes you've created a substantial branch of the cave.\u000a\u000a<<set $caverandom to random(1,12)>><<if $caverandom is 1>> <<set $supernova to 1>>You tunnel into a man-made room. Inside is a strange contraption, an upside down dome wrapped in thick coils connected to a terminal. As the rock settles, the terminal suddenly springs to life, and the room seems to heat up tremendously. Your hand scanner starts picking up strange solar emissions coming from the dome.\u000a\u000aYou speak into the radio. //"Uh, I found something weird in the mountains. Some weird technology."// You describe what you see.\u000a\u000aLya's voice responds. //"Buried technology? Strange. I'll see what I can dig up on that."// \u000a\u000a[[Okay.|Cave]]\u000a\u000a<<endif>><<if $caverandom > 1 and $caverandom < 6>>Your drilling doesn't turn up anything useful.\u000a\u000a[[Darn.|Cave]]\u000a\u000a<<endif>><<if $caverandom > 5>><<set $fuel += 3>>You dig up a cluster of fuels embedded in the rock. \u000a\u000a[[Awesome!|Cave]]\u000a\u000a<<endif>><<else>>You set your drill into the rock face, but it doesn't run. Your drill needs to be charged at the power plant first.\u000a\u000a[[Okay.|Cave]]\u000a\u000a<<endif>>\u000a
+V<<if $drill>><<set $drill -= 1>>You set your drill into the rock face and let it run. The work goes quickly, and in a few minutes you've created a substantial branch in the cave system.\u000a\u000a<<set $caverandom to random(1,12)>><<if $caverandom is 1>> <<set $supernova to 1>>You tunnel into a man-made room. Inside is a strange contraption, an upside-down dome wrapped in thick coils connected to a terminal. As the rock settles, the terminal suddenly springs to life, and the temperature in the room rises tremendously. Your hand scanner starts picking up strange solar emissions coming from the dome.\u000a\u000aYou speak into the radio. //"Uh, I found something weird in the mountains. Some kind of alien technology."// You describe what you see.\u000a\u000aLya's voice responds. //"Buried technology? Strange. I'll see what I can dig up on that."// \u000a\u000a[[Okay.|Cave]]\u000a\u000a<<endif>><<if $caverandom > 1 and $caverandom < 6>>Your drilling doesn't turn up anything useful.\u000a\u000a[[Darn.|Cave]]\u000a\u000a<<endif>><<if $caverandom > 5>><<set $fuel += 3>>You dig up a cluster of fuels embedded in the rock. \u000a\u000a[[Awesome!|Cave]]\u000a\u000a<<endif>><<else>>You set your drill into the rock face, but it doesn't run. Your drill needs to be charged at the power plant first.\u000a\u000a[[Okay.|Cave]]\u000a\u000a<<endif>>\u000a
 p997
 sg23
 VDig Deeper
@@ -3272,12 +3272,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I12
-I40
-I3
+I24
+I0
+I51
 I6
-I173
+I1
+I175
 I1
 tp999
 (dp1000
@@ -3363,7 +3363,7 @@ Tiddler
 p1025
 (dp1026
 g21
-V<<if $drill > 0>><<set $drill -= 1>>You set your drill into the rock face and let it run. The work goes by quickly, in a few minutes you've created a substantial tunnel in the rock face.\u000a\u000a[[Continue.|Cave]]\u000a\u000a<<else>>You set your drill into the rock face, but it doesn't run. Your drill needs to be charged at the power plant first.\u000a\u000a[[Okay.|Mountains]]\u000a\u000a<<endif>>
+V<<if $drill > 0>><<set $drill -= 1>>You set your drill into the rock face and let it run. The work goes quickly, and in a few minutes you've created a substantial tunnel in the rock face.\u000a\u000a[[Continue.|Cave]]\u000a\u000a<<else>>You set your drill into the rock face, but it doesn't run. Your drill needs to be charged at the power plant first.\u000a\u000a[[Okay.|Mountains]]\u000a\u000a<<endif>>
 p1027
 sg23
 VDrill Cave
@@ -3372,12 +3372,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I12
-I27
-I49
-I6
-I173
+I24
+I0
+I54
+I24
+I1
+I175
 I1
 tp1029
 (dp1030
@@ -3713,7 +3713,7 @@ Tiddler
 p1130
 (dp1131
 g21
-V<<if $plasma_torch>><<set $beast_den_destroyed to 1>><<set $plasma_torch -= 1>>You set fire to the beast den and make a hasty escape.\u000a\u000a[[Escape.|Deep Hills]]\u000a\u000a<<else>>Your plasma torch needs more power to ignite this.\u000a\u000a[[Go Back.|Beast Den]]\u000a\u000a<<endif>>
+V<<if $plasma_torch>><<set $beast_den_destroyed to 1>><<set $plasma_torch -= 1>>You set fire to the beast den and make a hasty escape.\u000a\u000a[[Escape.|Deep Hills]]\u000a\u000a<<else>>Your plasma torch lacks sufficient power to ignite the den.\u000a\u000a[[Go Back.|Beast Den]]\u000a\u000a<<endif>>
 p1132
 sg23
 VDestroy Den
@@ -3722,12 +3722,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I12
-I10
-I27
-I6
-I173
+I24
+I1
+I11
+I25
+I1
+I175
 I1
 tp1134
 (dp1135
@@ -3763,7 +3763,7 @@ Tiddler
 p1145
 (dp1146
 g21
-V<<if $plasma_torch>><<set $beast_captured to 1>><<set $plasma_torch -= 1>>You stun the beast with your plasma torch and net a youngling. You bolt out of the den before reinforcements arrive.\u000a\u000a[[Escape.|Deep Hills]]\u000a\u000a<<else>>The beast looks too ferocious to try and approach. You could stun it with your plasma torch if it had power. Your only choice is to back off.\u000a\u000a[[Retreat.|Beast Den]]\u000a\u000a<<endif>>
+V<<if $plasma_torch>><<set $beast_captured to 1>><<set $plasma_torch -= 1>>You stun the beast with your plasma torch and net a youngling. You should make a hasty escape from the den before reinforcements arrive.\u000a\u000a[[Escape.|Deep Hills]]\u000a\u000a<<else>>The beast looks too ferocious to try and approach. You could stun it with your plasma torch if it had power. Your only choice now is to back off.\u000a\u000a[[Retreat.|Beast Den]]\u000a\u000a<<endif>>
 p1147
 sg23
 VCapture Beast
@@ -3772,12 +3772,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I12
-I11
-I34
-I6
-I173
+I24
+I1
+I13
+I20
+I1
+I175
 I1
 tp1149
 (dp1150
@@ -4063,7 +4063,7 @@ Tiddler
 p1235
 (dp1236
 g21
-V<<if $generator>><<set $bomb to 1>><<set $generator -= 1>>Lucy turns to you, her eyes widening. //"A what?"//  \u000a\u000aYou explain the situation to her with the island. A rare smile crosses Lucy's face.\u000a\u000a//"Oh, you want a bomb? I'll give you a bomb. I'll give you a helluva bomb. You'll like this."// She waves you off. \u000a\u000a[[//"Thanks."//|Factory]]\u000a\u000a<<else>>//"Not now. I've got a hundred farming robots to piece together by hand because there's not enough damn power to run the assembler. Go talk to Soto first."// She waves you off.\u000a\u000a[[Leave.|Factory]]\u000a\u000a<<endif>>
+V<<if $generator>><<set $bomb to 1>><<set $generator -= 1>>Lucy turns to you, her eyes widening. //"A what?"//  \u000a\u000aYou explain the situation with the island to her. A rare smile crosses Lucy's face.\u000a\u000a//"Oh, you want a bomb? I'll give you a bomb. I'll give you a helluva bomb. You'll like this."// She waves you off. \u000a\u000a[[//"Thanks."//|Factory]]\u000a\u000a<<else>>//"Not now. I've got a hundred farming robots to piece together by hand because there's not enough damn power to run the assembler. Go talk to Soto first."// She waves you off.\u000a\u000a[[Leave.|Factory]]\u000a\u000a<<endif>>
 p1237
 sg23
 VBomb
@@ -4072,12 +4072,12 @@ sg25
 g26
 ((I2014
 I6
-I22
+I24
 I0
-I28
-I11
-I6
-I173
+I48
+I43
+I1
+I175
 I1
 tp1239
 (dp1240
@@ -4113,7 +4113,7 @@ Tiddler
 p1250
 (dp1251
 g21
-V//"It may not be Jakuta but it's still a habitable planet."// You hear Captain Scott's speech to the crew from behind, but focus on putting on all of your protective gear. Forgetting any small detail could get you killed planetside. Your finish your ensemble with a belt of handy tools and an oxygen tank, just in case.\u000a\u000aAs the captain's speech finishes up, your friend Soto spots you and approaches.\u000a\u000a//"Well, good to see you're not last this time. You excited?"//\u000a\u000a//[["I bet I'm more thrilled than the captain."|StartFastChat1]]//\u000a\u000a[[//"Hah! Someone's gotta watch your back down there."//|StartFastChat2]]
+V//"It may not be Jakuta but it's still a habitable planet."// You can still hear Captain Scott's speech to the crew, but focus on equipping all of your protective gear. Forgetting any small detail could get you killed planetside. You finish your ensemble with a belt of handy tools and an oxygen tank, just in case.\u000a\u000aAs the captain's speech finishes up, your friend Soto spots you and approaches.\u000a\u000a//"Well, good to see you're not last this time. You excited?"//\u000a\u000a//[["I bet I'm more thrilled than the captain."|StartFastChat1]]//\u000a\u000a[[//"Hah! Someone's gotta watch your back down there."//|StartFastChat2]]
 p1252
 sg23
 VStartFast
@@ -4122,12 +4122,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I13
-I27
-I53
-I6
-I173
+I24
+I0
+I29
+I29
+I1
+I175
 I1
 tp1254
 (dp1255
@@ -4163,7 +4163,7 @@ Tiddler
 p1265
 (dp1266
 g21
-V//"Oh, yeah? I'm sure the captain's gonna hang Tran this time. Computer doesn't even know what star system we're in, talk about a fuckup."//\u000a\u000aSoto checks the device on his wrist, then continues.\u000a\u000a//"Listen, I gotta run, need to find if we have any more LX canisters. The ship burned most of it's reserve getting here, and we're gonna run out of power on the colony in a few days. Stop by the power plant when you're not busy and we'll catch up then."//\u000a\u000a[[//"Sounds important. Stay safe, I'll see you on the colony."//|StartFastEnd]]
+V//"Oh, yeah? I'm sure the captain's gonna hang Tran this time. Computer doesn't even know what star system we're in, talk about a fuckup."//\u000a\u000aSoto checks the device on his wrist, then continues.\u000a\u000a//"Listen, I gotta run, need to find if we have any more LX canisters. The ship burned most of its reserve getting here, and we're gonna run out of power on the colony in a few days. Stop by the power plant when you're not busy and we'll catch up then."//\u000a\u000a[[//"Sounds important. Stay safe, I'll see you at the colony."//|StartFastEnd]]
 p1267
 sg23
 VStartFastChat1
@@ -4172,12 +4172,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I16
-I55
-I49
-I5
-I172
+I24
+I0
+I30
+I19
+I1
+I175
 I1
 tp1269
 (dp1270
@@ -4213,7 +4213,7 @@ Tiddler
 p1280
 (dp1281
 g21
-VYou step aside and thoroughly double check your gear. Can't be too careful, forgetting something could be fatal.\u000a\u000a<<if visited("StartSlow")>>After 20 minutes, you've confirmed that you have everything. Looking up, you see that only a single personal pod remains. Looks like you're last off this boat.<<else>>After 20 minutes, you've confirmed that you have everything. Looking up, you spot Soto making his way into a pod. He notices you as well and waves. //"Looks like I'm ahead again!"// Before you can respond, he closes the pod and launches out. There's only a few pods left.<<endif>>\u000a\u000a[[Lets go.|Drop Pod]]
+VYou step aside and thoroughly double check your gear. Can't be too careful, forgetting something could be fatal.\u000a\u000a<<if visited("StartSlow")>>After 20 minutes, you've confirmed that you have everything. Looking up, you see that only a single personal pod remains. Looks like you're last off this boat.<<else>>After 20 minutes, you've confirmed that you have everything. Looking up, you spot Soto making his way into a pod. He notices you as well and waves. //"Looks like I'm ahead again!"// Before you can respond, he closes the pod's doors and launches out. There's only a few pods left.<<endif>>\u000a\u000a[[Let's go.|Drop Pod]]
 p1282
 sg23
 VDelay Pod
@@ -4222,12 +4222,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I16
-I25
-I55
-I5
-I172
+I24
+I0
+I33
+I6
+I1
+I175
 I1
 tp1284
 (dp1285
@@ -4263,7 +4263,7 @@ Tiddler
 p1295
 (dp1296
 g21
-V//"Bah. You save a guy one time and you never let him live it down. I still owe you a drink for that."// \u000a\u000aSoto pauses for a moment, then checks a screen on his wrist. He looks up.\u000a\u000a//"I've got to go, cargo drone's coming up short on LX. Listen, I overheard from Moss that the sensors picked up some hostile life down there. Power's running a bit tight but I can spare a few watts for your plasma torch so you don't get jumped. Stop by the power plant."\u000a\u000a[[//"Allright. See you on the colony."//|StartFastEnd]]\u000a\u000a<<set $beasts_known to 1>>
+V//"Bah. You save a guy one time and you never let him live it down. I still owe you a drink for that."// \u000a\u000aSoto pauses for a moment, then checks a screen on his wrist. He looks up.\u000a\u000a//"I've got to go, cargo drone's coming up short on LX. Listen, I overheard from Moss that the sensors picked up some hostile life down there. Power's running a bit tight but I can spare a few watts for your plasma torch so you don't get jumped. Stop by the power plant when you have a chance."\u000a\u000a[[//"Alright. See you at the colony."//|StartFastEnd]]\u000a\u000a<<set $beasts_known to 1>>
 p1297
 sg23
 VStartFastChat2
@@ -4272,12 +4272,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I16
-I56
+I24
 I0
-I5
-I172
+I31
+I16
+I1
+I175
 I1
 tp1299
 (dp1300
@@ -4313,7 +4313,7 @@ Tiddler
 p1310
 (dp1311
 g21
-VYou exchange farewells as Soto heads off.\u000a\u000a[[Best to get a move to the drop pods.|Start4]]
+VYou exchange farewells as Soto heads off.\u000a\u000a[[Best get moving to the drop pods.|Start4]]
 p1312
 sg23
 VStartFastEnd
@@ -4322,12 +4322,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I17
-I8
+I24
 I0
-I5
-I172
+I31
+I44
+I1
+I175
 I1
 tp1314
 (dp1315
@@ -4363,7 +4363,7 @@ Tiddler
 p1325
 (dp1326
 g21
-VThe pod launches <<if visited("Delay Pod")>>jerkily<<else>>gracefully<<endif>> from the Heroism, spinning around and giving you a clear view of the large blue planet you are about to descend towards. Autopilot thrusters press you into your seat, an uncomfortable reminder of the G-forces normally associated with re-entry.\u000a\u000aYou squawk on the radio to the Heroism, //"Pod 126BB-M beginning entry."//\u000a\u000aThe reinforced viewport starts to flare up as the pod rushes through atmosphere. The computer automatically closes the window, leaving you only with the instruments and trust in the autopilot. Seconds pass as hours as the pod is endlessly jostled by atmospheric turbulence. Airfoils deploy and thrusters fire, and you feel the pod decelerating, the instruments showing the colony is fast approaching. The landing goes like clockwork, with a gentle thud as the pod touches the ground and tips over.\u000a\u000aYou toggle the radio as it links in with the local Colony grid, //"Pod 126BB-M has landed safely. Getting out now."//\u000a\u000a[[Open the pod and step outside.|Hub]]
+VThe pod launches <<if visited("Delay Pod")>>jerkily<<else>>gracefully<<endif>> from the Heroism, spinning around and giving you a clear view of the large blue planet you are about to descend towards. Autopilot thrusters press you into your seat, an uncomfortable reminder of the G-forces normally associated with atmospheric entry.\u000a\u000aYou squawk on the radio to the Heroism, //"Pod 126BB-M beginning  descent."//\u000a\u000aThe reinforced viewport starts to flare up as the pod rushes through atmosphere. The computer automatically closes the window, leaving you with only your instruments and trust in the autopilot. An eternity passes as the pod is endlessly jostled by atmospheric turbulence. Airfoils deploy and thrusters fire, and you feel the pod decelerating, the instruments showing the colony fast approaching. The landing goes like clockwork, with a gentle thud as the pod touches the ground and tips over.\u000a\u000aYou toggle the radio as it links in with the local Colony grid, //"Pod 126BB-M has landed safely. Getting out now."//\u000a\u000a[[Open the pod and step outside.|Hub]]
 p1327
 sg23
 VLaunch
@@ -4372,12 +4372,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I14
-I12
-I53
-I6
-I173
+I24
+I0
+I37
+I11
+I1
+I175
 I1
 tp1329
 (dp1330
@@ -4413,7 +4413,7 @@ Tiddler
 p1340
 (dp1341
 g21
-VLya blinks at you.\u000a\u000a//"Have to give you credit for trying to turn a new leaf, but you really should have come to me first ace."//\u000a\u000aLya sighs.\u000a\u000a//"The faster you find fuel, the better. Talk to Terra at the robotics lab if you haven't already. Use her robots to prospect. Once you're finished, let me know. The space radio is out, and we can't get a hold of Captain Scott. I'll need priority of the robots to rebuild the communications system."//\u000a\u000a[[//"Understood."//|Colony Center]]
+VLya blinks at you.\u000a\u000a//"Have to give you credit for trying to turn a new leaf, but you really should have come to me first, ace."//\u000a\u000aLya sighs.\u000a\u000a//"The faster you find fuel, the better. Talk to Terra at the robotics lab if you haven't already. Use her robots to prospect. Once you're finished, let me know. The space radio is out, and we can't get ahold of Captain Scott. I'll need priority on the robots to rebuild the communications system."//\u000a\u000a[[//"Understood."//|Colony Center]]
 p1342
 sg23
 VCCReply2
@@ -4422,12 +4422,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I20
+I24
 I0
-I46
-I5
-I172
+I38
+I42
+I1
+I175
 I1
 tp1344
 (dp1345
@@ -4463,7 +4463,7 @@ Tiddler
 p1355
 (dp1356
 g21
-V//"Check there first then. If you need any help talk to Terra at the lab, south of the landing area. Get her robots to map out anything you find. I'll let her know this is top priority."//\u000a\u000aLya peers at her wrist screen for a moment, then winces.\u000a\u000a//"One more thing, the space radio isn't working. We can't get in touch with Captain Scott. Once you're finished, let me know. I'll need the robots to rebuild the comm equipment here."//\u000a\u000a[[//"Understood."//|Colony Center]]
+V//"Check there first then. If you need any help, talk to Terra at the lab to the south of the landing area. Get her robots to map out anything you find. I'll let her know this is top priority."//\u000a\u000aLya peers at her wrist screen for a moment, then winces.\u000a\u000a//"One more thing, the space radio isn't working. We can't get in touch with Captain Scott. Once you're finished surveying, let me know. I'll need the robots to rebuild the comm equipment here."//\u000a\u000a[[//"Understood."//|Colony Center]]
 p1357
 sg23
 VCCReply1
@@ -4472,12 +4472,12 @@ sg25
 g26
 ((I2014
 I6
-I21
-I20
+I24
 I0
-I50
-I5
-I172
+I40
+I4
+I1
+I175
 I1
 tp1359
 (dp1360
@@ -4513,7 +4513,7 @@ Tiddler
 p1370
 (dp1371
 g21
-VA fearsome beast lurks here, with a tough exoskeleton and sharp fangs protruding from it's maw. It paces back and forth on its four legs and looks aggressive. <<if $plasma_torch is 0>>\u000a\u000aWithout a weapon it's best not to pick a fight with it. If your plasma torch had more power you could use it to fight.<<endif>>
+VA fearsome beast lurks here, with a tough exoskeleton and sharp fangs protruding from its maw. It paces back and forth on its four legs and looks aggressive. <<if $plasma_torch is 0>>\u000a\u000aWithout a weapon it's best not to pick a fight with it. If your plasma torch had more power you could use it to fight.<<endif>>
 p1372
 sg23
 VBeast
@@ -4522,12 +4522,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I12
+I24
+I0
+I57
+I58
 I1
-I5
-I6
-I173
+I175
 I1
 tp1374
 (dp1375
@@ -4613,7 +4613,7 @@ Tiddler
 p1400
 (dp1401
 g21
-VYou awaken in the middle of the night to a loud thumping sound followed by a scream. You hear squawking coming from outside your door. Suddenly, it bursts open, and a swarm of huge birds swarm in, flapping around with maddening frenzy. It seems the frequency drove the creatures to finally attack the colony.\u000a\u000aYour close your eyes one last time before being shredded apart... 
+VYou awaken in the middle of the night to a loud thumping sound followed by a scream. You hear squawking coming from outside your door. Suddenly, it bursts open, and a swarm of huge birds swarm in, flapping around with maddening frenzy. It seems the frequency finally drove the creatures to attack the colony.\u000a\u000aYour close your eyes one last time before being shredded apart... 
 p1402
 sg23
 VDoom by Xenocide
@@ -4622,12 +4622,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I14
-I12
-I33
-I6
-I173
+I24
+I1
+I1
+I47
+I1
+I175
 I1
 tp1404
 (dp1405
@@ -4663,7 +4663,7 @@ Tiddler
 p1415
 (dp1416
 g21
-VYou awaken in the middle of the night, sharp pains coursing through your body. You are barely able to move. It seems that the disease afflicting the colony has run its course, and your body begins to shut down.\u000a\u000aYour eyelids get heavy as you close them one last time... 
+VYou awaken in the middle of the night, sharp pains coursing through your body. You are barely able to move. It seems that the disease afflicting the colony has claimed one more victim.\u000a\u000aYour eyelids get heavy as you close them for the last time... 
 p1417
 sg23
 VDoom by Disease
@@ -4672,12 +4672,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I14
-I3
-I6
-I6
-I173
+I24
+I0
+I59
+I35
+I1
+I175
 I1
 tp1419
 (dp1420
@@ -4713,7 +4713,7 @@ Tiddler
 p1430
 (dp1431
 g21
-VYou awaken in the middle of the night to a sweltering heat and bright light. Looking outside, the sky is so bright it seems to be on fire, and it seems to be getting brighter and hotter. Your skin starts to sizzle, then suddenly goes numb. \u000a\u000aYour close your eyes one last time before being consumed by scorching heat... 
+VYou awaken in the middle of the night to sweltering heat and bright light. Looking outside, the sky is so bright it seems to be on fire, and it appears to be getting brighter and hotter. Your skin starts to sizzle, then suddenly goes numb. \u000a\u000aYour close your eyes one last time before being consumed by scorching heat... 
 p1432
 sg23
 VDoom by Supernova
@@ -4722,12 +4722,12 @@ sg25
 g26
 ((I2014
 I6
-I22
-I14
-I5
-I28
-I6
-I173
+I24
+I1
+I0
+I42
+I1
+I175
 I1
 tp1434
 (dp1435
@@ -4752,7 +4752,7 @@ tp1441
 Rp1442
 sbsasS'scale'
 p1443
-F0.8
+F0.6000000000000001
 sS'snapping'
 p1444
 I00
